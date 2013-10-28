@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PFCCreateCharacterStep1ViewController : UIViewController
+@interface PFCCreateCharacterStep1ViewController : UIViewController <UITextFieldDelegate, UIScrollViewDelegate>
+
+@property (nonatomic, weak) IBOutlet UITextField *strengthTextField;
+@property (nonatomic, weak) IBOutlet UITextField *dexterityTextField;
+@property (nonatomic, weak) IBOutlet UITextField *constitutionTextField;
+@property (nonatomic, weak) IBOutlet UITextField *intelligenceTextField;
+@property (nonatomic, weak) IBOutlet UITextField *wisdomTextField;
+@property (nonatomic, weak) IBOutlet UITextField *charismaTextField;
+@property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *nextBarButtonItem;
 
 -(IBAction)cancel:(id)sender;
 
