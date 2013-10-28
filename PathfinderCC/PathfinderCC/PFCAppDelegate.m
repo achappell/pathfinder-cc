@@ -16,30 +16,6 @@
 {
     // Override point for customization after application launch.
     
-    
-    PFCCharacterSheetViewController *characterViewController = [(UITabBarController *)self.window.rootViewController viewControllers][0];
-    
-    PFCAbilityScore *strength = [[PFCAbilityScore alloc] init];
-    strength.baseAbilityScore = @12;
-    
-    PFCAbilityScore *dexterity = [[PFCAbilityScore alloc] init];
-    dexterity.baseAbilityScore = @12;
-    
-    PFCAbilityScore *constitution = [[PFCAbilityScore alloc] init];
-    constitution.baseAbilityScore = @12;
-    
-    PFCAbilityScore *intelligence = [[PFCAbilityScore alloc] init];
-    intelligence.baseAbilityScore = @12;
-    
-    PFCAbilityScore *wisdom = [[PFCAbilityScore alloc] init];
-    wisdom.baseAbilityScore = @12;
-    
-    PFCAbilityScore *charisma = [[PFCAbilityScore alloc] init];
-    charisma.baseAbilityScore = @12;
-    
-    PFCCharacter *character = [[PFCCharacter alloc] initWithAbilityScores:@[strength,dexterity,constitution,intelligence,wisdom,charisma]];
-    //characterViewController.character = character;
-    
     return YES;
 }
 							
