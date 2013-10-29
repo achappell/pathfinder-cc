@@ -11,6 +11,7 @@
 		C8B5BEC8181F57E500602206 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B5BEC7181F57E500602206 /* CoreData.framework */; };
 		C8B5BECB181F59B600602206 /* PFCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECA181F59B600602206 /* PFCStore.m */; };
 		C8B5BECE181F5A9600602206 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECC181F5A9600602206 /* Model.xcdatamodeld */; };
+		C8B5BED7181FE39900602206 /* PFCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BED6181FE39900602206 /* PFCMenuViewController.m */; };
 		C8DCE4BD181DBA58008AD1B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */; };
 		C8DCE4BF181DBA58008AD1B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */; };
 		C8DCE4C1181DBA58008AD1B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4C0181DBA58008AD1B6 /* UIKit.framework */; };
@@ -19,7 +20,6 @@
 		C8DCE4CD181DBA58008AD1B6 /* PFCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE4CC181DBA58008AD1B6 /* PFCAppDelegate.m */; };
 		C8DCE4D0181DBA58008AD1B6 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4CE181DBA58008AD1B6 /* Main_iPhone.storyboard */; };
 		C8DCE4D3181DBA58008AD1B6 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4D1181DBA58008AD1B6 /* Main_iPad.storyboard */; };
-		C8DCE4D9181DBA58008AD1B6 /* PFCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE4D8181DBA58008AD1B6 /* PFCSecondViewController.m */; };
 		C8DCE4DB181DBA58008AD1B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4DA181DBA58008AD1B6 /* Images.xcassets */; };
 		C8DCE4E2181DBA58008AD1B6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4E1181DBA58008AD1B6 /* XCTest.framework */; };
 		C8DCE4E3181DBA58008AD1B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */; };
@@ -50,6 +50,8 @@
 		C8B5BEC9181F59B600602206 /* PFCStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCStore.h; sourceTree = "<group>"; };
 		C8B5BECA181F59B600602206 /* PFCStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCStore.m; sourceTree = "<group>"; };
 		C8B5BECD181F5A9600602206 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C8B5BED5181FE39900602206 /* PFCMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCMenuViewController.h; sourceTree = "<group>"; };
+		C8B5BED6181FE39900602206 /* PFCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCMenuViewController.m; sourceTree = "<group>"; };
 		C8DCE4B9181DBA58008AD1B6 /* PathfinderCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathfinderCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,8 +64,6 @@
 		C8DCE4CC181DBA58008AD1B6 /* PFCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFCAppDelegate.m; sourceTree = "<group>"; };
 		C8DCE4CF181DBA58008AD1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		C8DCE4D2181DBA58008AD1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		C8DCE4D7181DBA58008AD1B6 /* PFCSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFCSecondViewController.h; sourceTree = "<group>"; };
-		C8DCE4D8181DBA58008AD1B6 /* PFCSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFCSecondViewController.m; sourceTree = "<group>"; };
 		C8DCE4DA181DBA58008AD1B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C8DCE4E0181DBA58008AD1B6 /* PathfinderCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PathfinderCCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DCE4E1181DBA58008AD1B6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -161,8 +161,6 @@
 				C8DCE4CC181DBA58008AD1B6 /* PFCAppDelegate.m */,
 				C8DCE4CE181DBA58008AD1B6 /* Main_iPhone.storyboard */,
 				C8DCE4D1181DBA58008AD1B6 /* Main_iPad.storyboard */,
-				C8DCE4D7181DBA58008AD1B6 /* PFCSecondViewController.h */,
-				C8DCE4D8181DBA58008AD1B6 /* PFCSecondViewController.m */,
 				C8DCE4DA181DBA58008AD1B6 /* Images.xcassets */,
 				C8DCE4C3181DBA58008AD1B6 /* Supporting Files */,
 			);
@@ -205,6 +203,8 @@
 				C8DCE4FC181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m */,
 				C8DCE50D181DE7F4008AD1B6 /* PFCCreateCharacterStep1ViewController.h */,
 				C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterStep1ViewController.m */,
+				C8B5BED5181FE39900602206 /* PFCMenuViewController.h */,
+				C8B5BED6181FE39900602206 /* PFCMenuViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 			files = (
 				C8B5BEC6181F57C600602206 /* PFCPersistentStack.m in Sources */,
 				C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterStep1ViewController.m in Sources */,
-				C8DCE4D9181DBA58008AD1B6 /* PFCSecondViewController.m in Sources */,
+				C8B5BED7181FE39900602206 /* PFCMenuViewController.m in Sources */,
 				C8B5BECB181F59B600602206 /* PFCStore.m in Sources */,
 				C8DCE4CD181DBA58008AD1B6 /* PFCAppDelegate.m in Sources */,
 				C8DCE4FE181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m in Sources */,
