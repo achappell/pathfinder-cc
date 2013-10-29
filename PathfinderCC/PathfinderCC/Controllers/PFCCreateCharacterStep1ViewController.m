@@ -7,6 +7,9 @@
 //
 
 #import "PFCCreateCharacterStep1ViewController.h"
+#import "PFCCharacter.h"
+#import "PFCAbilityScore.h"
+#import "PFCCharacterSheetViewController.h"
 
 @interface PFCCreateCharacterStep1ViewController ()
 
@@ -151,11 +154,37 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+-(IBAction)next:(id)sender
+{
+    // create character with ability scores
+    NSNumber *strength = @([self.strengthTextField.text integerValue]);
+    PFCAbilityScore *strengthScore = [PFCAbilityScore insertItemWithBaseScore:strength type:PFCAbilityTypeStrength inManagedObjectContext:self.store.managedObjectContext];
+    
+    NSNumber *dexterity = @([self.dexterityTextField.text integerValue]);
+    PFCAbilityScore *dexterityScore = [PFCAbilityScore insertItemWithBaseScore:dexterity type:PFCAbilityTypeDexterity inManagedObjectContext:self.store.managedObjectContext];
+    
+    NSNumber *constitution = @([self.constitutionTextField.text integerValue]);
+    PFCAbilityScore *constitutionScore = [PFCAbilityScore insertItemWithBaseScore:constitution type:PFCAbilityTypeConstitution inManagedObjectContext:self.store.managedObjectContext];
+    
+    NSNumber *intelligence = @([self.intelligenceTextField.text integerValue]);
+    PFCAbilityScore *intelligenceScore = [PFCAbilityScore insertItemWithBaseScore:intelligence type:PFCAbilityTypeIntelligence inManagedObjectContext:self.store.managedObjectContext];
+    
+    NSNumber *wisdom = @([self.wisdomTextField.text integerValue]);
+    PFCAbilityScore *wisdomScore = [PFCAbilityScore insertItemWithBaseScore:wisdom type:PFCAbilityTypeWisdom inManagedObjectContext:self.store.managedObjectContext];
+    
+    NSNumber *charisma = @([self.charismaTextField.text integerValue]);
+    PFCAbilityScore *charismaScore = [PFCAbilityScore insertItemWithBaseScore:charisma type:PFCAbilityTypeCharisma inManagedObjectContext:self.store.managedObjectContext];
+    
+    PFCCharacter *character = [PFCCharacter insertItemWithAbilityScores:[NSSet setWithObjects:strengthScore, dexterityScore, constitutionScore, intelligenceScore, wisdomScore, charismaScore, nil] inManagedObjectContext:self.store.managedObjectContext];
+    
+}
+
 #pragma mark = Segue
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    
+    PFCCharacterSheetViewController *viewController = (PFCCharacterSheetViewController *)sender;
+    self.store = viewController.store;
 }
 
 @end

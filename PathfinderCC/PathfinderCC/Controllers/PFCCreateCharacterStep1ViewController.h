@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PFCStore.h"
 
 @interface PFCCreateCharacterStep1ViewController : UIViewController <UITextFieldDelegate, UIScrollViewDelegate>
 
@@ -18,6 +19,8 @@
 @property (nonatomic, weak) IBOutlet UITextField *charismaTextField;
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *nextBarButtonItem;
+
+@property (nonatomic, strong) PFCStore *store;
 
 -(IBAction)cancel:(id)sender;
 

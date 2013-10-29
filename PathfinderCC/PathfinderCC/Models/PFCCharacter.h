@@ -2,22 +2,36 @@
 //  PFCCharacter.h
 //  PathfinderCC
 //
-//  Created by Amanda Chappell on 10/27/13.
+//  Created by Amanda Chappell on 10/28/13.
 //  Copyright (c) 2013 Amanda Chappell. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "PFCAbilityScore.h"
+#import <CoreData/CoreData.h>
 
-@interface PFCCharacter : NSObject
+@class PFCAbilityScore;
 
-- (id)initWithAbilityScores:(NSArray *)abilityScores;
+@interface PFCCharacter : NSManagedObject
 
-@property (nonatomic, readonly) PFCAbilityScore *strength;
-@property (nonatomic, readonly) PFCAbilityScore *dexterity;
-@property (nonatomic, readonly) PFCAbilityScore *constitution;
-@property (nonatomic, readonly) PFCAbilityScore *intelligence;
-@property (nonatomic, readonly) PFCAbilityScore *wisdom;
-@property (nonatomic, readonly) PFCAbilityScore *charisma;
+@property (nonatomic, retain) NSSet *baseAbilityScores;
+@end
+
+@interface PFCCharacter (CoreDataGeneratedAccessors)
+
+- (void)addBaseAbilityScoresObject:(PFCAbilityScore *)value;
+- (void)removeBaseAbilityScoresObject:(PFCAbilityScore *)value;
+- (void)addBaseAbilityScores:(NSSet *)values;
+- (void)removeBaseAbilityScores:(NSSet *)values;
+
++ (NSString*)entityName;
++ (instancetype)insertItemWithAbilityScores:(NSSet *)abilityScores
+                     inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+
+- (PFCAbilityScore *)strength;
+- (PFCAbilityScore *)dexterity;
+- (PFCAbilityScore *)constitution;
+- (PFCAbilityScore *)intelligence;
+- (PFCAbilityScore *)wisdom;
+- (PFCAbilityScore *)charisma;
 
 @end

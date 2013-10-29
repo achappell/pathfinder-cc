@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8B5BEC6181F57C600602206 /* PFCPersistentStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEC5181F57C600602206 /* PFCPersistentStack.m */; };
+		C8B5BEC8181F57E500602206 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B5BEC7181F57E500602206 /* CoreData.framework */; };
+		C8B5BECB181F59B600602206 /* PFCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECA181F59B600602206 /* PFCStore.m */; };
+		C8B5BECE181F5A9600602206 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECC181F5A9600602206 /* Model.xcdatamodeld */; };
 		C8DCE4BD181DBA58008AD1B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */; };
 		C8DCE4BF181DBA58008AD1B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */; };
 		C8DCE4C1181DBA58008AD1B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4C0181DBA58008AD1B6 /* UIKit.framework */; };
@@ -40,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8B5BEC4181F57C600602206 /* PFCPersistentStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCPersistentStack.h; sourceTree = "<group>"; };
+		C8B5BEC5181F57C600602206 /* PFCPersistentStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCPersistentStack.m; sourceTree = "<group>"; };
+		C8B5BEC7181F57E500602206 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C8B5BEC9181F59B600602206 /* PFCStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCStore.h; sourceTree = "<group>"; };
+		C8B5BECA181F59B600602206 /* PFCStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCStore.m; sourceTree = "<group>"; };
+		C8B5BECD181F5A9600602206 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		C8DCE4B9181DBA58008AD1B6 /* PathfinderCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathfinderCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B5BEC8181F57E500602206 /* CoreData.framework in Frameworks */,
 				C8DCE4BF181DBA58008AD1B6 /* CoreGraphics.framework in Frameworks */,
 				C8DCE4C1181DBA58008AD1B6 /* UIKit.framework in Frameworks */,
 				C8DCE4BD181DBA58008AD1B6 /* Foundation.framework in Frameworks */,
@@ -96,6 +107,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8B5BEC3181F578000602206 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C8B5BEC4181F57C600602206 /* PFCPersistentStack.h */,
+				C8B5BEC5181F57C600602206 /* PFCPersistentStack.m */,
+				C8B5BEC9181F59B600602206 /* PFCStore.h */,
+				C8B5BECA181F59B600602206 /* PFCStore.m */,
+				C8B5BECC181F5A9600602206 /* Model.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		C8DCE4B0181DBA58008AD1B6 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +141,7 @@
 		C8DCE4BB181DBA58008AD1B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8B5BEC7181F57E500602206 /* CoreData.framework */,
 				C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */,
 				C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */,
 				C8DCE4C0181DBA58008AD1B6 /* UIKit.framework */,
@@ -129,6 +153,7 @@
 		C8DCE4C2181DBA58008AD1B6 /* PathfinderCC */ = {
 			isa = PBXGroup;
 			children = (
+				C8B5BEC3181F578000602206 /* CoreData */,
 				C8DCE504181DC4BF008AD1B6 /* Models */,
 				C8DCE500181DC02C008AD1B6 /* Views */,
 				C8DCE4F7181DBE27008AD1B6 /* Controllers */,
@@ -314,13 +339,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B5BEC6181F57C600602206 /* PFCPersistentStack.m in Sources */,
 				C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterStep1ViewController.m in Sources */,
 				C8DCE4D9181DBA58008AD1B6 /* PFCSecondViewController.m in Sources */,
+				C8B5BECB181F59B600602206 /* PFCStore.m in Sources */,
 				C8DCE4CD181DBA58008AD1B6 /* PFCAppDelegate.m in Sources */,
 				C8DCE4FE181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m in Sources */,
 				C8DCE507181DC514008AD1B6 /* PFCCharacter.m in Sources */,
 				C8DCE503181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m in Sources */,
 				C8DCE4C9181DBA58008AD1B6 /* main.m in Sources */,
+				C8B5BECE181F5A9600602206 /* Model.xcdatamodeld in Sources */,
 				C8DCE50A181DD632008AD1B6 /* PFCAbilityScore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +574,7 @@
 				C8DCE4F3181DBA59008AD1B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8DCE4F4181DBA59008AD1B6 /* Build configuration list for PBXNativeTarget "PathfinderCCTests" */ = {
 			isa = XCConfigurationList;
@@ -554,8 +583,22 @@
 				C8DCE4F6181DBA59008AD1B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C8B5BECC181F5A9600602206 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C8B5BECD181F5A9600602206 /* Model.xcdatamodel */,
+			);
+			currentVersion = C8B5BECD181F5A9600602206 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C8DCE4B1181DBA58008AD1B6 /* Project object */;
 }

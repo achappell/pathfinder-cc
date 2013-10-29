@@ -2,41 +2,86 @@
 //  PFCCharacter.m
 //  PathfinderCC
 //
-//  Created by Amanda Chappell on 10/27/13.
+//  Created by Amanda Chappell on 10/28/13.
 //  Copyright (c) 2013 Amanda Chappell. All rights reserved.
 //
 
 #import "PFCCharacter.h"
+#import "PFCAbilityScore.h"
 
-@interface PFCCharacter()
-
-@property (nonatomic, strong) PFCAbilityScore *strength;
-@property (nonatomic, strong) PFCAbilityScore *dexterity;
-@property (nonatomic, strong) PFCAbilityScore *constitution;
-@property (nonatomic, strong) PFCAbilityScore *intelligence;
-@property (nonatomic, strong) PFCAbilityScore *wisdom;
-@property (nonatomic, strong) PFCAbilityScore *charisma;
-
-@end
 
 @implementation PFCCharacter
 
-- (id)initWithAbilityScores:(NSArray *)abilityScores
+@dynamic baseAbilityScores;
+
++ (instancetype)insertItemWithAbilityScores:(NSSet *)abilityScores
+             inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
 {
-    self = [super init];
-    if (self) {
-        
-        if ([abilityScores count] == 6)
-        {
-            _strength = abilityScores[0];
-            _dexterity = abilityScores[1];
-            _constitution = abilityScores[2];
-            _intelligence = abilityScores[3];
-            _wisdom = abilityScores[4];
-            _charisma = abilityScores[5];
-        }
-    }
-    return self;
+    PFCCharacter* character = [NSEntityDescription insertNewObjectForEntityForName:[self entityName]
+                                               inManagedObjectContext:managedObjectContext];
+    
+    character.baseAbilityScores = abilityScores;
+    
+    return character;
+}
+
++ (NSString*)entityName
+{
+    return @"PFCCharacter";
+}
+
+- (PFCAbilityScore *)strength
+{
+    for (PFCAbilityScore *abilityScore in self.baseAbilityScores)
+        if ([abilityScore.type integerValue] == PFCAbilityTypeStrength )
+            return abilityScore;
+
+    return nil;
+}
+
+- (PFCAbilityScore *)dexterity
+{
+    for (PFCAbilityScore *abilityScore in self.baseAbilityScores)
+        if ([abilityScore.type integerValue] == PFCAbilityTypeDexterity )
+            return abilityScore;
+    
+    return nil;
+}
+
+- (PFCAbilityScore *)constitution
+{
+    for (PFCAbilityScore *abilityScore in self.baseAbilityScores)
+        if ([abilityScore.type integerValue] == PFCAbilityTypeConstitution )
+            return abilityScore;
+    
+    return nil;
+}
+
+- (PFCAbilityScore *)intelligence
+{
+    for (PFCAbilityScore *abilityScore in self.baseAbilityScores)
+        if ([abilityScore.type integerValue] == PFCAbilityTypeIntelligence )
+            return abilityScore;
+    
+    return nil;
+}
+
+- (PFCAbilityScore *)wisdom
+{
+    for (PFCAbilityScore *abilityScore in self.baseAbilityScores)
+        if ([abilityScore.type integerValue] == PFCAbilityTypeWisdom )
+            return abilityScore;
+    
+    return nil;
+}
+
+- (PFCAbilityScore *)charisma
+{
+    for (PFCAbilityScore *abilityScore in self.baseAbilityScores)
+        if ([abilityScore.type integerValue] == PFCAbilityTypeCharisma )
+            return abilityScore;
+    
+    return nil;
 }
 
 @end

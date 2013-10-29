@@ -7,6 +7,7 @@
 //
 
 #import "PFCAbilityScoreCollectionViewCell.h"
+#import "PFCAbilityScore.h"
 
 @implementation PFCAbilityScoreCollectionViewCell
 
@@ -31,12 +32,12 @@
     
     _character = character;
     
-    self.strengthLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.strength baseAbilityScore] integerValue]];
-    self.dexterityLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.dexterity baseAbilityScore] integerValue]];
-    self.constitutionLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.constitution baseAbilityScore] integerValue]];
-    self.intelligenceLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.intelligence baseAbilityScore] integerValue]];
-    self.wisdomLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.wisdom baseAbilityScore] integerValue]];
-    self.charismaLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.charisma baseAbilityScore] integerValue]];
+    self.strengthLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.strength baseScore] integerValue]];
+    self.dexterityLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.dexterity baseScore] integerValue]];
+    self.constitutionLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.constitution baseScore] integerValue]];
+    self.intelligenceLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.intelligence baseScore] integerValue]];
+    self.wisdomLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.wisdom baseScore] integerValue]];
+    self.charismaLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.charisma baseScore] integerValue]];
     
     self.strengthModLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.strength abilityModifier] integerValue]];
     self.dexterityModLabel.text = [NSString stringWithFormat:@"%li", (long)[[character.dexterity abilityModifier] integerValue]];

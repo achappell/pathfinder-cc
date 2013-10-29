@@ -581,7 +581,11 @@
                                 <action selector="cancel:" destination="X0i-4U-N5h" id="Jyl-qC-ibl"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Next" id="mmD-dC-VIe"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Next" id="mmD-dC-VIe">
+                            <connections>
+                                <action selector="next:" destination="X0i-4U-N5h" id="dMi-Ce-qPP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="charismaTextField" destination="QJ8-So-gJd" id="U6k-ZX-C3X"/>
