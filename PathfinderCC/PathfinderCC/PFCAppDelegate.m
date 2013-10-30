@@ -11,6 +11,7 @@
 #import "PFCAbilityScore.h"
 #import "PFCPersistentStack.h"
 #import "PFCStore.h"
+#import "PFCMenuViewController.h"
 
 @interface PFCAppDelegate ()
 
@@ -36,6 +37,10 @@
     PFCCharacterSheetViewController *characterSheetViewController = tabBarController.viewControllers[0];
     characterSheetViewController.store = self.store;
     characterSheetViewController.character = rootCharacter;
+    
+    UINavigationController *navController = tabBarController.viewControllers[1];
+    PFCMenuViewController *menuViewController = (PFCMenuViewController *)navController.topViewController;
+    menuViewController.store = self.store;
     
     return YES;
 }

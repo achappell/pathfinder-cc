@@ -6,18 +6,18 @@
 //  Copyright (c) 2013 Amanda Chappell. All rights reserved.
 //
 
-#import "PFCCreateCharacterStep1ViewController.h"
+#import "PFCCreateCharacterAbilityScoreViewController.h"
 #import "PFCCharacter.h"
 #import "PFCAbilityScore.h"
-#import "PFCCharacterSheetViewController.h"
+#import "PFCCreateCharacterNameViewController.h"
 
-@interface PFCCreateCharacterStep1ViewController ()
+@interface PFCCreateCharacterAbilityScoreViewController ()
 
 @property (nonatomic, weak) UITextField *activeField;
 
 @end
 
-@implementation PFCCreateCharacterStep1ViewController
+@implementation PFCCreateCharacterAbilityScoreViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -154,7 +154,9 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(IBAction)next:(id)sender
+#pragma mark = Segue
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // create character with ability scores
     NSNumber *strength = @([self.strengthTextField.text integerValue]);
@@ -177,14 +179,8 @@
     
     PFCCharacter *character = [PFCCharacter insertItemWithAbilityScores:[NSSet setWithObjects:strengthScore, dexterityScore, constitutionScore, intelligenceScore, wisdomScore, charismaScore, nil] inManagedObjectContext:self.store.managedObjectContext];
     
-}
-
-#pragma mark = Segue
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    PFCCharacterSheetViewController *viewController = (PFCCharacterSheetViewController *)sender;
-    self.store = viewController.store;
+    PFCCreateCharacterNameViewController *viewController = (PFCCreateCharacterNameViewController *)segue.destinationViewController;
+    viewController.character = character;
 }
 
 @end

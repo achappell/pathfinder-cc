@@ -12,6 +12,9 @@
 		C8B5BECB181F59B600602206 /* PFCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECA181F59B600602206 /* PFCStore.m */; };
 		C8B5BECE181F5A9600602206 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECC181F5A9600602206 /* Model.xcdatamodeld */; };
 		C8B5BED7181FE39900602206 /* PFCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BED6181FE39900602206 /* PFCMenuViewController.m */; };
+		C8B5BEDA1820970B00602206 /* PFCCharacterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BED91820970B00602206 /* PFCCharacterListViewController.m */; };
+		C8B5BEDE182097E500602206 /* PFCFetchedResultsControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEDD182097E500602206 /* PFCFetchedResultsControllerDataSource.m */; };
+		C8B5BEE218209DDF00602206 /* PFCCreateCharacterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEE118209DDF00602206 /* PFCCreateCharacterNameViewController.m */; };
 		C8DCE4BD181DBA58008AD1B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */; };
 		C8DCE4BF181DBA58008AD1B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */; };
 		C8DCE4C1181DBA58008AD1B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4C0181DBA58008AD1B6 /* UIKit.framework */; };
@@ -30,7 +33,7 @@
 		C8DCE503181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE502181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m */; };
 		C8DCE507181DC514008AD1B6 /* PFCCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE506181DC514008AD1B6 /* PFCCharacter.m */; };
 		C8DCE50A181DD632008AD1B6 /* PFCAbilityScore.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE509181DD632008AD1B6 /* PFCAbilityScore.m */; };
-		C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterStep1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterStep1ViewController.m */; };
+		C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,12 @@
 		C8B5BECD181F5A9600602206 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		C8B5BED5181FE39900602206 /* PFCMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCMenuViewController.h; sourceTree = "<group>"; };
 		C8B5BED6181FE39900602206 /* PFCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCMenuViewController.m; sourceTree = "<group>"; };
+		C8B5BED81820970B00602206 /* PFCCharacterListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCharacterListViewController.h; sourceTree = "<group>"; };
+		C8B5BED91820970B00602206 /* PFCCharacterListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCharacterListViewController.m; sourceTree = "<group>"; };
+		C8B5BEDC182097E500602206 /* PFCFetchedResultsControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCFetchedResultsControllerDataSource.h; sourceTree = "<group>"; };
+		C8B5BEDD182097E500602206 /* PFCFetchedResultsControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCFetchedResultsControllerDataSource.m; sourceTree = "<group>"; };
+		C8B5BEE018209DDF00602206 /* PFCCreateCharacterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCreateCharacterNameViewController.h; sourceTree = "<group>"; };
+		C8B5BEE118209DDF00602206 /* PFCCreateCharacterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCreateCharacterNameViewController.m; sourceTree = "<group>"; };
 		C8DCE4B9181DBA58008AD1B6 /* PathfinderCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathfinderCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,8 +87,8 @@
 		C8DCE506181DC514008AD1B6 /* PFCCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCharacter.m; sourceTree = "<group>"; };
 		C8DCE508181DD632008AD1B6 /* PFCAbilityScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCAbilityScore.h; sourceTree = "<group>"; };
 		C8DCE509181DD632008AD1B6 /* PFCAbilityScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCAbilityScore.m; sourceTree = "<group>"; };
-		C8DCE50D181DE7F4008AD1B6 /* PFCCreateCharacterStep1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCreateCharacterStep1ViewController.h; sourceTree = "<group>"; };
-		C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterStep1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCreateCharacterStep1ViewController.m; sourceTree = "<group>"; };
+		C8DCE50D181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCreateCharacterAbilityScoreViewController.h; sourceTree = "<group>"; };
+		C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCreateCharacterAbilityScoreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +128,26 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		C8B5BEDB182097BF00602206 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				C8B5BEDC182097E500602206 /* PFCFetchedResultsControllerDataSource.h */,
+				C8B5BEDD182097E500602206 /* PFCFetchedResultsControllerDataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		C8B5BEDF18209D9200602206 /* CreateCharacterControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C8DCE50D181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.h */,
+				C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */,
+				C8B5BEE018209DDF00602206 /* PFCCreateCharacterNameViewController.h */,
+				C8B5BEE118209DDF00602206 /* PFCCreateCharacterNameViewController.m */,
+			);
+			path = CreateCharacterControllers;
+			sourceTree = "<group>";
+		};
 		C8DCE4B0181DBA58008AD1B6 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +182,7 @@
 		C8DCE4C2181DBA58008AD1B6 /* PathfinderCC */ = {
 			isa = PBXGroup;
 			children = (
+				C8B5BEDB182097BF00602206 /* DataSource */,
 				C8B5BEC3181F578000602206 /* CoreData */,
 				C8DCE504181DC4BF008AD1B6 /* Models */,
 				C8DCE500181DC02C008AD1B6 /* Views */,
@@ -199,12 +229,13 @@
 		C8DCE4F7181DBE27008AD1B6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C8B5BEDF18209D9200602206 /* CreateCharacterControllers */,
 				C8DCE4FB181DBF0B008AD1B6 /* PFCCharacterSheetViewController.h */,
 				C8DCE4FC181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m */,
-				C8DCE50D181DE7F4008AD1B6 /* PFCCreateCharacterStep1ViewController.h */,
-				C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterStep1ViewController.m */,
 				C8B5BED5181FE39900602206 /* PFCMenuViewController.h */,
 				C8B5BED6181FE39900602206 /* PFCMenuViewController.m */,
+				C8B5BED81820970B00602206 /* PFCCharacterListViewController.h */,
+				C8B5BED91820970B00602206 /* PFCCharacterListViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -340,13 +371,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B5BEC6181F57C600602206 /* PFCPersistentStack.m in Sources */,
-				C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterStep1ViewController.m in Sources */,
+				C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m in Sources */,
 				C8B5BED7181FE39900602206 /* PFCMenuViewController.m in Sources */,
+				C8B5BEDE182097E500602206 /* PFCFetchedResultsControllerDataSource.m in Sources */,
 				C8B5BECB181F59B600602206 /* PFCStore.m in Sources */,
+				C8B5BEE218209DDF00602206 /* PFCCreateCharacterNameViewController.m in Sources */,
 				C8DCE4CD181DBA58008AD1B6 /* PFCAppDelegate.m in Sources */,
 				C8DCE4FE181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m in Sources */,
 				C8DCE507181DC514008AD1B6 /* PFCCharacter.m in Sources */,
 				C8DCE503181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m in Sources */,
+				C8B5BEDA1820970B00602206 /* PFCCharacterListViewController.m in Sources */,
 				C8DCE4C9181DBA58008AD1B6 /* main.m in Sources */,
 				C8B5BECE181F5A9600602206 /* Model.xcdatamodeld in Sources */,
 				C8DCE50A181DD632008AD1B6 /* PFCAbilityScore.m in Sources */,

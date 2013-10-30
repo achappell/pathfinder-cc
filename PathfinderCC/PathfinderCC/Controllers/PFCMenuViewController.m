@@ -7,6 +7,7 @@
 //
 
 #import "PFCMenuViewController.h"
+#import "PFCCharacterListViewController.h"
 
 @interface PFCMenuViewController ()
 
@@ -33,6 +34,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    PFCCharacterListViewController *characterListViewController = (PFCCharacterListViewController *)segue.destinationViewController;
+    characterListViewController.store = self.store;
 }
 
 #pragma mark = UITableViewDelegate

@@ -13,6 +13,7 @@
 @implementation PFCCharacter
 
 @dynamic baseAbilityScores;
+@dynamic name;
 
 + (instancetype)insertItemWithAbilityScores:(NSSet *)abilityScores
              inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
@@ -28,6 +29,18 @@
 + (NSString*)entityName
 {
     return @"PFCCharacter";
+}
+
+#pragma mark - Data Access Methods
+
++ (NSFetchedResultsController *)allCharactersFetchedResultsControllerInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
+{
+    NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:[self entityName]];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]];
+    return [[NSFetchedResultsController alloc] initWithFetchRequest:request
+                                               managedObjectContext:managedObjectContext
+                                                 sectionNameKeyPath:nil
+                                                          cacheName:nil];
 }
 
 - (PFCAbilityScore *)strength

@@ -1,5 +1,5 @@
 //
-//  PFCMenuViewController.h
+//  PFCCharacterListViewController.h
 //  PathfinderCC
 //
 //  Created by Amanda Chappell on 10/29/13.
@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "PFCStore.h"
 
-@interface PFCMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface PFCCharacterListViewController : UIViewController <UITableViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) PFCStore *store;
+
 
 @end

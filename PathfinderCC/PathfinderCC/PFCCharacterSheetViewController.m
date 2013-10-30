@@ -8,7 +8,7 @@
 
 #import "PFCCharacterSheetViewController.h"
 #import "PFCAbilityScoreCollectionViewCell.h"
-#import "PFCCreateCharacterStep1ViewController.h"
+#import "PFCCreateCharacterAbilityScoreViewController.h"
 
 @interface PFCCharacterSheetViewController ()
 
@@ -47,7 +47,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
-    PFCCreateCharacterStep1ViewController *createViewController = (PFCCreateCharacterStep1ViewController *)navController.topViewController;
+    PFCCreateCharacterAbilityScoreViewController *createViewController = (PFCCreateCharacterAbilityScoreViewController *)navController.topViewController;
     createViewController.store = self.store;
 }
 

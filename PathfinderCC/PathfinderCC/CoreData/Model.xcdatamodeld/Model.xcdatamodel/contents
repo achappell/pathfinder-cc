@@ -9,10 +9,11 @@
         <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PFCCharacter" inverseName="baseAbilityScores" inverseEntity="PFCCharacter" syncable="YES"/>
     </entity>
     <entity name="PFCCharacter" representedClassName="PFCCharacter" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="baseAbilityScores" optional="YES" toMany="YES" minCount="6" maxCount="6" deletionRule="Nullify" destinationEntity="PFCAbilityScore" inverseName="character" inverseEntity="PFCAbilityScore" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PFCCharacter" positionX="0" positionY="0" width="0" height="0"/>
         <element name="PFCAbilityScore" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="PFCCharacter" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PFCStore.h"
 
-@interface PFCCreateCharacterStep1ViewController : UIViewController <UITextFieldDelegate, UIScrollViewDelegate>
+@interface PFCCreateCharacterAbilityScoreViewController : UIViewController <UITextFieldDelegate, UIScrollViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UITextField *strengthTextField;
 @property (nonatomic, weak) IBOutlet UITextField *dexterityTextField;

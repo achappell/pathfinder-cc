@@ -14,6 +14,7 @@
 @interface PFCCharacter : NSManagedObject
 
 @property (nonatomic, retain) NSSet *baseAbilityScores;
+@property (nonatomic, retain) NSString *name;
 @end
 
 @interface PFCCharacter (CoreDataGeneratedAccessors)
@@ -26,6 +27,7 @@
 + (NSString*)entityName;
 + (instancetype)insertItemWithAbilityScores:(NSSet *)abilityScores
                      inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
++ (NSFetchedResultsController *)allCharactersFetchedResultsControllerInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
 - (PFCAbilityScore *)strength;
 - (PFCAbilityScore *)dexterity;
