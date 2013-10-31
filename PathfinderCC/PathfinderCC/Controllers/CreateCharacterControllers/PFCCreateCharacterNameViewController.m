@@ -10,6 +10,9 @@
 
 @interface PFCCreateCharacterNameViewController ()
 
+@property (nonatomic, strong) NSString *selectedAlignment;
+@property (nonatomic, strong) NSArray *alignments;
+
 @end
 
 @implementation PFCCreateCharacterNameViewController
@@ -27,12 +30,70 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.selectedAlignment = PFCAlignmentLawfulGood;
+    
+    self.alignments = @[PFCAlignmentLawfulGood, PFCAlignmentNeutralGood, PFCAlignmentChaoticGood,
+                        PFCAlignmentLawfulNeutral, PFCAlignmentNeutral, PFCAlignmentChaoticNeutral,
+                        PFCAlignmentLawfulEvil, PFCAlignmentNeutralEvil, PFCAlignmentChaoticEvil];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)save:(id)sender
+{
+    self.character.name = self.nameTextField.text;
+    self.character.age = [self.ageTextField.text integerValue];
+    
+    if (self.genderSegmentedControl.selectedSegmentIndex == 0)
+        self.character.gender = PFCGenderMale;
+    else
+        self.character.gender = PFCGenderFemale;
+    
+    self.character.alignment = self.selectedAlignment;
+    [self.store setSelectedCharacter:self.character];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+#pragma mark - UIPickerViewDataSource
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return 9;
+}
+
+#pragma mark - UIPickerViewDelegate
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    if (self.alignments.count > row)
+        return self.alignments[row];
+    
+    return PFCAlignmentLawfulGood;
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    if (self.alignments.count > row)
+        self.selectedAlignment = self.alignments[row];
 }
 
 @end

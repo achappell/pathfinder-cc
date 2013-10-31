@@ -9,6 +9,7 @@
 #import "PFCCharacterListViewController.h"
 #import "PFCFetchedResultsControllerDataSource.h"
 #import "PFCCharacter.h"
+#import "PFCCreateCharacterAbilityScoreViewController.h"
 
 @interface PFCCharacterListViewController () <PFCFetchedResultsControllerDataSourceDelegate>
 
@@ -47,13 +48,19 @@
     self.fetchedResultsControllerDataSource.paused = YES;
 }
 
-
 - (void)setupFetchedResultsController
 {
     self.fetchedResultsControllerDataSource = [[PFCFetchedResultsControllerDataSource alloc] initWithTableView:self.tableView];
     self.fetchedResultsControllerDataSource.fetchedResultsController = [PFCCharacter allCharactersFetchedResultsControllerInManagedObjectContext:self.store.managedObjectContext];
     self.fetchedResultsControllerDataSource.delegate = self;
     self.fetchedResultsControllerDataSource.reuseIdentifier = @"Cell";
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
+    PFCCreateCharacterAbilityScoreViewController *createViewController = (PFCCreateCharacterAbilityScoreViewController *)navController.topViewController;
+    createViewController.store = self.store;
 }
 
 #pragma mark - PFCFetchedResultsControllerDataSourceDelegate

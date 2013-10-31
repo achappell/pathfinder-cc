@@ -15,6 +15,8 @@
 		C8B5BEDA1820970B00602206 /* PFCCharacterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BED91820970B00602206 /* PFCCharacterListViewController.m */; };
 		C8B5BEDE182097E500602206 /* PFCFetchedResultsControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEDD182097E500602206 /* PFCFetchedResultsControllerDataSource.m */; };
 		C8B5BEE218209DDF00602206 /* PFCCreateCharacterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEE118209DDF00602206 /* PFCCreateCharacterNameViewController.m */; };
+		C8DA37641821E6BF00DBC2F7 /* PFCAlignment.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA37631821E6BF00DBC2F7 /* PFCAlignment.m */; };
+		C8DA37671821E92A00DBC2F7 /* PFCGender.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA37661821E92A00DBC2F7 /* PFCGender.m */; };
 		C8DCE4BD181DBA58008AD1B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */; };
 		C8DCE4BF181DBA58008AD1B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */; };
 		C8DCE4C1181DBA58008AD1B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4C0181DBA58008AD1B6 /* UIKit.framework */; };
@@ -61,6 +63,10 @@
 		C8B5BEDD182097E500602206 /* PFCFetchedResultsControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCFetchedResultsControllerDataSource.m; sourceTree = "<group>"; };
 		C8B5BEE018209DDF00602206 /* PFCCreateCharacterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCreateCharacterNameViewController.h; sourceTree = "<group>"; };
 		C8B5BEE118209DDF00602206 /* PFCCreateCharacterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCreateCharacterNameViewController.m; sourceTree = "<group>"; };
+		C8DA37621821E6BF00DBC2F7 /* PFCAlignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCAlignment.h; sourceTree = "<group>"; };
+		C8DA37631821E6BF00DBC2F7 /* PFCAlignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCAlignment.m; sourceTree = "<group>"; };
+		C8DA37651821E92A00DBC2F7 /* PFCGender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCGender.h; sourceTree = "<group>"; };
+		C8DA37661821E92A00DBC2F7 /* PFCGender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCGender.m; sourceTree = "<group>"; };
 		C8DCE4B9181DBA58008AD1B6 /* PathfinderCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathfinderCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +154,17 @@
 			path = CreateCharacterControllers;
 			sourceTree = "<group>";
 		};
+		C8DA37611821E69600DBC2F7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C8DA37621821E6BF00DBC2F7 /* PFCAlignment.h */,
+				C8DA37631821E6BF00DBC2F7 /* PFCAlignment.m */,
+				C8DA37651821E92A00DBC2F7 /* PFCGender.h */,
+				C8DA37661821E92A00DBC2F7 /* PFCGender.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		C8DCE4B0181DBA58008AD1B6 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +199,7 @@
 		C8DCE4C2181DBA58008AD1B6 /* PathfinderCC */ = {
 			isa = PBXGroup;
 			children = (
+				C8DA37611821E69600DBC2F7 /* Constants */,
 				C8B5BEDB182097BF00602206 /* DataSource */,
 				C8B5BEC3181F578000602206 /* CoreData */,
 				C8DCE504181DC4BF008AD1B6 /* Models */,
@@ -372,7 +390,9 @@
 			files = (
 				C8B5BEC6181F57C600602206 /* PFCPersistentStack.m in Sources */,
 				C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m in Sources */,
+				C8DA37641821E6BF00DBC2F7 /* PFCAlignment.m in Sources */,
 				C8B5BED7181FE39900602206 /* PFCMenuViewController.m in Sources */,
+				C8DA37671821E92A00DBC2F7 /* PFCGender.m in Sources */,
 				C8B5BEDE182097E500602206 /* PFCFetchedResultsControllerDataSource.m in Sources */,
 				C8B5BECB181F59B600602206 /* PFCStore.m in Sources */,
 				C8B5BEE218209DDF00602206 /* PFCCreateCharacterNameViewController.m in Sources */,

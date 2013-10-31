@@ -12,13 +12,30 @@
 
 @implementation PFCStore
 
-- (PFCCharacter *)rootCharacter
+- (PFCCharacter *)selectedCharacter
 {
     // todo: use a cache?
     NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCharacter"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"selected == 1"];
+    request.predicate = predicate;
     NSArray* objects = [self.managedObjectContext executeFetchRequest:request error:NULL];
     PFCCharacter* rootCharacter = [objects lastObject];
     return rootCharacter;
+}
+
+- (void)setSelectedCharacter:(PFCCharacter *)character
+{
+    NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCharacter"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"selected == %@", @"YES"];
+    request.predicate = predicate;
+    NSArray* objects = [self.managedObjectContext executeFetchRequest:request error:NULL];
+    
+    [objects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        PFCCharacter *deselectedCharacter = (PFCCharacter *)obj;
+        deselectedCharacter.selected = NO;
+    }];
+    
+    character.selected = YES;
 }
 
 @end

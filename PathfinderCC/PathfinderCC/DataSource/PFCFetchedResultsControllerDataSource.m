@@ -84,13 +84,20 @@
     if (type == NSFetchedResultsChangeInsert)
     {
         [self.tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-    } else if (type == NSFetchedResultsChangeMove)
+    }
+    else if (type == NSFetchedResultsChangeMove)
     {
         [self.tableView moveRowAtIndexPath:indexPath toIndexPath:newIndexPath];
-    } else if (type == NSFetchedResultsChangeDelete)
+    }
+    else if (type == NSFetchedResultsChangeDelete)
     {
         [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-    } else
+    }
+    else if (type == NSFetchedResultsChangeUpdate)
+    {
+        [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+    else
     {
         NSAssert(NO,@"");
     }

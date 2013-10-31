@@ -14,6 +14,10 @@
 
 @dynamic baseAbilityScores;
 @dynamic name;
+@dynamic age;
+@dynamic gender;
+@dynamic alignment;
+@dynamic selected;
 
 + (instancetype)insertItemWithAbilityScores:(NSSet *)abilityScores
              inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext

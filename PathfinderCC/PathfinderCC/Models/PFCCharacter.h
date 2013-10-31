@@ -15,6 +15,11 @@
 
 @property (nonatomic, retain) NSSet *baseAbilityScores;
 @property (nonatomic, retain) NSString *name;
+@property (nonatomic) int16_t age;
+@property (nonatomic, retain) NSString *gender;
+@property (nonatomic, retain) NSString *alignment;
+@property (nonatomic) BOOL selected;
+
 @end
 
 @interface PFCCharacter (CoreDataGeneratedAccessors)

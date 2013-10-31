@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
 
-- (PFCCharacter *)rootCharacter;
+- (PFCCharacter *)selectedCharacter;
+- (void)setSelectedCharacter:(PFCCharacter *)character;
 
 @end

@@ -30,13 +30,13 @@
     self.store = [[PFCStore alloc] init];
     self.store.managedObjectContext = self.persistentStack.managedObjectContext;
     
-    PFCCharacter *rootCharacter = [self.store rootCharacter];
+    PFCCharacter *selectedCharacter = [self.store selectedCharacter];
     
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     
     PFCCharacterSheetViewController *characterSheetViewController = tabBarController.viewControllers[0];
     characterSheetViewController.store = self.store;
-    characterSheetViewController.character = rootCharacter;
+    characterSheetViewController.character = selectedCharacter;
     
     UINavigationController *navController = tabBarController.viewControllers[1];
     PFCMenuViewController *menuViewController = (PFCMenuViewController *)navController.topViewController;

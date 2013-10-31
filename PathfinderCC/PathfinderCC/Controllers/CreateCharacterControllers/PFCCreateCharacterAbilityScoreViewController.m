@@ -181,6 +181,7 @@
     
     PFCCreateCharacterNameViewController *viewController = (PFCCreateCharacterNameViewController *)segue.destinationViewController;
     viewController.character = character;
+    viewController.store = self.store;
 }
 
 @end
