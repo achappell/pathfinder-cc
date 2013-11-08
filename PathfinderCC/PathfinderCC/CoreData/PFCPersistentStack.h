@@ -11,7 +11,7 @@
 
 @interface PFCPersistentStack : NSObject
 
-- (id)initWithStoreURL:(NSURL*)storeURL modelURL:(NSURL*)modelURL;
+- (id)initWithStorePath:(NSString *)storePath modelURL:(NSURL*)modelURL;
 
 @property (nonatomic,strong,readonly) NSManagedObjectContext* managedObjectContext;
 

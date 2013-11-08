@@ -12,6 +12,7 @@
 #import "PFCPersistentStack.h"
 #import "PFCStore.h"
 #import "PFCMenuViewController.h"
+#import <RestKit/RestKit.h>
 
 @interface PFCAppDelegate ()
 
@@ -26,7 +27,7 @@
 {
     // Override point for customization after application launch.
     
-    self.persistentStack = [[PFCPersistentStack alloc] initWithStoreURL:[self storeURL] modelURL:[self modelURL]];
+    self.persistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL]];
     self.store = [[PFCStore alloc] init];
     self.store.managedObjectContext = self.persistentStack.managedObjectContext;
     
@@ -70,7 +71,7 @@
     
     NSError *error;
     
-    [self.store.managedObjectContext save:&error];
+    [self.store.managedObjectContext saveToPersistentStore:&error];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

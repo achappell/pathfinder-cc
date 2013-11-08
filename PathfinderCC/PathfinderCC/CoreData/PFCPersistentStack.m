@@ -7,22 +7,23 @@
 //
 
 #import "PFCPersistentStack.h"
+#import <RestKit/RestKit.h>
 
 @interface PFCPersistentStack ()
 
 @property (nonatomic,strong,readwrite) NSManagedObjectContext* managedObjectContext;
 @property (nonatomic,strong) NSURL* modelURL;
-@property (nonatomic,strong) NSURL* storeURL;
+@property (nonatomic,strong) NSString* storePath;
 
 @end
 
 @implementation PFCPersistentStack
 
-- (id)initWithStoreURL:(NSURL*)storeURL modelURL:(NSURL*)modelURL
+- (id)initWithStorePath:(NSString *)storePath modelURL:(NSURL*)modelURL
 {
     self = [super init];
     if (self) {
-        self.storeURL = storeURL;
+        self.storePath = storePath;
         self.modelURL = modelURL;
         [self setupManagedObjectContext];
     }
@@ -31,15 +32,22 @@
 
 - (void)setupManagedObjectContext
 {
-    self.managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
-    self.managedObjectContext.persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    
+    // Initialize the Core Data stack
+    [managedObjectStore createPersistentStoreCoordinator];
     
     NSError *error;
-    [self.managedObjectContext.persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:self.storeURL options:nil error:&error];
-    if (error)
-    {
-        NSLog(@"error: %@", error);
-    }
+    NSPersistentStore __unused *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:self.storePath fromSeedDatabaseAtPath:nil withConfiguration:nil options:nil error:&error];
+    NSAssert(persistentStore, @"Failed to add persistent store: %@", error);
+    
+    [managedObjectStore createManagedObjectContexts];
+    
+    // Set the default store shared instance
+    [RKManagedObjectStore setDefaultStore:managedObjectStore];
+    
+    self.managedObjectContext = managedObjectStore.mainQueueManagedObjectContext;
+    
     self.managedObjectContext.undoManager = [[NSUndoManager alloc] init];
 }
 
