@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3400" systemVersion="13A2093" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PFCAbilityScore" representedClassName="PFCAbilityScore" syncable="YES">
+        <attribute name="abilityModifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="baseScore" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tempAdjustment" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tempModifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PFCRace" inverseName="modifiers" inverseEntity="PFCRace" syncable="YES"/>
+    </entity>
+    <entity name="PFCCoreRulebook" representedClassName="PFCCoreRulebook" syncable="YES">
+        <relationship name="races" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PFCRace" inverseName="coreRulebook" inverseEntity="PFCRace" syncable="YES"/>
+    </entity>
+    <entity name="PFCRace" representedClassName="PFCRace" syncable="YES">
+        <attribute name="adventures" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="alignmentAndReligion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="physicalDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relations" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="society" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="coreRulebook" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PFCCoreRulebook" inverseName="races" inverseEntity="PFCCoreRulebook" syncable="YES"/>
+        <relationship name="modifiers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PFCAbilityScore" inverseName="race" inverseEntity="PFCAbilityScore" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PFCCoreRulebook" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="PFCRace" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="PFCAbilityScore" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

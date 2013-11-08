@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE5B0CD2182D82990039E623 /* PFCWrittenTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5B0CD1182D82990039E623 /* PFCWrittenTextField.m */; };
 		A7403EF7D87D4FF0817E552E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B964AB63344D00BB30C2D6 /* libPods.a */; };
+		BE5B0CD2182D82990039E623 /* PFCWrittenTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5B0CD1182D82990039E623 /* PFCWrittenTextField.m */; };
 		C8B5BEC6181F57C600602206 /* PFCPersistentStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEC5181F57C600602206 /* PFCPersistentStack.m */; };
 		C8B5BEC8181F57E500602206 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B5BEC7181F57E500602206 /* CoreData.framework */; };
 		C8B5BECB181F59B600602206 /* PFCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECA181F59B600602206 /* PFCStore.m */; };
@@ -38,6 +38,38 @@
 		C8DCE507181DC514008AD1B6 /* PFCCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE506181DC514008AD1B6 /* PFCCharacter.m */; };
 		C8DCE50A181DD632008AD1B6 /* PFCAbilityScore.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE509181DD632008AD1B6 /* PFCAbilityScore.m */; };
 		C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */; };
+		E072505B182DA48D00E523B6 /* PFCPersistentStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEC5181F57C600602206 /* PFCPersistentStack.m */; };
+		E072505C182DA48D00E523B6 /* PFCCreateCharacterAbilityScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */; };
+		E072505D182DA48D00E523B6 /* PFCAlignment.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA37631821E6BF00DBC2F7 /* PFCAlignment.m */; };
+		E072505E182DA48D00E523B6 /* PFCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BED6181FE39900602206 /* PFCMenuViewController.m */; };
+		E072505F182DA48D00E523B6 /* PFCGender.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA37661821E92A00DBC2F7 /* PFCGender.m */; };
+		E0725060182DA48D00E523B6 /* PFCFetchedResultsControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEDD182097E500602206 /* PFCFetchedResultsControllerDataSource.m */; };
+		E0725061182DA48D00E523B6 /* PFCWrittenTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5B0CD1182D82990039E623 /* PFCWrittenTextField.m */; };
+		E0725062182DA48D00E523B6 /* PFCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECA181F59B600602206 /* PFCStore.m */; };
+		E0725063182DA48D00E523B6 /* PFCCreateCharacterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEE118209DDF00602206 /* PFCCreateCharacterNameViewController.m */; };
+		E0725064182DA48D00E523B6 /* PFCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE4CC181DBA58008AD1B6 /* PFCAppDelegate.m */; };
+		E0725065182DA48D00E523B6 /* PFCCharacterSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE4FC181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m */; };
+		E0725066182DA48D00E523B6 /* PFCCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE506181DC514008AD1B6 /* PFCCharacter.m */; };
+		E0725067182DA48D00E523B6 /* PFCAbilityScoreCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE502181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m */; };
+		E0725068182DA48D00E523B6 /* PFCCharacterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BED91820970B00602206 /* PFCCharacterListViewController.m */; };
+		E0725069182DA48D00E523B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE4C8181DBA58008AD1B6 /* main.m */; };
+		E072506A182DA48D00E523B6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECC181F5A9600602206 /* Model.xcdatamodeld */; };
+		E072506B182DA48D00E523B6 /* PFCAbilityScore.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE509181DD632008AD1B6 /* PFCAbilityScore.m */; };
+		E072506D182DA48D00E523B6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B5BEC7181F57E500602206 /* CoreData.framework */; };
+		E072506E182DA48D00E523B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */; };
+		E072506F182DA48D00E523B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4C0181DBA58008AD1B6 /* UIKit.framework */; };
+		E0725070182DA48D00E523B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */; };
+		E0725071182DA48D00E523B6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B964AB63344D00BB30C2D6 /* libPods.a */; };
+		E0725073182DA48D00E523B6 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4D1181DBA58008AD1B6 /* Main_iPad.storyboard */; };
+		E0725074182DA48D00E523B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4DA181DBA58008AD1B6 /* Images.xcassets */; };
+		E0725075182DA48D00E523B6 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4CE181DBA58008AD1B6 /* Main_iPhone.storyboard */; };
+		E0725076182DA48D00E523B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4C5181DBA58008AD1B6 /* InfoPlist.strings */; };
+		E072507F182DA7A800E523B6 /* CoreRulebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */; };
+		E0725080182DA7A800E523B6 /* CoreRulebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */; };
+		E0725083182DADFC00E523B6 /* PFCRace.m in Sources */ = {isa = PBXBuildFile; fileRef = E0725082182DADFC00E523B6 /* PFCRace.m */; };
+		E0725084182DADFC00E523B6 /* PFCRace.m in Sources */ = {isa = PBXBuildFile; fileRef = E0725082182DADFC00E523B6 /* PFCRace.m */; };
+		E0725087182DADFC00E523B6 /* PFCCoreRulebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */; };
+		E0725088182DADFC00E523B6 /* PFCCoreRulebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +83,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE5B0CD0182D82990039E623 /* PFCWrittenTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCWrittenTextField.h; sourceTree = "<group>"; };
-		BE5B0CD1182D82990039E623 /* PFCWrittenTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCWrittenTextField.m; sourceTree = "<group>"; };
 		3B91F4C25E7F4150ABE11486 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A4B964AB63344D00BB30C2D6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5B0CD0182D82990039E623 /* PFCWrittenTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCWrittenTextField.h; sourceTree = "<group>"; };
+		BE5B0CD1182D82990039E623 /* PFCWrittenTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCWrittenTextField.m; sourceTree = "<group>"; };
 		C8B5BEC4181F57C600602206 /* PFCPersistentStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCPersistentStack.h; sourceTree = "<group>"; };
 		C8B5BEC5181F57C600602206 /* PFCPersistentStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCPersistentStack.m; sourceTree = "<group>"; };
 		C8B5BEC7181F57E500602206 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -101,6 +133,13 @@
 		C8DCE509181DD632008AD1B6 /* PFCAbilityScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCAbilityScore.m; sourceTree = "<group>"; };
 		C8DCE50D181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCreateCharacterAbilityScoreViewController.h; sourceTree = "<group>"; };
 		C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCreateCharacterAbilityScoreViewController.m; sourceTree = "<group>"; };
+		E072507B182DA48D00E523B6 /* PathfinderCC copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PathfinderCC copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E072507C182DA48D00E523B6 /* PathfinderCC copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PathfinderCC copy-Info.plist"; path = "/Users/achappell/Documents/Development/iOS/pathfinder-cc/PathfinderCC/PathfinderCC copy-Info.plist"; sourceTree = "<absolute>"; };
+		E072507E182DA7A800E523B6 /* CoreRulebook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreRulebook.xcdatamodel; sourceTree = "<group>"; };
+		E0725081182DADFC00E523B6 /* PFCRace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFCRace.h; path = PathfinderCC/Models/PFCRace.h; sourceTree = SOURCE_ROOT; };
+		E0725082182DADFC00E523B6 /* PFCRace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFCRace.m; path = PathfinderCC/Models/PFCRace.m; sourceTree = SOURCE_ROOT; };
+		E0725085182DADFC00E523B6 /* PFCCoreRulebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFCCoreRulebook.h; path = PathfinderCC/Models/PFCCoreRulebook.h; sourceTree = SOURCE_ROOT; };
+		E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFCCoreRulebook.m; path = PathfinderCC/Models/PFCCoreRulebook.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +165,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E072506C182DA48D00E523B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E072506D182DA48D00E523B6 /* CoreData.framework in Frameworks */,
+				E072506E182DA48D00E523B6 /* CoreGraphics.framework in Frameworks */,
+				E072506F182DA48D00E523B6 /* UIKit.framework in Frameworks */,
+				E0725070182DA48D00E523B6 /* Foundation.framework in Frameworks */,
+				E0725071182DA48D00E523B6 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,6 +188,7 @@
 				C8B5BEC9181F59B600602206 /* PFCStore.h */,
 				C8B5BECA181F59B600602206 /* PFCStore.m */,
 				C8B5BECC181F5A9600602206 /* Model.xcdatamodeld */,
+				E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -180,6 +232,7 @@
 				C8DCE4BB181DBA58008AD1B6 /* Frameworks */,
 				C8DCE4BA181DBA58008AD1B6 /* Products */,
 				3B91F4C25E7F4150ABE11486 /* Pods.xcconfig */,
+				E072507C182DA48D00E523B6 /* PathfinderCC copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +241,7 @@
 			children = (
 				C8DCE4B9181DBA58008AD1B6 /* PathfinderCC.app */,
 				C8DCE4E0181DBA58008AD1B6 /* PathfinderCCTests.xctest */,
+				E072507B182DA48D00E523B6 /* PathfinderCC copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,6 +335,10 @@
 		C8DCE504181DC4BF008AD1B6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E0725085182DADFC00E523B6 /* PFCCoreRulebook.h */,
+				E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */,
+				E0725081182DADFC00E523B6 /* PFCRace.h */,
+				E0725082182DADFC00E523B6 /* PFCRace.m */,
 				C8DCE505181DC514008AD1B6 /* PFCCharacter.h */,
 				C8DCE506181DC514008AD1B6 /* PFCCharacter.m */,
 				C8DCE508181DD632008AD1B6 /* PFCAbilityScore.h */,
@@ -329,6 +387,25 @@
 			productReference = C8DCE4E0181DBA58008AD1B6 /* PathfinderCCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E0725058182DA48D00E523B6 /* Generate Seed DB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0725078182DA48D00E523B6 /* Build configuration list for PBXNativeTarget "Generate Seed DB" */;
+			buildPhases = (
+				E0725059182DA48D00E523B6 /* Check Pods Manifest.lock */,
+				E072505A182DA48D00E523B6 /* Sources */,
+				E072506C182DA48D00E523B6 /* Frameworks */,
+				E0725072182DA48D00E523B6 /* Resources */,
+				E0725077182DA48D00E523B6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Generate Seed DB";
+			productName = PathfinderCC;
+			productReference = E072507B182DA48D00E523B6 /* PathfinderCC copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -370,6 +447,7 @@
 			targets = (
 				C8DCE4B8181DBA58008AD1B6 /* PathfinderCC */,
 				C8DCE4DF181DBA58008AD1B6 /* PathfinderCCTests */,
+				E0725058182DA48D00E523B6 /* Generate Seed DB */,
 			);
 		};
 /* End PBXProject section */
@@ -391,6 +469,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8DCE4EC181DBA58008AD1B6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0725072182DA48D00E523B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0725073182DA48D00E523B6 /* Main_iPad.storyboard in Resources */,
+				E0725074182DA48D00E523B6 /* Images.xcassets in Resources */,
+				E0725075182DA48D00E523B6 /* Main_iPhone.storyboard in Resources */,
+				E0725076182DA48D00E523B6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +516,36 @@
 			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E0725059182DA48D00E523B6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0725077182DA48D00E523B6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -434,6 +553,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0725083182DADFC00E523B6 /* PFCRace.m in Sources */,
+				E0725087182DADFC00E523B6 /* PFCCoreRulebook.m in Sources */,
 				C8B5BEC6181F57C600602206 /* PFCPersistentStack.m in Sources */,
 				C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m in Sources */,
 				C8DA37641821E6BF00DBC2F7 /* PFCAlignment.m in Sources */,
@@ -447,6 +568,7 @@
 				C8DCE4FE181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m in Sources */,
 				C8DCE507181DC514008AD1B6 /* PFCCharacter.m in Sources */,
 				C8DCE503181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m in Sources */,
+				E072507F182DA7A800E523B6 /* CoreRulebook.xcdatamodeld in Sources */,
 				C8B5BEDA1820970B00602206 /* PFCCharacterListViewController.m in Sources */,
 				C8DCE4C9181DBA58008AD1B6 /* main.m in Sources */,
 				C8B5BECE181F5A9600602206 /* Model.xcdatamodeld in Sources */,
@@ -459,6 +581,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8DCE4EE181DBA58008AD1B6 /* PathfinderCCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E072505A182DA48D00E523B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0725084182DADFC00E523B6 /* PFCRace.m in Sources */,
+				E0725088182DADFC00E523B6 /* PFCCoreRulebook.m in Sources */,
+				E072505B182DA48D00E523B6 /* PFCPersistentStack.m in Sources */,
+				E072505C182DA48D00E523B6 /* PFCCreateCharacterAbilityScoreViewController.m in Sources */,
+				E072505D182DA48D00E523B6 /* PFCAlignment.m in Sources */,
+				E072505E182DA48D00E523B6 /* PFCMenuViewController.m in Sources */,
+				E072505F182DA48D00E523B6 /* PFCGender.m in Sources */,
+				E0725060182DA48D00E523B6 /* PFCFetchedResultsControllerDataSource.m in Sources */,
+				E0725061182DA48D00E523B6 /* PFCWrittenTextField.m in Sources */,
+				E0725062182DA48D00E523B6 /* PFCStore.m in Sources */,
+				E0725063182DA48D00E523B6 /* PFCCreateCharacterNameViewController.m in Sources */,
+				E0725064182DA48D00E523B6 /* PFCAppDelegate.m in Sources */,
+				E0725065182DA48D00E523B6 /* PFCCharacterSheetViewController.m in Sources */,
+				E0725066182DA48D00E523B6 /* PFCCharacter.m in Sources */,
+				E0725067182DA48D00E523B6 /* PFCAbilityScoreCollectionViewCell.m in Sources */,
+				E0725080182DA7A800E523B6 /* CoreRulebook.xcdatamodeld in Sources */,
+				E0725068182DA48D00E523B6 /* PFCCharacterListViewController.m in Sources */,
+				E0725069182DA48D00E523B6 /* main.m in Sources */,
+				E072506A182DA48D00E523B6 /* Model.xcdatamodeld in Sources */,
+				E072506B182DA48D00E523B6 /* PFCAbilityScore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +807,45 @@
 			};
 			name = Release;
 		};
+		E0725079182DA48D00E523B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B91F4C25E7F4150ABE11486 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"RESTKIT_GENERATE_SEED_DB=1",
+				);
+				INFOPLIST_FILE = "PathfinderCC copy-Info.plist";
+				PRODUCT_NAME = "PathfinderCC copy";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E072507A182DA48D00E523B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B91F4C25E7F4150ABE11486 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
+				INFOPLIST_FILE = "PathfinderCC copy-Info.plist";
+				PRODUCT_NAME = "PathfinderCC copy";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -688,6 +876,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E0725078182DA48D00E523B6 /* Build configuration list for PBXNativeTarget "Generate Seed DB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0725079182DA48D00E523B6 /* Debug */,
+				E072507A182DA48D00E523B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
@@ -698,6 +895,16 @@
 			);
 			currentVersion = C8B5BECD181F5A9600602206 /* Model.xcdatamodel */;
 			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E072507E182DA7A800E523B6 /* CoreRulebook.xcdatamodel */,
+			);
+			currentVersion = E072507E182DA7A800E523B6 /* CoreRulebook.xcdatamodel */;
+			path = CoreRulebook.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
