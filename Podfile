@@ -1,3 +1,3 @@
 xcodeproj 'PathfinderCC/PathfinderCC.xcodeproj'
 
-pod 'RestKit/CoreData', '0.21.0'
+pod 'RestKit/Core', '0.21.0'
