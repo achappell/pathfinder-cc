@@ -17,3 +17,9 @@ extern NSString * const PFCAlignmentChaoticNeutral;
 extern NSString * const PFCAlignmentLawfulEvil;
 extern NSString * const PFCAlignmentNeutralEvil;
 extern NSString * const PFCAlignmentChaoticEvil;
+
+@interface PFCAlignment : NSObject
+
++ (NSString *)displayNameForAlignment:(NSString *)alignment;
+
+@end

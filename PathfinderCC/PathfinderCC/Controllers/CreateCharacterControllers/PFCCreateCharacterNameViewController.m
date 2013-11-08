@@ -77,7 +77,7 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return 9;
+    return [self.alignments count];
 }
 
 #pragma mark - UIPickerViewDelegate
@@ -85,15 +85,17 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     if (self.alignments.count > row)
-        return self.alignments[row];
+        return [PFCAlignment displayNameForAlignment: self.alignments[row]];
     
-    return PFCAlignmentLawfulGood;
+    return [PFCAlignment displayNameForAlignment: PFCAlignmentLawfulGood];
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     if (self.alignments.count > row)
         self.selectedAlignment = self.alignments[row];
+    
+    [self.alignmentButton setTitle:[PFCAlignment displayNameForAlignment:self.selectedAlignment] forState:UIControlStateNormal];
 }
 
 @end
