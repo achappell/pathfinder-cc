@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE5B0CD2182D82990039E623 /* PFCWrittenTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5B0CD1182D82990039E623 /* PFCWrittenTextField.m */; };
 		A7403EF7D87D4FF0817E552E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B964AB63344D00BB30C2D6 /* libPods.a */; };
 		C8B5BEC6181F57C600602206 /* PFCPersistentStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEC5181F57C600602206 /* PFCPersistentStack.m */; };
 		C8B5BEC8181F57E500602206 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B5BEC7181F57E500602206 /* CoreData.framework */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE5B0CD0182D82990039E623 /* PFCWrittenTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCWrittenTextField.h; sourceTree = "<group>"; };
+		BE5B0CD1182D82990039E623 /* PFCWrittenTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCWrittenTextField.m; sourceTree = "<group>"; };
 		3B91F4C25E7F4150ABE11486 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A4B964AB63344D00BB30C2D6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B5BEC4181F57C600602206 /* PFCPersistentStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCPersistentStack.h; sourceTree = "<group>"; };
@@ -269,6 +272,8 @@
 			children = (
 				C8DCE501181DC084008AD1B6 /* PFCAbilityScoreCollectionViewCell.h */,
 				C8DCE502181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m */,
+				BE5B0CD0182D82990039E623 /* PFCWrittenTextField.h */,
+				BE5B0CD1182D82990039E623 /* PFCWrittenTextField.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -435,6 +440,7 @@
 				C8B5BED7181FE39900602206 /* PFCMenuViewController.m in Sources */,
 				C8DA37671821E92A00DBC2F7 /* PFCGender.m in Sources */,
 				C8B5BEDE182097E500602206 /* PFCFetchedResultsControllerDataSource.m in Sources */,
+				BE5B0CD2182D82990039E623 /* PFCWrittenTextField.m in Sources */,
 				C8B5BECB181F59B600602206 /* PFCStore.m in Sources */,
 				C8B5BEE218209DDF00602206 /* PFCCreateCharacterNameViewController.m in Sources */,
 				C8DCE4CD181DBA58008AD1B6 /* PFCAppDelegate.m in Sources */,
