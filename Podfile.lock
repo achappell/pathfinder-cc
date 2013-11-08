@@ -1,0 +1,10 @@
+PODS:
+  - RestKit/CoreData (0.21.0)
+
+DEPENDENCIES:
+  - RestKit/CoreData (= 0.21.0)
+
+SPEC CHECKSUMS:
+  RestKit: c11a30e7bc73513d9d2c2695672aba7697d24181
+
+COCOAPODS: 0.25.0
