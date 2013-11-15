@@ -1,1 +1,3 @@
 language: objective-c
+workspace: PathfinderCC.xcworkspace
+scheme: PathfinderCC
