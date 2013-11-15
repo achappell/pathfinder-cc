@@ -20,6 +20,20 @@
                ReferencedContainer = "container:PathfinderCC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C8DCE4DF181DBA58008AD1B6"
+               BuildableName = "PathfinderCCTests.xctest"
+               BlueprintName = "PathfinderCCTests"
+               ReferencedContainer = "container:PathfinderCC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
