@@ -1,6 +1,7 @@
 xcodeproj 'PathfinderCC/PathfinderCC.xcodeproj'
 
 pod 'RestKit/Core', '0.21.0'
+pod 'OCMock', '~> 2.2.1'
 
 post_install do |installer|
   installer.project.targets.each do |target|
