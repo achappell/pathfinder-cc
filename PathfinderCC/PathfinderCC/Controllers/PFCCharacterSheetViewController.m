@@ -75,7 +75,7 @@
     {
         UICollectionViewCell *collectionViewCell = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"NoCharacterHeader" forIndexPath:indexPath];
         
-        UIButton *createCharacterButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        UIButton *createCharacterButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [createCharacterButton setTitle:@"Create Character" forState:UIControlStateNormal];
         [createCharacterButton sizeToFit];
         createCharacterButton.center = CGPointMake(CGRectGetWidth(collectionViewCell.bounds)/2.0f, CGRectGetHeight(collectionViewCell.bounds)/2.0f);
