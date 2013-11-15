@@ -57,6 +57,12 @@
     return [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
 }
 
+#ifdef DEBUG
++ (void)initialize {
+    [[NSUserDefaults standardUserDefaults] setValue:@"XCTestLog,GTMCodeCoverageTests"
+                                             forKey:@"XCTestObserverClass"];
+}
+#endif
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -84,9 +90,10 @@
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+extern void __gcov_flush(void);
+
+- (void)applicationWillTerminate:(UIApplication*)application {
+    __gcov_flush();
 }
 
 @end
