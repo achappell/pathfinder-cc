@@ -6,7 +6,7 @@ before_script:
   - sudo easy_install cpp-coveralls
 
 script:
-  - xctool -workspace PathfinderCC.xcworkspace -scheme "PathfinderCC" build test -sdk iphonesimulator
+  - xctool -workspace PathfinderCC.xcworkspace -scheme "PathfinderCC" build test -sdk iphonesimulator -arch i386
 
 after_success:
       - ./coveralls.rb --extension m
