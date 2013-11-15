@@ -8,6 +8,7 @@
 
 #import "PFCAbilityScoreCollectionViewCell.h"
 #import "PFCAbilityScore.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation PFCAbilityScoreCollectionViewCell
 
