@@ -26,7 +26,7 @@
 - (void)setSelectedCharacter:(PFCCharacter *)character
 {
     NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCharacter"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"selected == %@", @"YES"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"selected == 1"];
     request.predicate = predicate;
     NSArray* objects = [self.managedObjectContext executeFetchRequest:request error:NULL];
     
@@ -36,6 +36,16 @@
     }];
     
     character.selected = YES;
+}
+
+- (PFCCharacter *)characterWithName:(NSString *)name
+{
+    NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCharacter"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name = %@",name];
+    request.predicate = predicate;
+    NSArray* objects = [self.managedObjectContext executeFetchRequest:request error:NULL];
+    PFCCharacter* rootCharacter = [objects lastObject];
+    return rootCharacter;
 }
 
 @end

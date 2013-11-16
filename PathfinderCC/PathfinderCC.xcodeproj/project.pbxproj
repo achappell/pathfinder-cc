@@ -42,6 +42,7 @@
 		E072507F182DA7A800E523B6 /* CoreRulebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */; };
 		E0725083182DADFC00E523B6 /* PFCRace.m in Sources */ = {isa = PBXBuildFile; fileRef = E0725082182DADFC00E523B6 /* PFCRace.m */; };
 		E0725087182DADFC00E523B6 /* PFCCoreRulebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */; };
+		E09C3A7B1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E09C3A7A1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m */; };
 		E0EF3FCF1835C63100FA4045 /* GTMCodeCoverageApp.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EF3FCE1835C63100FA4045 /* GTMCodeCoverageApp.m */; };
 		E0EF3FD21835C6F100FA4045 /* GTMCodeCoverageTestsXC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */; };
 /* End PBXBuildFile section */
@@ -114,9 +115,10 @@
 		E0725082182DADFC00E523B6 /* PFCRace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFCRace.m; path = PathfinderCC/Models/PFCRace.m; sourceTree = SOURCE_ROOT; };
 		E0725085182DADFC00E523B6 /* PFCCoreRulebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFCCoreRulebook.h; path = PathfinderCC/Models/PFCCoreRulebook.h; sourceTree = SOURCE_ROOT; };
 		E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFCCoreRulebook.m; path = PathfinderCC/Models/PFCCoreRulebook.m; sourceTree = SOURCE_ROOT; };
+		E09C3A7A1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFCCreateCharacterAbilityScoreViewControllerTest.m; path = PathfinderCCTests/PFCCreateCharacterAbilityScoreViewControllerTest.m; sourceTree = SOURCE_ROOT; };
 		E0EF3FCD1835C63100FA4045 /* GTMCodeCoverageApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMCodeCoverageApp.h; sourceTree = "<group>"; };
 		E0EF3FCE1835C63100FA4045 /* GTMCodeCoverageApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMCodeCoverageApp.m; sourceTree = "<group>"; };
-		E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMCodeCoverageTestsXC.m; path = ../PathfinderCC/GTMCodeCoverageTestsXC.m; sourceTree = "<group>"; };
+		E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMCodeCoverageTestsXC.m; sourceTree = "<group>"; };
 		E4C3FEB92BBB4B959DC39334 /* libPods-PathfinderCCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PathfinderCCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -249,8 +251,6 @@
 		C8DCE4C3181DBA58008AD1B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E0EF3FCD1835C63100FA4045 /* GTMCodeCoverageApp.h */,
-				E0EF3FCE1835C63100FA4045 /* GTMCodeCoverageApp.m */,
 				C8DCE4C4181DBA58008AD1B6 /* PathfinderCC-Info.plist */,
 				C8DCE4C5181DBA58008AD1B6 /* InfoPlist.strings */,
 				C8DCE4C8181DBA58008AD1B6 /* main.m */,
@@ -262,6 +262,9 @@
 		C8DCE4E7181DBA58008AD1B6 /* PathfinderCCTests */ = {
 			isa = PBXGroup;
 			children = (
+				E09C3A7A1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m */,
+				E0EF3FCD1835C63100FA4045 /* GTMCodeCoverageApp.h */,
+				E0EF3FCE1835C63100FA4045 /* GTMCodeCoverageApp.m */,
 				E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */,
 				C8DCE4ED181DBA58008AD1B6 /* PathfinderCCTests.m */,
 				C8DCE4E8181DBA58008AD1B6 /* Supporting Files */,
@@ -539,6 +542,7 @@
 			files = (
 				E0EF3FD21835C6F100FA4045 /* GTMCodeCoverageTestsXC.m in Sources */,
 				C8DCE4EE181DBA58008AD1B6 /* PathfinderCCTests.m in Sources */,
+				E09C3A7B1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +627,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -658,7 +662,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -671,14 +675,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Amanda Chappell (W75263856K)";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
 				INFOPLIST_FILE = "PathfinderCC/PathfinderCC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -691,14 +694,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Amanda Chappell (W75263856K)";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
 				INFOPLIST_FILE = "PathfinderCC/PathfinderCC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

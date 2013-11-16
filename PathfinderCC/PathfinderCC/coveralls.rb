@@ -8,7 +8,7 @@ require 'optparse'
 # arraw of source subfolders to exclude
 excludedFolders = []
 extensionsToProcess = []
-coveralls_cmd = "coveralls --verbose -t FMHVHzbu8PdoeIrenQNdWOZb8Qvkr9c7M -e Pods -e PathfinderCC/PathfinderCCTests --extension .m"
+coveralls_cmd = "coveralls"
 
 excludeHeaders = false
 

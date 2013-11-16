@@ -24,4 +24,9 @@
 
 -(IBAction)cancel:(id)sender;
 
+- (BOOL)shouldAllowNextNavigation;
+- (void)registerForKeyboardNotifications;
+- (void)keyboardWasShown:(NSNotification*)aNotification;
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification;
+
 @end

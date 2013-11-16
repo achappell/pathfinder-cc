@@ -16,5 +16,6 @@
 
 - (PFCCharacter *)selectedCharacter;
 - (void)setSelectedCharacter:(PFCCharacter *)character;
+- (PFCCharacter *)characterWithName:(NSString *)name;
 
 @end
