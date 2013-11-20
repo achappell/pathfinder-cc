@@ -4,6 +4,9 @@ xcode_scheme: PathfinderCC
 
 before_script:
   - sudo easy_install cpp-coveralls
+  
+before_install: 
+  - gem install cocoapods
 
 script:
   - xctool -workspace PathfinderCC.xcworkspace -scheme "PathfinderCC" build test -sdk iphonesimulator -arch i386
