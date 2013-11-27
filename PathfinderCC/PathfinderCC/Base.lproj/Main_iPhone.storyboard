@@ -675,7 +675,7 @@
         <!--Menu View Controller-->
         <scene sceneID="wER-FI-EHl">
             <objects>
-                <viewController id="PRq-gb-5YK" customClass="PFCMenuViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PFCMenuViewController" id="PRq-gb-5YK" customClass="PFCMenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nTs-v7-fhL"/>
                         <viewControllerLayoutGuide type="bottom" id="Dzz-da-9bD"/>

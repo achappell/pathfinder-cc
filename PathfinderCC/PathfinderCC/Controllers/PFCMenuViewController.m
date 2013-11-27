@@ -15,15 +15,6 @@
 
 @implementation PFCMenuViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -40,13 +31,6 @@
 {
     PFCCharacterListViewController *characterListViewController = (PFCCharacterListViewController *)segue.destinationViewController;
     characterListViewController.store = self.store;
-}
-
-#pragma mark = UITableViewDelegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
 }
 
 #pragma mark = UITableViewDataSource
