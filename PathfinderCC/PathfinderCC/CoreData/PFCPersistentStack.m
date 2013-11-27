@@ -49,6 +49,8 @@
     self.managedObjectContext = managedObjectStore.mainQueueManagedObjectContext;
     
     self.managedObjectContext.undoManager = [[NSUndoManager alloc] init];
+    
+    [RKObjectManager sharedManager].managedObjectStore = managedObjectStore;
 }
 
 - (NSManagedObjectModel*)managedObjectModel

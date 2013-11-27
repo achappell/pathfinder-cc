@@ -14,6 +14,7 @@
 #import "PFCMenuViewController.h"
 #import <RestKit/RestKit.h>
 #import "PFCCoreRulebookVersionCoordinator.h"
+#import "PFCCoreRulebookBuilder.h"
 
 @interface PFCAppDelegate ()
 
@@ -51,7 +52,11 @@
     PFCCoreRulebookVersionCoordinator *versionCoordinator = [[PFCCoreRulebookVersionCoordinator alloc] init];
     versionCoordinator.store = self.store;
     
-    [versionCoordinator latestVersion];
+    if (![versionCoordinator isCoreRulebookUpToDate])
+    {
+        PFCCoreRulebookBuilder *builder = [[PFCCoreRulebookBuilder alloc] init];
+        [builder buildLatestCoreRulebook];
+    }
     
     return YES;
 }

@@ -53,6 +53,7 @@
 		E0EF3FD21835C6F100FA4045 /* GTMCodeCoverageTestsXC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */; };
 		E0F296F51846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F296F41846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m */; };
 		E0F296F818468A9B0007B2B6 /* testcorerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = E0F296F6184689800007B2B6 /* testcorerulebook.json */; };
+		E0F296FA1846A2230007B2B6 /* PFCCoreRulebookBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F296F91846A2230007B2B6 /* PFCCoreRulebookBuilderTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMCodeCoverageTestsXC.m; sourceTree = "<group>"; };
 		E0F296F41846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCoreRulebookVersionCoordinatorTests.m; sourceTree = "<group>"; };
 		E0F296F6184689800007B2B6 /* testcorerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testcorerulebook.json; sourceTree = "<group>"; };
+		E0F296F91846A2230007B2B6 /* PFCCoreRulebookBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCoreRulebookBuilderTests.m; sourceTree = "<group>"; };
 		E4C3FEB92BBB4B959DC39334 /* libPods-PathfinderCCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PathfinderCCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -295,6 +297,7 @@
 				E0E74A761846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m */,
 				E0E74A7B1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m */,
 				E0F296F41846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m */,
+				E0F296F91846A2230007B2B6 /* PFCCoreRulebookBuilderTests.m */,
 			);
 			path = PathfinderCCTests;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				E0E74A771846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m in Sources */,
 				E0F296F51846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m in Sources */,
 				E0E74A73184642D300F13FE9 /* PFCMenuViewControllerTests.m in Sources */,
+				E0F296FA1846A2230007B2B6 /* PFCCoreRulebookBuilderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
