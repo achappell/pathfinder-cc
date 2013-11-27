@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self.collectionView registerClass:[UICollectionViewCell class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"NoCharacterHeader"];
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"NoCharacterHeader"];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -52,11 +52,11 @@
 
 #pragma mark - UICollectionViewDataSource
 
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.character)
     {
-        PFCAbilityScoreCollectionViewCell *collectionViewCell = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"AbilityHeader" forIndexPath:indexPath];
+        PFCAbilityScoreCollectionViewCell *collectionViewCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AbilityHeader" forIndexPath:indexPath];
         
         [collectionViewCell setCharacter:self.character];
         
@@ -64,7 +64,7 @@
     }
     else
     {
-        UICollectionViewCell *collectionViewCell = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"NoCharacterHeader" forIndexPath:indexPath];
+        UICollectionViewCell *collectionViewCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"NoCharacterHeader" forIndexPath:indexPath];
         
         UIButton *createCharacterButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [createCharacterButton setTitle:@"Create Character" forState:UIControlStateNormal];
@@ -76,6 +76,16 @@
         
         return collectionViewCell;
     }
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 1;
 }
 
 @end

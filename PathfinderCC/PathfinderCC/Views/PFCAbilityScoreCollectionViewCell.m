@@ -12,16 +12,7 @@
 
 @implementation PFCAbilityScoreCollectionViewCell
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
--(void)awakeFromNib
+- (void)awakeFromNib
 {
     [self configureViews];
 }

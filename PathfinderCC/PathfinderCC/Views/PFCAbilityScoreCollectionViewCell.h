@@ -41,4 +41,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *wisdomTempModLabel;
 @property (nonatomic, weak) IBOutlet UILabel *charismaTempModLabel;
 
+- (void)configureViews;
+- (void)awakeFromNib;
+
 @end

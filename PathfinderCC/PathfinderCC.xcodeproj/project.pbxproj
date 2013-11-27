@@ -44,6 +44,7 @@
 		E0725087182DADFC00E523B6 /* PFCCoreRulebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */; };
 		E09C3A7B1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E09C3A7A1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m */; };
 		E0E74A73184642D300F13FE9 /* PFCMenuViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A72184642D300F13FE9 /* PFCMenuViewControllerTests.m */; };
+		E0E74A771846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A761846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m */; };
 		E0EF3FCF1835C63100FA4045 /* GTMCodeCoverageApp.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EF3FCE1835C63100FA4045 /* GTMCodeCoverageApp.m */; };
 		E0EF3FD21835C6F100FA4045 /* GTMCodeCoverageTestsXC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */; };
 /* End PBXBuildFile section */
@@ -118,6 +119,7 @@
 		E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFCCoreRulebook.m; path = PathfinderCC/Models/PFCCoreRulebook.m; sourceTree = SOURCE_ROOT; };
 		E09C3A7A1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFCCreateCharacterAbilityScoreViewControllerTest.m; path = PathfinderCCTests/PFCCreateCharacterAbilityScoreViewControllerTest.m; sourceTree = SOURCE_ROOT; };
 		E0E74A72184642D300F13FE9 /* PFCMenuViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCMenuViewControllerTests.m; sourceTree = "<group>"; };
+		E0E74A761846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCharacterSheetViewControllerTests.m; sourceTree = "<group>"; };
 		E0EF3FCD1835C63100FA4045 /* GTMCodeCoverageApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMCodeCoverageApp.h; sourceTree = "<group>"; };
 		E0EF3FCE1835C63100FA4045 /* GTMCodeCoverageApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMCodeCoverageApp.m; sourceTree = "<group>"; };
 		E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMCodeCoverageTestsXC.m; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				C8DCE4ED181DBA58008AD1B6 /* PathfinderCCTests.m */,
 				C8DCE4E8181DBA58008AD1B6 /* Supporting Files */,
 				E0E74A72184642D300F13FE9 /* PFCMenuViewControllerTests.m */,
+				E0E74A761846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m */,
 			);
 			path = PathfinderCCTests;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 				E0EF3FD21835C6F100FA4045 /* GTMCodeCoverageTestsXC.m in Sources */,
 				C8DCE4EE181DBA58008AD1B6 /* PathfinderCCTests.m in Sources */,
 				E09C3A7B1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m in Sources */,
+				E0E74A771846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m in Sources */,
 				E0E74A73184642D300F13FE9 /* PFCMenuViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
