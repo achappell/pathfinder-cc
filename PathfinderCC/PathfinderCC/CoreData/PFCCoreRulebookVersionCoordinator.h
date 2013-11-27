@@ -12,5 +12,10 @@
 @interface PFCCoreRulebookVersionCoordinator : NSObject
 
 @property (nonatomic, strong) PFCStore *store;
+@property (nonatomic, strong) NSDictionary *coreRulebookDictionary;
+
+- (NSInteger)latestVersion;
+- (id)initWithJSONURL:(NSURL *)jsonURL;
+- (BOOL)isCoreRulebookUpToDate;
 
 @end

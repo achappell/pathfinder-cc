@@ -47,8 +47,12 @@
 		E0E74A771846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A761846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m */; };
 		E0E74A7A1846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A791846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m */; };
 		E0E74A7C1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A7B1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m */; };
+		E0E74A7F184680F900F13FE9 /* PFCCoreRulebookBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A7E184680F900F13FE9 /* PFCCoreRulebookBuilder.m */; };
+		E0E74A811846820300F13FE9 /* corerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = E0E74A801846820300F13FE9 /* corerulebook.json */; };
 		E0EF3FCF1835C63100FA4045 /* GTMCodeCoverageApp.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EF3FCE1835C63100FA4045 /* GTMCodeCoverageApp.m */; };
 		E0EF3FD21835C6F100FA4045 /* GTMCodeCoverageTestsXC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */; };
+		E0F296F51846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F296F41846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m */; };
+		E0F296F818468A9B0007B2B6 /* testcorerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = E0F296F6184689800007B2B6 /* testcorerulebook.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,9 +129,14 @@
 		E0E74A781846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCoreRulebookVersionCoordinator.h; sourceTree = "<group>"; };
 		E0E74A791846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCoreRulebookVersionCoordinator.m; sourceTree = "<group>"; };
 		E0E74A7B1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCreateCharacterNameViewControllerTests.m; sourceTree = "<group>"; };
+		E0E74A7D184680F900F13FE9 /* PFCCoreRulebookBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCoreRulebookBuilder.h; sourceTree = "<group>"; };
+		E0E74A7E184680F900F13FE9 /* PFCCoreRulebookBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCoreRulebookBuilder.m; sourceTree = "<group>"; };
+		E0E74A801846820300F13FE9 /* corerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = corerulebook.json; sourceTree = "<group>"; };
 		E0EF3FCD1835C63100FA4045 /* GTMCodeCoverageApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMCodeCoverageApp.h; sourceTree = "<group>"; };
 		E0EF3FCE1835C63100FA4045 /* GTMCodeCoverageApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMCodeCoverageApp.m; sourceTree = "<group>"; };
 		E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMCodeCoverageTestsXC.m; sourceTree = "<group>"; };
+		E0F296F41846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCoreRulebookVersionCoordinatorTests.m; sourceTree = "<group>"; };
+		E0F296F6184689800007B2B6 /* testcorerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testcorerulebook.json; sourceTree = "<group>"; };
 		E4C3FEB92BBB4B959DC39334 /* libPods-PathfinderCCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PathfinderCCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -169,6 +178,8 @@
 				E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */,
 				E0E74A781846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.h */,
 				E0E74A791846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m */,
+				E0E74A7D184680F900F13FE9 /* PFCCoreRulebookBuilder.h */,
+				E0E74A7E184680F900F13FE9 /* PFCCoreRulebookBuilder.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -262,6 +273,7 @@
 		C8DCE4C3181DBA58008AD1B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E0E74A801846820300F13FE9 /* corerulebook.json */,
 				C8DCE4C4181DBA58008AD1B6 /* PathfinderCC-Info.plist */,
 				C8DCE4C5181DBA58008AD1B6 /* InfoPlist.strings */,
 				C8DCE4C8181DBA58008AD1B6 /* main.m */,
@@ -282,6 +294,7 @@
 				E0E74A72184642D300F13FE9 /* PFCMenuViewControllerTests.m */,
 				E0E74A761846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m */,
 				E0E74A7B1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m */,
+				E0F296F41846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m */,
 			);
 			path = PathfinderCCTests;
 			sourceTree = "<group>";
@@ -289,6 +302,7 @@
 		C8DCE4E8181DBA58008AD1B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E0F296F6184689800007B2B6 /* testcorerulebook.json */,
 				C8DCE4E9181DBA58008AD1B6 /* PathfinderCCTests-Info.plist */,
 				C8DCE4EA181DBA58008AD1B6 /* InfoPlist.strings */,
 			);
@@ -429,8 +443,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8DCE4D3181DBA58008AD1B6 /* Main_iPad.storyboard in Resources */,
+				E0F296F818468A9B0007B2B6 /* testcorerulebook.json in Resources */,
 				C8DCE4DB181DBA58008AD1B6 /* Images.xcassets in Resources */,
 				C8DCE4D0181DBA58008AD1B6 /* Main_iPhone.storyboard in Resources */,
+				E0E74A811846820300F13FE9 /* corerulebook.json in Resources */,
 				C8DCE4C7181DBA58008AD1B6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +563,7 @@
 				C8B5BECE181F5A9600602206 /* Model.xcdatamodeld in Sources */,
 				E0E74A7A1846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m in Sources */,
 				C8DCE50A181DD632008AD1B6 /* PFCAbilityScore.m in Sources */,
+				E0E74A7F184680F900F13FE9 /* PFCCoreRulebookBuilder.m in Sources */,
 				E0EF3FCF1835C63100FA4045 /* GTMCodeCoverageApp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,6 +577,7 @@
 				E09C3A7B1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m in Sources */,
 				E0E74A7C1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m in Sources */,
 				E0E74A771846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m in Sources */,
+				E0F296F51846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m in Sources */,
 				E0E74A73184642D300F13FE9 /* PFCMenuViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

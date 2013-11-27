@@ -13,6 +13,7 @@
 #import "PFCStore.h"
 #import "PFCMenuViewController.h"
 #import <RestKit/RestKit.h>
+#import "PFCCoreRulebookVersionCoordinator.h"
 
 @interface PFCAppDelegate ()
 
@@ -46,6 +47,11 @@
     UINavigationController *navController = tabBarController.viewControllers[1];
     PFCMenuViewController *menuViewController = (PFCMenuViewController *)navController.topViewController;
     menuViewController.store = self.store;
+    
+    PFCCoreRulebookVersionCoordinator *versionCoordinator = [[PFCCoreRulebookVersionCoordinator alloc] init];
+    versionCoordinator.store = self.store;
+    
+    [versionCoordinator latestVersion];
     
     return YES;
 }

@@ -43,4 +43,12 @@
     XCTAssertTrue([self.viewController.selectedAlignment isEqualToString:PFCAlignmentLawfulGood], @"The default selected alignment should be Lawful Good");
 }
 
+- (void)testPickerHasCorrectTitles
+{
+    [self.viewController viewDidLoad];
+    NSString *firstTitle = [self.viewController pickerView:self.viewController.alignmentPickerView titleForRow:0 forComponent:0];
+    
+    XCTAssertTrue([firstTitle isEqualToString:[PFCAlignment displayNameForAlignment:self.viewController.alignments[0]]], @"First picker should be Laweful Good");
+}
+
 @end
