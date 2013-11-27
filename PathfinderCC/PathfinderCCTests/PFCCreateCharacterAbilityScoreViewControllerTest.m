@@ -9,6 +9,8 @@
 #import <XCTest/XCTest.h>
 #import "PFCCreateCharacterAbilityScoreViewController.h"
 #import <OCMock/OCMock.h>
+#import "PFCPersistentStack.h"
+#import "PFCStore.h"
 
 @interface PFCCreateCharacterAbilityScoreViewControllerTest : XCTestCase
 
@@ -46,7 +48,16 @@
     XCTAssertNotNil(viewController, @"View Controller should not be nil");
 }
 
-- (void)testRegisterForNotifications
+- (void)testShouldRegisterForNotificationsOnViewDidLoad
+{
+    [[self.viewControllerMock expect] registerForKeyboardNotifications];
+    
+    [self.viewControllerMock viewDidLoad];
+    
+    [self.viewControllerMock verify];
+}
+
+- (void)testRegisterForNotificationsProperly
 {
     [[self.viewControllerMock expect] keyboardWasShown:[OCMArg any]];
     [[self.viewControllerMock expect] keyboardWillBeHidden:[OCMArg any]];
@@ -86,6 +97,81 @@
     self.viewController.charismaTextField.text = @"12";
     
     XCTAssertFalse([self.viewController shouldAllowNextNavigation], @"When all fields are not valid, should not allow next navigation");
+}
+
+- (void)testShouldNotGotToNextWithoutConstitution
+{
+    self.viewController.strengthTextField.text = @"12";
+    self.viewController.dexterityTextField.text = @"12";
+    self.viewController.wisdomTextField.text = @"12";
+    self.viewController.intelligenceTextField.text = @"12";
+    self.viewController.charismaTextField.text = @"12";
+    
+    XCTAssertFalse([self.viewController shouldAllowNextNavigation], @"When all fields are not valid, should not allow next navigation");
+}
+
+- (void)testShouldNotGotToNextWithoutWisdom
+{
+    self.viewController.strengthTextField.text = @"12";
+    self.viewController.dexterityTextField.text = @"12";
+    self.viewController.constitutionTextField.text = @"12";
+    self.viewController.intelligenceTextField.text = @"12";
+    self.viewController.charismaTextField.text = @"12";
+    
+    XCTAssertFalse([self.viewController shouldAllowNextNavigation], @"When all fields are not valid, should not allow next navigation");
+}
+
+- (void)testShouldNotGotToNextWithoutIntelligence
+{
+    self.viewController.strengthTextField.text = @"12";
+    self.viewController.dexterityTextField.text = @"12";
+    self.viewController.constitutionTextField.text = @"12";
+    self.viewController.wisdomTextField.text = @"12";
+    self.viewController.charismaTextField.text = @"12";
+    
+    XCTAssertFalse([self.viewController shouldAllowNextNavigation], @"When all fields are not valid, should not allow next navigation");
+}
+
+- (void)testShouldNotGotToNextWithoutCharisma
+{
+    self.viewController.strengthTextField.text = @"12";
+    self.viewController.dexterityTextField.text = @"12";
+    self.viewController.constitutionTextField.text = @"12";
+    self.viewController.wisdomTextField.text = @"12";
+    self.viewController.intelligenceTextField.text = @"12";
+    
+    XCTAssertFalse([self.viewController shouldAllowNextNavigation], @"When all fields are not valid, should not allow next navigation");
+}
+
+- (void)testCreateCharacterWithValidInfo
+{
+    PFCPersistentStack *persistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL]];
+    
+    PFCStore *store = [[PFCStore alloc] init];
+    store.managedObjectContext = persistentStack.managedObjectContext;
+    self.viewController.store = store;
+    
+    self.viewController.strengthTextField.text = @"12";
+    self.viewController.dexterityTextField.text = @"12";
+    self.viewController.constitutionTextField.text = @"12";
+    self.viewController.wisdomTextField.text = @"12";
+    self.viewController.intelligenceTextField.text = @"12";
+    self.viewController.charismaTextField.text = @"12";
+
+    PFCCharacter *character = [self.viewController createCharacter];
+    
+    XCTAssertNotNil(character, @"Character should be created successfully.");
+}
+
+- (NSURL*)storeURL
+{
+    NSURL* documentsDirectory = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:NULL];
+    return [documentsDirectory URLByAppendingPathComponent:@"testdb.sqlite"];
+}
+
+- (NSURL*)modelURL
+{
+    return [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
 }
 
 @end

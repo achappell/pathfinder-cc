@@ -28,5 +28,6 @@
 - (void)registerForKeyboardNotifications;
 - (void)keyboardWasShown:(NSNotification*)aNotification;
 - (void)keyboardWillBeHidden:(NSNotification*)aNotification;
+- (PFCCharacter *)createCharacter;
 
 @end
