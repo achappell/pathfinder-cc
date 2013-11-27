@@ -9,6 +9,7 @@
 #import "PFCStore.h"
 #import <CoreData/CoreData.h>
 #import "PFCCharacter.h"
+#import "PFCCoreRulebook.h"
 
 @implementation PFCStore
 
@@ -18,7 +19,7 @@
     NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCharacter"];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"selected == 1"];
     request.predicate = predicate;
-    NSArray* objects = [self.managedObjectContext executeFetchRequest:request error:NULL];
+    NSArray* objects = [self.characterManagedObjectContext executeFetchRequest:request error:NULL];
     PFCCharacter* rootCharacter = [objects lastObject];
     return rootCharacter;
 }
@@ -28,7 +29,7 @@
     NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCharacter"];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"selected == 1"];
     request.predicate = predicate;
-    NSArray* objects = [self.managedObjectContext executeFetchRequest:request error:NULL];
+    NSArray* objects = [self.characterManagedObjectContext executeFetchRequest:request error:NULL];
     
     [objects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         PFCCharacter *deselectedCharacter = (PFCCharacter *)obj;
@@ -43,9 +44,17 @@
     NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCharacter"];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name = %@",name];
     request.predicate = predicate;
-    NSArray* objects = [self.managedObjectContext executeFetchRequest:request error:NULL];
+    NSArray* objects = [self.characterManagedObjectContext executeFetchRequest:request error:NULL];
     PFCCharacter* rootCharacter = [objects lastObject];
     return rootCharacter;
+}
+
+- (PFCCoreRulebook *)coreRulebook
+{
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCoreRulebook"];
+    NSArray *objects = [self.coreRulebookManagedObjectContext executeFetchRequest:request error:NULL];
+    PFCCoreRulebook *coreRulebook = [objects lastObject];
+    return coreRulebook;
 }
 
 @end

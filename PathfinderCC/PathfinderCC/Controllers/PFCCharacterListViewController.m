@@ -42,7 +42,7 @@
 - (void)setupFetchedResultsController
 {
     self.fetchedResultsControllerDataSource = [[PFCFetchedResultsControllerDataSource alloc] initWithTableView:self.tableView];
-    self.fetchedResultsControllerDataSource.fetchedResultsController = [PFCCharacter allCharactersFetchedResultsControllerInManagedObjectContext:self.store.managedObjectContext];
+    self.fetchedResultsControllerDataSource.fetchedResultsController = [PFCCharacter allCharactersFetchedResultsControllerInManagedObjectContext:self.store.characterManagedObjectContext];
     self.fetchedResultsControllerDataSource.delegate = self;
     self.fetchedResultsControllerDataSource.reuseIdentifier = @"Cell";
 }

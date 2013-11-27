@@ -74,24 +74,24 @@
 {
     // create character with ability scores
     NSNumber *strength = @([self.strengthTextField.text integerValue]);
-    PFCAbilityScore *strengthScore = [PFCAbilityScore insertItemWithBaseScore:strength type:PFCAbilityTypeStrength inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *strengthScore = [PFCAbilityScore insertItemWithBaseScore:strength type:PFCAbilityTypeStrength inManagedObjectContext:self.store.characterManagedObjectContext];
     
     NSNumber *dexterity = @([self.dexterityTextField.text integerValue]);
-    PFCAbilityScore *dexterityScore = [PFCAbilityScore insertItemWithBaseScore:dexterity type:PFCAbilityTypeDexterity inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *dexterityScore = [PFCAbilityScore insertItemWithBaseScore:dexterity type:PFCAbilityTypeDexterity inManagedObjectContext:self.store.characterManagedObjectContext];
     
     NSNumber *constitution = @([self.constitutionTextField.text integerValue]);
-    PFCAbilityScore *constitutionScore = [PFCAbilityScore insertItemWithBaseScore:constitution type:PFCAbilityTypeConstitution inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *constitutionScore = [PFCAbilityScore insertItemWithBaseScore:constitution type:PFCAbilityTypeConstitution inManagedObjectContext:self.store.characterManagedObjectContext];
     
     NSNumber *intelligence = @([self.intelligenceTextField.text integerValue]);
-    PFCAbilityScore *intelligenceScore = [PFCAbilityScore insertItemWithBaseScore:intelligence type:PFCAbilityTypeIntelligence inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *intelligenceScore = [PFCAbilityScore insertItemWithBaseScore:intelligence type:PFCAbilityTypeIntelligence inManagedObjectContext:self.store.characterManagedObjectContext];
     
     NSNumber *wisdom = @([self.wisdomTextField.text integerValue]);
-    PFCAbilityScore *wisdomScore = [PFCAbilityScore insertItemWithBaseScore:wisdom type:PFCAbilityTypeWisdom inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *wisdomScore = [PFCAbilityScore insertItemWithBaseScore:wisdom type:PFCAbilityTypeWisdom inManagedObjectContext:self.store.characterManagedObjectContext];
     
     NSNumber *charisma = @([self.charismaTextField.text integerValue]);
-    PFCAbilityScore *charismaScore = [PFCAbilityScore insertItemWithBaseScore:charisma type:PFCAbilityTypeCharisma inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *charismaScore = [PFCAbilityScore insertItemWithBaseScore:charisma type:PFCAbilityTypeCharisma inManagedObjectContext:self.store.characterManagedObjectContext];
     
-    PFCCharacter *character = [PFCCharacter insertItemWithAbilityScores:[NSSet setWithObjects:strengthScore, dexterityScore, constitutionScore, intelligenceScore, wisdomScore, charismaScore, nil] inManagedObjectContext:self.store.managedObjectContext];
+    PFCCharacter *character = [PFCCharacter insertItemWithAbilityScores:[NSSet setWithObjects:strengthScore, dexterityScore, constitutionScore, intelligenceScore, wisdomScore, charismaScore, nil] inManagedObjectContext:self.store.characterManagedObjectContext];
     
     return character;
 }

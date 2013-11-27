@@ -12,10 +12,12 @@
 #import "PFCCharacter.h"
 #import <OCMock/OCMock.h>
 #import "PFCAbilityScore.h"
+#import "PFCCoreRulebook.h"
 
 @interface PathfinderCCTests : XCTestCase
 
 @property (nonatomic, strong) PFCPersistentStack* persistentStack;
+@property (nonatomic, strong) PFCPersistentStack *coreRulebookPersistentStack;
 @property (nonatomic, strong) PFCStore* store;
 
 @end
@@ -27,10 +29,12 @@
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
     
-    self.persistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL]];
+    self.persistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self characterStoreURL] path] modelURL:[self characterModelURL]];
+    self.coreRulebookPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self coreRulebookStoreURL] path] modelURL:[self coreRulebookModelURL]];
     
     self.store = [[PFCStore alloc] init];
-    self.store.managedObjectContext = self.persistentStack.managedObjectContext;
+    self.store.characterManagedObjectContext = self.persistentStack.managedObjectContext;
+    self.store.coreRulebookManagedObjectContext = self.coreRulebookPersistentStack.managedObjectContext;
 }
 
 - (void)tearDown
@@ -41,38 +45,49 @@
     //[[NSFileManager defaultManager] removeItemAtURL:[self storeURL] error:nil];
 }
 
-- (NSURL*)storeURL
+- (NSURL*)characterStoreURL
 {
     NSURL* documentsDirectory = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:NULL];
-    return [documentsDirectory URLByAppendingPathComponent:@"testdb.sqlite"];
+    return [documentsDirectory URLByAppendingPathComponent:@"testCharacterDB.sqlite"];
 }
 
-- (NSURL*)modelURL
+- (NSURL*)characterModelURL
 {
     return [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
+}
+
+- (NSURL*)coreRulebookStoreURL
+{
+    NSURL* documentsDirectory = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:NULL];
+    return [documentsDirectory URLByAppendingPathComponent:@"testCoreRulebookDB.sqlite"];
+}
+
+- (NSURL*)coreRulebookModelURL
+{
+    return [[NSBundle mainBundle] URLForResource:@"CoreRulebook" withExtension:@"momd"];
 }
 
 - (PFCCharacter *)defaultCharacterWithName:(NSString *)name
 {
     NSNumber *strength = @(11);
-    PFCAbilityScore *strengthScore = [PFCAbilityScore insertItemWithBaseScore:strength type:PFCAbilityTypeStrength inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *strengthScore = [PFCAbilityScore insertItemWithBaseScore:strength type:PFCAbilityTypeStrength inManagedObjectContext:self.store.characterManagedObjectContext];
     
     NSNumber *dexterity = @(12);
-    PFCAbilityScore *dexterityScore = [PFCAbilityScore insertItemWithBaseScore:dexterity type:PFCAbilityTypeDexterity inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *dexterityScore = [PFCAbilityScore insertItemWithBaseScore:dexterity type:PFCAbilityTypeDexterity inManagedObjectContext:self.store.characterManagedObjectContext];
     
     NSNumber *constitution = @(13);
-    PFCAbilityScore *constitutionScore = [PFCAbilityScore insertItemWithBaseScore:constitution type:PFCAbilityTypeConstitution inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *constitutionScore = [PFCAbilityScore insertItemWithBaseScore:constitution type:PFCAbilityTypeConstitution inManagedObjectContext:self.store.characterManagedObjectContext];
     
     NSNumber *intelligence = @(14);
-    PFCAbilityScore *intelligenceScore = [PFCAbilityScore insertItemWithBaseScore:intelligence type:PFCAbilityTypeIntelligence inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *intelligenceScore = [PFCAbilityScore insertItemWithBaseScore:intelligence type:PFCAbilityTypeIntelligence inManagedObjectContext:self.store.characterManagedObjectContext];
     
     NSNumber *wisdom = @(15);
-    PFCAbilityScore *wisdomScore = [PFCAbilityScore insertItemWithBaseScore:wisdom type:PFCAbilityTypeWisdom inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *wisdomScore = [PFCAbilityScore insertItemWithBaseScore:wisdom type:PFCAbilityTypeWisdom inManagedObjectContext:self.store.characterManagedObjectContext];
     
     NSNumber *charisma = @(16);
-    PFCAbilityScore *charismaScore = [PFCAbilityScore insertItemWithBaseScore:charisma type:PFCAbilityTypeCharisma inManagedObjectContext:self.store.managedObjectContext];
+    PFCAbilityScore *charismaScore = [PFCAbilityScore insertItemWithBaseScore:charisma type:PFCAbilityTypeCharisma inManagedObjectContext:self.store.characterManagedObjectContext];
     
-    PFCCharacter *character = [PFCCharacter insertItemWithAbilityScores:[NSSet setWithObjects:strengthScore, dexterityScore, constitutionScore, intelligenceScore, wisdomScore, charismaScore, nil] inManagedObjectContext:self.store.managedObjectContext];
+    PFCCharacter *character = [PFCCharacter insertItemWithAbilityScores:[NSSet setWithObjects:strengthScore, dexterityScore, constitutionScore, intelligenceScore, wisdomScore, charismaScore, nil] inManagedObjectContext:self.store.characterManagedObjectContext];
     character.name = name;
     
     return character;
@@ -90,7 +105,7 @@
     PFCCharacter *character = [self defaultCharacterWithName:@"Amanda"];
     
     NSError *error;
-    [self.store.managedObjectContext save:&error];
+    [self.store.characterManagedObjectContext save:&error];
     
     XCTAssertNil(error, @"Save error should be nil");
     XCTAssertNotNil(character, @"Can create character in context.");
@@ -108,7 +123,7 @@
     PFCCharacter *character2 = [self defaultCharacterWithName:@"John"];
     
     NSError *error;
-    [self.store.managedObjectContext save:&error];
+    [self.store.characterManagedObjectContext save:&error];
     
     [self.store setSelectedCharacter:character];
     
@@ -127,7 +142,7 @@
     [self.store setSelectedCharacter:character];
     
     NSError *error;
-    [self.store.managedObjectContext save:&error];
+    [self.store.characterManagedObjectContext save:&error];
     
     XCTAssertNil(error, @"Saving should not have error");
     XCTAssertNotNil([self.store selectedCharacter], @"After setting selected character, should be able to retrieve it");
@@ -142,10 +157,19 @@
     PFCCharacter *character2 = [self.store characterWithName:@"Amanda"];
     
     NSError *error;
-    [self.store.managedObjectContext save:&error];
+    [self.store.characterManagedObjectContext  save:&error];
     
     XCTAssertNil(error, @"Saving should not have error");
     XCTAssertEqualObjects(character, character2, @"Character fetched by name should be the one just created");
+}
+
+- (void)testCreateCoreRulebook
+{
+    PFCCoreRulebook *coreRulebook = [PFCCoreRulebook insertItemInManagedObjectContext:self.store.coreRulebookManagedObjectContext];
+    
+    PFCCoreRulebook *fetchedCoreRulebook = [self.store coreRulebook];
+    
+    XCTAssertEqualObjects(coreRulebook, fetchedCoreRulebook, @"The fetched core rulebook should be the same as the one just made");
 }
 
 @end

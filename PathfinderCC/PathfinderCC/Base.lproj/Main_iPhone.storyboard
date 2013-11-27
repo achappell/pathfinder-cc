@@ -557,7 +557,7 @@
         <!--Create Character Name View Controller-->
         <scene sceneID="AMJ-VA-uP5">
             <objects>
-                <viewController id="5Dp-ko-xsj" customClass="PFCCreateCharacterNameViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PFCCreateCharacterNameViewController" id="5Dp-ko-xsj" customClass="PFCCreateCharacterNameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Fh-mL-fC7"/>
                         <viewControllerLayoutGuide type="bottom" id="Zlf-jK-uqg"/>

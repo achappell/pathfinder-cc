@@ -16,7 +16,8 @@
 
 @interface PFCAppDelegate ()
 
-@property (nonatomic, strong) PFCPersistentStack* persistentStack;
+@property (nonatomic, strong) PFCPersistentStack *characterPersistentStack;
+@property (nonatomic, strong) PFCPersistentStack *coreRulebookPersistentStack;
 @property (nonatomic, strong) PFCStore *store;
 
 @end
@@ -27,9 +28,12 @@
 {
     // Override point for customization after application launch.
     
-    self.persistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL]];
+    self.characterPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self characterStoreURL] path] modelURL:[self characterModelURL]];
     self.store = [[PFCStore alloc] init];
-    self.store.managedObjectContext = self.persistentStack.managedObjectContext;
+    self.store.characterManagedObjectContext = self.characterPersistentStack.managedObjectContext;
+    
+    self.coreRulebookPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self coreRulebookStoreURL] path] modelURL:[self coreRulebookModelURL]];
+    self.store.coreRulebookManagedObjectContext = self.coreRulebookPersistentStack.managedObjectContext;
     
     PFCCharacter *selectedCharacter = [self.store selectedCharacter];
     
@@ -46,15 +50,26 @@
     return YES;
 }
 
-- (NSURL*)storeURL
+- (NSURL*)characterStoreURL
 {
     NSURL* documentsDirectory = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:NULL];
-    return [documentsDirectory URLByAppendingPathComponent:@"db.sqlite"];
+    return [documentsDirectory URLByAppendingPathComponent:@"characterDB.sqlite"];
 }
 
-- (NSURL*)modelURL
+- (NSURL*)characterModelURL
 {
     return [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
+}
+
+- (NSURL*)coreRulebookStoreURL
+{
+    NSURL* documentsDirectory = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:NULL];
+    return [documentsDirectory URLByAppendingPathComponent:@"coreRulebookDB.sqlite"];
+}
+
+- (NSURL*)coreRulebookModelURL
+{
+    return [[NSBundle mainBundle] URLForResource:@"CoreRulebook" withExtension:@"momd"];
 }
 
 #ifdef DEBUG
@@ -77,7 +92,7 @@
     
     NSError *error;
     
-    [self.store.managedObjectContext saveToPersistentStore:&error];
+    [self.store.characterManagedObjectContext saveToPersistentStore:&error];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

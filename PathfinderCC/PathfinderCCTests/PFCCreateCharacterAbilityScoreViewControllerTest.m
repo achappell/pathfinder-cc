@@ -148,7 +148,7 @@
     PFCPersistentStack *persistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL]];
     
     PFCStore *store = [[PFCStore alloc] init];
-    store.managedObjectContext = persistentStack.managedObjectContext;
+    store.characterManagedObjectContext = persistentStack.managedObjectContext;
     self.viewController.store = store;
     
     self.viewController.strengthTextField.text = @"12";

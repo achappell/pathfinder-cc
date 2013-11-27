@@ -20,5 +20,7 @@
 
 @property (nonatomic, strong) PFCCharacter *character;
 @property (nonatomic, strong) PFCStore *store;
+@property (nonatomic, strong) NSString *selectedAlignment;
+@property (nonatomic, strong) NSArray *alignments;
 
 @end

@@ -10,9 +10,6 @@
 
 @interface PFCCreateCharacterNameViewController ()
 
-@property (nonatomic, strong) NSString *selectedAlignment;
-@property (nonatomic, strong) NSArray *alignments;
-
 @end
 
 @implementation PFCCreateCharacterNameViewController
