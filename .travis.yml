@@ -9,7 +9,7 @@ before_install:
   - gem install cocoapods
 
 script:
-  - xctool -workspace PathfinderCC.xcworkspace -scheme "PathfinderCC" -reporter json-compilation-database:compile_commands.json build test -sdk iphonesimulator -arch i386
+  - xctool -workspace PathfinderCC.xcworkspace -scheme "PathfinderCC" -reporter "json-compilation-database:compile_commands.json" build test -sdk iphonesimulator -arch i386
   - oclint-json-compilation-database
 
 after_success:
