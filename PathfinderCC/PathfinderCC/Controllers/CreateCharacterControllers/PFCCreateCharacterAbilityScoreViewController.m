@@ -10,6 +10,7 @@
 #import "PFCCharacter.h"
 #import "PFCAbilityScore.h"
 #import "PFCCreateCharacterNameViewController.h"
+#import "UITextField+PFC.h"
 
 @interface PFCCreateCharacterAbilityScoreViewController ()
 
@@ -54,20 +55,12 @@
 
 - (BOOL)shouldAllowNextNavigation
 {
-    if ([[self.strengthTextField text] isEqualToString:@""] || ![self.strengthTextField text])
-        return NO;
-    if ([[self.dexterityTextField text] isEqualToString:@""] || ![self.dexterityTextField text])
-        return NO;
-    if ([[self.constitutionTextField text] isEqualToString:@""] || ![self.constitutionTextField text])
-        return NO;
-    if ([[self.intelligenceTextField text] isEqualToString:@""] || ![self.intelligenceTextField text])
-        return NO;
-    if ([[self.wisdomTextField text] isEqualToString:@""] || ![self.wisdomTextField text])
-        return NO;
-    if ([[self.charismaTextField text] isEqualToString:@""] || ![self.charismaTextField text])
-        return NO;
+    BOOL shouldAllowNextNavigation = NO;
     
-    return YES;
+    if ([self.strengthTextField hasValidText] && [self.dexterityTextField hasValidText] && [self.constitutionTextField hasValidText] && [self.intelligenceTextField hasValidText] && [self.wisdomTextField hasValidText] && [self.charismaTextField hasValidText])
+        shouldAllowNextNavigation = YES;
+    
+    return shouldAllowNextNavigation;
 }
 
 - (PFCCharacter *)createCharacter
@@ -102,7 +95,7 @@
 - (void)keyboardWasShown:(NSNotification*)aNotification
 {
     NSDictionary* info = [aNotification userInfo];
-    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    CGSize kbSize = [info[UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
     
     UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
     self.scrollView.contentInset = contentInsets;

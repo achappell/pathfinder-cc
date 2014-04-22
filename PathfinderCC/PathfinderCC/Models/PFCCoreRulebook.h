@@ -15,8 +15,6 @@
 
 @property (nonatomic, retain) NSSet *races;
 
-+ (instancetype)insertItemInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
-
 @end
 
 @interface PFCCoreRulebook (CoreDataGeneratedAccessors)

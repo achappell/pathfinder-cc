@@ -38,6 +38,7 @@
 		C8DCE507181DC514008AD1B6 /* PFCCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE506181DC514008AD1B6 /* PFCCharacter.m */; };
 		C8DCE50A181DD632008AD1B6 /* PFCAbilityScore.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE509181DD632008AD1B6 /* PFCAbilityScore.m */; };
 		C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */; };
+		E0709AB21905FB840075E34C /* UITextField+PFC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0709AB11905FB840075E34C /* UITextField+PFC.m */; };
 		E072507F182DA7A800E523B6 /* CoreRulebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */; };
 		E0725083182DADFC00E523B6 /* PFCRace.m in Sources */ = {isa = PBXBuildFile; fileRef = E0725082182DADFC00E523B6 /* PFCRace.m */; };
 		E0725087182DADFC00E523B6 /* PFCCoreRulebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */; };
@@ -119,6 +120,8 @@
 		C8DCE509181DD632008AD1B6 /* PFCAbilityScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCAbilityScore.m; sourceTree = "<group>"; };
 		C8DCE50D181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCreateCharacterAbilityScoreViewController.h; sourceTree = "<group>"; };
 		C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCreateCharacterAbilityScoreViewController.m; sourceTree = "<group>"; };
+		E0709AB01905FB840075E34C /* UITextField+PFC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PFC.h"; sourceTree = "<group>"; };
+		E0709AB11905FB840075E34C /* UITextField+PFC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PFC.m"; sourceTree = "<group>"; };
 		E072507C182DA48D00E523B6 /* PathfinderCC copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PathfinderCC copy-Info.plist"; path = "/Users/achappell/Documents/Development/iOS/pathfinder-cc/PathfinderCC/PathfinderCC copy-Info.plist"; sourceTree = "<absolute>"; };
 		E072507E182DA7A800E523B6 /* CoreRulebook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreRulebook.xcdatamodel; sourceTree = "<group>"; };
 		E0725081182DADFC00E523B6 /* PFCRace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFCRace.h; path = PathfinderCC/Models/PFCRace.h; sourceTree = SOURCE_ROOT; };
@@ -286,6 +289,8 @@
 				C8DCE4C5181DBA58008AD1B6 /* InfoPlist.strings */,
 				C8DCE4C8181DBA58008AD1B6 /* main.m */,
 				C8DCE4CA181DBA58008AD1B6 /* PathfinderCC-Prefix.pch */,
+				E0709AB01905FB840075E34C /* UITextField+PFC.h */,
+				E0709AB11905FB840075E34C /* UITextField+PFC.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -574,6 +579,7 @@
 				C8B5BED7181FE39900602206 /* PFCMenuViewController.m in Sources */,
 				C8DA37671821E92A00DBC2F7 /* PFCGender.m in Sources */,
 				C8B5BEDE182097E500602206 /* PFCFetchedResultsControllerDataSource.m in Sources */,
+				E0709AB21905FB840075E34C /* UITextField+PFC.m in Sources */,
 				E0E0E86118C265BD00F3B2D4 /* PFCRaceMappingModel.m in Sources */,
 				E0E0E86418C2710400F3B2D4 /* PFCAbilityScoreMappingModel.m in Sources */,
 				BE5B0CD2182D82990039E623 /* PFCWrittenTextField.m in Sources */,

@@ -24,33 +24,33 @@
     
     _character = character;
     
-    self.strengthLabel.text = [NSString stringWithFormat:@"%i", [[character.strength baseScore] integerValue]];
-    self.dexterityLabel.text = [NSString stringWithFormat:@"%i", [[character.dexterity baseScore] integerValue]];
-    self.constitutionLabel.text = [NSString stringWithFormat:@"%i", [[character.constitution baseScore] integerValue]];
-    self.intelligenceLabel.text = [NSString stringWithFormat:@"%i", [[character.intelligence baseScore] integerValue]];
-    self.wisdomLabel.text = [NSString stringWithFormat:@"%i", [[character.wisdom baseScore] integerValue]];
-    self.charismaLabel.text = [NSString stringWithFormat:@"%i", [[character.charisma baseScore] integerValue]];
+    self.strengthLabel.text = [NSString stringWithFormat:@"%li", [[character.strength baseScore] integerValue]];
+    self.dexterityLabel.text = [NSString stringWithFormat:@"%li", [[character.dexterity baseScore] integerValue]];
+    self.constitutionLabel.text = [NSString stringWithFormat:@"%li", [[character.constitution baseScore] integerValue]];
+    self.intelligenceLabel.text = [NSString stringWithFormat:@"%li", [[character.intelligence baseScore] integerValue]];
+    self.wisdomLabel.text = [NSString stringWithFormat:@"%li", [[character.wisdom baseScore] integerValue]];
+    self.charismaLabel.text = [NSString stringWithFormat:@"%li", [[character.charisma baseScore] integerValue]];
     
-    self.strengthModLabel.text = [NSString stringWithFormat:@"%i", [[character.strength abilityModifier] integerValue]];
-    self.dexterityModLabel.text = [NSString stringWithFormat:@"%i", [[character.dexterity abilityModifier] integerValue]];
-    self.constitutionModLabel.text = [NSString stringWithFormat:@"%i", [[character.constitution abilityModifier] integerValue]];
-    self.intelligenceModLabel.text = [NSString stringWithFormat:@"%i", [[character.intelligence abilityModifier] integerValue]];
-    self.wisdomModLabel.text = [NSString stringWithFormat:@"%i", [[character.wisdom abilityModifier] integerValue]];
-    self.charismaModLabel.text = [NSString stringWithFormat:@"%i", [[character.charisma abilityModifier] integerValue]];
+    self.strengthModLabel.text = [NSString stringWithFormat:@"%li", [[character.strength abilityModifier] integerValue]];
+    self.dexterityModLabel.text = [NSString stringWithFormat:@"%li", [[character.dexterity abilityModifier] integerValue]];
+    self.constitutionModLabel.text = [NSString stringWithFormat:@"%li", [[character.constitution abilityModifier] integerValue]];
+    self.intelligenceModLabel.text = [NSString stringWithFormat:@"%li", [[character.intelligence abilityModifier] integerValue]];
+    self.wisdomModLabel.text = [NSString stringWithFormat:@"%li", [[character.wisdom abilityModifier] integerValue]];
+    self.charismaModLabel.text = [NSString stringWithFormat:@"%li", [[character.charisma abilityModifier] integerValue]];
     
-    self.strengthTempAdjLabel.text = [NSString stringWithFormat:@"%i", [[character.strength tempAdjustment] integerValue]];
-    self.dexterityTempAdjLabel.text = [NSString stringWithFormat:@"%i", [[character.dexterity tempAdjustment] integerValue]];
-    self.constitutionTempAdjLabel.text = [NSString stringWithFormat:@"%i", [[character.constitution tempAdjustment] integerValue]];
-    self.intelligenceTempAdjLabel.text = [NSString stringWithFormat:@"%i", [[character.intelligence tempAdjustment] integerValue]];
-    self.wisdomTempAdjLabel.text = [NSString stringWithFormat:@"%i", [[character.wisdom tempAdjustment] integerValue]];
-    self.charismaTempAdjLabel.text = [NSString stringWithFormat:@"%i", [[character.charisma tempAdjustment] integerValue]];
+    self.strengthTempAdjLabel.text = [NSString stringWithFormat:@"%li", [[character.strength tempAdjustment] integerValue]];
+    self.dexterityTempAdjLabel.text = [NSString stringWithFormat:@"%li", [[character.dexterity tempAdjustment] integerValue]];
+    self.constitutionTempAdjLabel.text = [NSString stringWithFormat:@"%li", [[character.constitution tempAdjustment] integerValue]];
+    self.intelligenceTempAdjLabel.text = [NSString stringWithFormat:@"%li", [[character.intelligence tempAdjustment] integerValue]];
+    self.wisdomTempAdjLabel.text = [NSString stringWithFormat:@"%li", [[character.wisdom tempAdjustment] integerValue]];
+    self.charismaTempAdjLabel.text = [NSString stringWithFormat:@"%li", [[character.charisma tempAdjustment] integerValue]];
     
-    self.strengthTempModLabel.text = [NSString stringWithFormat:@"%i", [[character.strength tempModifier] integerValue]];
-    self.dexterityTempModLabel.text = [NSString stringWithFormat:@"%i", [[character.dexterity tempModifier] integerValue]];
-    self.constitutionTempModLabel.text = [NSString stringWithFormat:@"%i", [[character.constitution tempModifier] integerValue]];
-    self.intelligenceTempModLabel.text = [NSString stringWithFormat:@"%i", [[character.intelligence tempModifier] integerValue]];
-    self.wisdomTempModLabel.text = [NSString stringWithFormat:@"%i", [[character.wisdom tempModifier] integerValue]];
-    self.charismaTempModLabel.text = [NSString stringWithFormat:@"%i", [[character.charisma tempModifier] integerValue]];
+    self.strengthTempModLabel.text = [NSString stringWithFormat:@"%li", [[character.strength tempModifier] integerValue]];
+    self.dexterityTempModLabel.text = [NSString stringWithFormat:@"%li", [[character.dexterity tempModifier] integerValue]];
+    self.constitutionTempModLabel.text = [NSString stringWithFormat:@"%li", [[character.constitution tempModifier] integerValue]];
+    self.intelligenceTempModLabel.text = [NSString stringWithFormat:@"%li", [[character.intelligence tempModifier] integerValue]];
+    self.wisdomTempModLabel.text = [NSString stringWithFormat:@"%li", [[character.wisdom tempModifier] integerValue]];
+    self.charismaTempModLabel.text = [NSString stringWithFormat:@"%li", [[character.charisma tempModifier] integerValue]];
 }
 
 - (void)configureViews

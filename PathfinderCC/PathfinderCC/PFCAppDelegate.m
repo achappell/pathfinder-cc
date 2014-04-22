@@ -65,7 +65,7 @@
     NSData *jsonData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"corerulebook" ofType:@"json"]];
     
     NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
-    jsonDictionary = [jsonDictionary objectForKey:@"coreRulebook"];
+    jsonDictionary = jsonDictionary[@"coreRulebook"];
     
     PFCCoreRulebookMappingModel *coreRulebook = [MTLJSONAdapter modelOfClass:[PFCCoreRulebookMappingModel class] fromJSONDictionary:jsonDictionary error:&error];
     
