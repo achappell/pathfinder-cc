@@ -13,6 +13,7 @@
 #import <OCMock/OCMock.h>
 #import "PFCAbilityScore.h"
 #import "PFCCoreRulebook.h"
+#import "PFCWrittenTextField.h"
 
 @interface PathfinderCCTests : XCTestCase
 
@@ -152,13 +153,13 @@
     XCTAssertEqualObjects(character, character2, @"Character fetched by name should be the one just created");
 }
 
-- (void)testCreateCoreRulebook
+- (void)testWrittenTextField
 {
-//    PFCCoreRulebook *coreRulebook = [PFCCoreRulebook insertItemInManagedObjectContext:self.store.coreRulebookManagedObjectContext];
-//    
-//    PFCCoreRulebook *fetchedCoreRulebook = [self.store coreRulebook];
-//    
-//    XCTAssertEqualObjects(coreRulebook, fetchedCoreRulebook, @"The fetched core rulebook should be the same as the one just made");
+    PFCWrittenTextField *textField = [[PFCWrittenTextField alloc] init];
+    
+    textField.text = @"test";
+    
+    XCTAssertEqualObjects(textField.text, @"test", @"The written text field should properly take text");
 }
 
 @end
