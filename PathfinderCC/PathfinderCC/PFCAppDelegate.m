@@ -12,9 +12,11 @@
 #import "PFCPersistentStack.h"
 #import "PFCStore.h"
 #import "PFCMenuViewController.h"
-#import <RestKit/RestKit.h>
 #import "PFCCoreRulebookVersionCoordinator.h"
 #import "PFCCoreRulebookBuilder.h"
+#import <CoreData/CoreData.h>
+#import "PFCCoreRulebook.h"
+#import "PFCCoreRulebookMappingModel.h"
 
 @interface PFCAppDelegate ()
 
@@ -30,11 +32,11 @@
 {
     // Override point for customization after application launch.
     
-    self.characterPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self characterStoreURL] path] modelURL:[self characterModelURL]];
+    self.characterPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL] configuration:@"UserData"];
     self.store = [[PFCStore alloc] init];
     self.store.characterManagedObjectContext = self.characterPersistentStack.managedObjectContext;
     
-    self.coreRulebookPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self coreRulebookStoreURL] path] modelURL:[self coreRulebookModelURL]];
+    self.coreRulebookPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL] configuration:@"CoreRulebook"];
     self.store.coreRulebookManagedObjectContext = self.coreRulebookPersistentStack.managedObjectContext;
     
     PFCCharacter *selectedCharacter = [self.store selectedCharacter];
@@ -55,30 +57,32 @@
     if (![versionCoordinator isCoreRulebookUpToDate])
     {
         PFCCoreRulebookBuilder *builder = [[PFCCoreRulebookBuilder alloc] init];
-        [builder buildLatestCoreRulebook];
+        
     }
+    
+    NSError *error = nil;
+    
+    NSData *jsonData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"corerulebook" ofType:@"json"]];
+    
+    NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
+    jsonDictionary = [jsonDictionary objectForKey:@"coreRulebook"];
+    
+    PFCCoreRulebookMappingModel *coreRulebook = [MTLJSONAdapter modelOfClass:[PFCCoreRulebookMappingModel class] fromJSONDictionary:jsonDictionary error:&error];
+    
+    NSManagedObject *coreRulebookManagedModel = [MTLManagedObjectAdapter managedObjectFromModel:coreRulebook insertingIntoContext:self.store.coreRulebookManagedObjectContext error:&error];
+    
+    [self.store.coreRulebookManagedObjectContext save:&error];
     
     return YES;
 }
 
-- (NSURL*)characterStoreURL
+- (NSURL*)storeURL
 {
     NSURL* documentsDirectory = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:NULL];
     return [documentsDirectory URLByAppendingPathComponent:@"characterDB.sqlite"];
 }
 
-- (NSURL*)characterModelURL
-{
-    return [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
-}
-
-- (NSURL*)coreRulebookStoreURL
-{
-    NSURL* documentsDirectory = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:NULL];
-    return [documentsDirectory URLByAppendingPathComponent:@"coreRulebookDB.sqlite"];
-}
-
-- (NSURL*)coreRulebookModelURL
+- (NSURL*)modelURL
 {
     return [[NSBundle mainBundle] URLForResource:@"CoreRulebook" withExtension:@"momd"];
 }
@@ -103,7 +107,7 @@
     
     NSError *error;
     
-    [self.store.characterManagedObjectContext saveToPersistentStore:&error];
+    [self.store.characterManagedObjectContext save:&error];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

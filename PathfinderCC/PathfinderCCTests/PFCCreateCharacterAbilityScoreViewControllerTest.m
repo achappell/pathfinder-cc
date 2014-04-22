@@ -145,7 +145,7 @@
 
 - (void)testCreateCharacterWithValidInfo
 {
-    PFCPersistentStack *persistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL]];
+    PFCPersistentStack *persistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL] configuration:@"UserData"];
     
     PFCStore *store = [[PFCStore alloc] init];
     store.characterManagedObjectContext = persistentStack.managedObjectContext;
@@ -171,7 +171,7 @@
 
 - (NSURL*)modelURL
 {
-    return [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
+    return [[NSBundle mainBundle] URLForResource:@"CoreRulebook" withExtension:@"momd"];
 }
 
 @end

@@ -8,9 +8,6 @@
 
 #import <XCTest/XCTest.h>
 #import "PFCCoreRulebookBuilder.h"
-#import <RestKit/RestKit.h>
-#import <RKEntityMapping.h>
-#import <RKManagedObjectStore.h>
 #import "PFCPersistentStack.h"
 
 @interface PFCCoreRulebookBuilderTests : XCTestCase
@@ -27,7 +24,7 @@
     [super setUp];
     // Put setup code here; it will be run once, before the first test case.
 
-    self.coreRulebookPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self coreRulebookStoreURL] path] modelURL:[self coreRulebookModelURL]];
+    self.coreRulebookPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self coreRulebookStoreURL] path] modelURL:[self coreRulebookModelURL] configuration:@"CoreRulebook"];
     self.builder = [[PFCCoreRulebookBuilder alloc] init];
 }
 
@@ -46,16 +43,6 @@
 - (NSURL*)coreRulebookModelURL
 {
     return [[NSBundle mainBundle] URLForResource:@"CoreRulebook" withExtension:@"momd"];
-}
-
-- (void)testImportHappensSuccessfully
-{
-    RKManagedObjectStore *rkStore = [RKManagedObjectStore defaultStore];
-    
-    NSString *seedPath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"MySeedDatabase.sqlite"];
-    RKManagedObjectImporter *importer = [[RKManagedObjectImporter alloc] initWithManagedObjectModel:rkStore.managedObjectModel storePath:seedPath];
-
-    XCTAssertTrue([self.builder importDataWithImporter:importer], @"Import should happen successfully");
 }
 
 @end

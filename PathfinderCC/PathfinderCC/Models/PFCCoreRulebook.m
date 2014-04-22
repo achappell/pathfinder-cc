@@ -14,18 +14,4 @@
 
 @dynamic races;
 
-+ (instancetype)insertItemInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
-{
-    PFCCoreRulebook* coreRulebook = [NSEntityDescription insertNewObjectForEntityForName:[self entityName]
-                                                            inManagedObjectContext:managedObjectContext];
-    
-    return coreRulebook;
-}
-
-+ (NSString*)entityName
-{
-    return @"PFCCoreRulebook";
-}
-
-
 @end

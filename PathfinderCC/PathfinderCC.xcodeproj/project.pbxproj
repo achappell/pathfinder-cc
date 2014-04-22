@@ -13,7 +13,6 @@
 		C8B5BEC6181F57C600602206 /* PFCPersistentStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEC5181F57C600602206 /* PFCPersistentStack.m */; };
 		C8B5BEC8181F57E500602206 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B5BEC7181F57E500602206 /* CoreData.framework */; };
 		C8B5BECB181F59B600602206 /* PFCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECA181F59B600602206 /* PFCStore.m */; };
-		C8B5BECE181F5A9600602206 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECC181F5A9600602206 /* Model.xcdatamodeld */; };
 		C8B5BED7181FE39900602206 /* PFCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BED6181FE39900602206 /* PFCMenuViewController.m */; };
 		C8B5BEDA1820970B00602206 /* PFCCharacterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BED91820970B00602206 /* PFCCharacterListViewController.m */; };
 		C8B5BEDE182097E500602206 /* PFCFetchedResultsControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEDD182097E500602206 /* PFCFetchedResultsControllerDataSource.m */; };
@@ -43,6 +42,9 @@
 		E0725083182DADFC00E523B6 /* PFCRace.m in Sources */ = {isa = PBXBuildFile; fileRef = E0725082182DADFC00E523B6 /* PFCRace.m */; };
 		E0725087182DADFC00E523B6 /* PFCCoreRulebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */; };
 		E09C3A7B1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E09C3A7A1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m */; };
+		E0E0E85E18C263D800F3B2D4 /* PFCCoreRulebookMappingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E85D18C263D800F3B2D4 /* PFCCoreRulebookMappingModel.m */; };
+		E0E0E86118C265BD00F3B2D4 /* PFCRaceMappingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E86018C265BD00F3B2D4 /* PFCRaceMappingModel.m */; };
+		E0E0E86418C2710400F3B2D4 /* PFCAbilityScoreMappingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E86318C2710400F3B2D4 /* PFCAbilityScoreMappingModel.m */; };
 		E0E74A73184642D300F13FE9 /* PFCMenuViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A72184642D300F13FE9 /* PFCMenuViewControllerTests.m */; };
 		E0E74A771846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A761846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m */; };
 		E0E74A7A1846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A791846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m */; };
@@ -77,7 +79,6 @@
 		C8B5BEC7181F57E500602206 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C8B5BEC9181F59B600602206 /* PFCStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCStore.h; sourceTree = "<group>"; };
 		C8B5BECA181F59B600602206 /* PFCStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCStore.m; sourceTree = "<group>"; };
-		C8B5BECD181F5A9600602206 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		C8B5BED5181FE39900602206 /* PFCMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCMenuViewController.h; sourceTree = "<group>"; };
 		C8B5BED6181FE39900602206 /* PFCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCMenuViewController.m; sourceTree = "<group>"; };
 		C8B5BED81820970B00602206 /* PFCCharacterListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCharacterListViewController.h; sourceTree = "<group>"; };
@@ -125,6 +126,12 @@
 		E0725085182DADFC00E523B6 /* PFCCoreRulebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFCCoreRulebook.h; path = PathfinderCC/Models/PFCCoreRulebook.h; sourceTree = SOURCE_ROOT; };
 		E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFCCoreRulebook.m; path = PathfinderCC/Models/PFCCoreRulebook.m; sourceTree = SOURCE_ROOT; };
 		E09C3A7A1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFCCreateCharacterAbilityScoreViewControllerTest.m; path = PathfinderCCTests/PFCCreateCharacterAbilityScoreViewControllerTest.m; sourceTree = SOURCE_ROOT; };
+		E0E0E85C18C263D800F3B2D4 /* PFCCoreRulebookMappingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCoreRulebookMappingModel.h; sourceTree = "<group>"; };
+		E0E0E85D18C263D800F3B2D4 /* PFCCoreRulebookMappingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCoreRulebookMappingModel.m; sourceTree = "<group>"; };
+		E0E0E85F18C265BD00F3B2D4 /* PFCRaceMappingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCRaceMappingModel.h; sourceTree = "<group>"; };
+		E0E0E86018C265BD00F3B2D4 /* PFCRaceMappingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCRaceMappingModel.m; sourceTree = "<group>"; };
+		E0E0E86218C2710400F3B2D4 /* PFCAbilityScoreMappingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCAbilityScoreMappingModel.h; sourceTree = "<group>"; };
+		E0E0E86318C2710400F3B2D4 /* PFCAbilityScoreMappingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCAbilityScoreMappingModel.m; sourceTree = "<group>"; };
 		E0E74A72184642D300F13FE9 /* PFCMenuViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCMenuViewControllerTests.m; sourceTree = "<group>"; };
 		E0E74A761846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCharacterSheetViewControllerTests.m; sourceTree = "<group>"; };
 		E0E74A781846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCoreRulebookVersionCoordinator.h; sourceTree = "<group>"; };
@@ -176,7 +183,6 @@
 				C8B5BEC5181F57C600602206 /* PFCPersistentStack.m */,
 				C8B5BEC9181F59B600602206 /* PFCStore.h */,
 				C8B5BECA181F59B600602206 /* PFCStore.m */,
-				C8B5BECC181F5A9600602206 /* Model.xcdatamodeld */,
 				E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */,
 				E0E74A781846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.h */,
 				E0E74A791846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m */,
@@ -340,6 +346,7 @@
 		C8DCE504181DC4BF008AD1B6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E0E0E85B18C2639000F3B2D4 /* MantleModels */,
 				E0725085182DADFC00E523B6 /* PFCCoreRulebook.h */,
 				E0725086182DADFC00E523B6 /* PFCCoreRulebook.m */,
 				E0725081182DADFC00E523B6 /* PFCRace.h */,
@@ -350,6 +357,19 @@
 				C8DCE509181DD632008AD1B6 /* PFCAbilityScore.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E0E0E85B18C2639000F3B2D4 /* MantleModels */ = {
+			isa = PBXGroup;
+			children = (
+				E0E0E85C18C263D800F3B2D4 /* PFCCoreRulebookMappingModel.h */,
+				E0E0E85D18C263D800F3B2D4 /* PFCCoreRulebookMappingModel.m */,
+				E0E0E85F18C265BD00F3B2D4 /* PFCRaceMappingModel.h */,
+				E0E0E86018C265BD00F3B2D4 /* PFCRaceMappingModel.m */,
+				E0E0E86218C2710400F3B2D4 /* PFCAbilityScoreMappingModel.h */,
+				E0E0E86318C2710400F3B2D4 /* PFCAbilityScoreMappingModel.m */,
+			);
+			path = MantleModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -545,6 +565,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E0E85E18C263D800F3B2D4 /* PFCCoreRulebookMappingModel.m in Sources */,
 				E0725083182DADFC00E523B6 /* PFCRace.m in Sources */,
 				E0725087182DADFC00E523B6 /* PFCCoreRulebook.m in Sources */,
 				C8B5BEC6181F57C600602206 /* PFCPersistentStack.m in Sources */,
@@ -553,6 +574,8 @@
 				C8B5BED7181FE39900602206 /* PFCMenuViewController.m in Sources */,
 				C8DA37671821E92A00DBC2F7 /* PFCGender.m in Sources */,
 				C8B5BEDE182097E500602206 /* PFCFetchedResultsControllerDataSource.m in Sources */,
+				E0E0E86118C265BD00F3B2D4 /* PFCRaceMappingModel.m in Sources */,
+				E0E0E86418C2710400F3B2D4 /* PFCAbilityScoreMappingModel.m in Sources */,
 				BE5B0CD2182D82990039E623 /* PFCWrittenTextField.m in Sources */,
 				C8B5BECB181F59B600602206 /* PFCStore.m in Sources */,
 				C8B5BEE218209DDF00602206 /* PFCCreateCharacterNameViewController.m in Sources */,
@@ -563,7 +586,6 @@
 				E072507F182DA7A800E523B6 /* CoreRulebook.xcdatamodeld in Sources */,
 				C8B5BEDA1820970B00602206 /* PFCCharacterListViewController.m in Sources */,
 				C8DCE4C9181DBA58008AD1B6 /* main.m in Sources */,
-				C8B5BECE181F5A9600602206 /* Model.xcdatamodeld in Sources */,
 				E0E74A7A1846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m in Sources */,
 				C8DCE50A181DD632008AD1B6 /* PFCAbilityScore.m in Sources */,
 				E0E74A7F184680F900F13FE9 /* PFCCoreRulebookBuilder.m in Sources */,
@@ -824,16 +846,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C8B5BECC181F5A9600602206 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C8B5BECD181F5A9600602206 /* Model.xcdatamodel */,
-			);
-			currentVersion = C8B5BECD181F5A9600602206 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

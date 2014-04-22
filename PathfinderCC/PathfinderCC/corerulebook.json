@@ -12,15 +12,15 @@
 				"modifiers": [
 					{
 						"baseScore": 2,
-						"type": "Constitution"
+						"type": 2
 					},
 					{
 						"baseScore": 2,
-						"type": "Wisdom"
+						"type": 4
 					},
 					{
 						"baseScore": -2,
-						"type": "Charisma"
+						"type": 5
 					}
 				]
 			}	

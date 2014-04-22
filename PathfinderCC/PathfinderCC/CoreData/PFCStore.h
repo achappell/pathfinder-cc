@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Amanda Chappell. All rights reserved.
 //
 
+#warning this should be an aggregate object
+
 #import <Foundation/Foundation.h>
 
 @class PFCCharacter;

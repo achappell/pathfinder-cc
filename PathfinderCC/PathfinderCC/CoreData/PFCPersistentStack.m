@@ -7,24 +7,26 @@
 //
 
 #import "PFCPersistentStack.h"
-#import <RestKit/RestKit.h>
 
 @interface PFCPersistentStack ()
 
 @property (nonatomic,strong,readwrite) NSManagedObjectContext* managedObjectContext;
 @property (nonatomic,strong) NSURL* modelURL;
 @property (nonatomic,strong) NSString* storePath;
+@property (nonatomic,strong) NSString* configuration;
+@property (nonatomic,strong) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 @end
 
 @implementation PFCPersistentStack
 
-- (id)initWithStorePath:(NSString *)storePath modelURL:(NSURL*)modelURL
+- (id)initWithStorePath:(NSString *)storePath modelURL:(NSURL*)modelURL configuration:(NSString *)configuration
 {
     self = [super init];
     if (self) {
         self.storePath = storePath;
         self.modelURL = modelURL;
+        self.configuration = configuration;
         [self setupManagedObjectContext];
     }
     return self;
@@ -32,25 +34,22 @@
 
 - (void)setupManagedObjectContext
 {
-    RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     
-    // Initialize the Core Data stack
-    [managedObjectStore createPersistentStoreCoordinator];
+    self.persistentStoreCoordinator = persistentStoreCoordinator;
+    
+    NSURL *storeURL = [NSURL fileURLWithPath:self.storePath];
     
     NSError *error;
-    NSPersistentStore __unused *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:self.storePath fromSeedDatabaseAtPath:nil withConfiguration:nil options:nil error:&error];
+    NSPersistentStore __unused *persistentStore = [persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:self.configuration URL:storeURL options:nil error:&error];
     NSAssert(persistentStore, @"Failed to add persistent store: %@", error);
     
-    [managedObjectStore createManagedObjectContexts];
+    NSManagedObjectContext *managedObjectContext = [[NSManagedObjectContext alloc] init];
+    [managedObjectContext setPersistentStoreCoordinator:persistentStoreCoordinator];
     
-    // Set the default store shared instance
-    [RKManagedObjectStore setDefaultStore:managedObjectStore];
-    
-    self.managedObjectContext = managedObjectStore.mainQueueManagedObjectContext;
+    self.managedObjectContext = managedObjectContext;
     
     self.managedObjectContext.undoManager = [[NSUndoManager alloc] init];
-    
-    [RKObjectManager sharedManager].managedObjectStore = managedObjectStore;
 }
 
 - (NSManagedObjectModel*)managedObjectModel
