@@ -12,7 +12,7 @@
 
 - (BOOL)hasValidText
 {
-    return [[self text] isEqualToString:@""] || ![self text];
+    return !([[self text] isEqualToString:@""] || ![self text]);
 }
 
 @end
