@@ -449,7 +449,6 @@
 				C8DCE4B6181DBA58008AD1B6 /* Frameworks */,
 				C8DCE4B7181DBA58008AD1B6 /* Resources */,
 				6E741F847959456ABCCC9279 /* Copy Pods Resources */,
-				E0EF3FCC1835C27400FA4045 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -647,19 +646,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		E0EF3FCC1835C27400FA4045 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = XcodeCoverage/exportenv.sh;
 		};
 		E98E1F7A906D4902950DDB09 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
