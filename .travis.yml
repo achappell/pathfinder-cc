@@ -1,7 +1,4 @@
 language: objective-c
-xcode_workspace: PathfinderCC.xcworkspace
-xcode_scheme: PathfinderCC
-
 before_script:
   - sudo easy_install cpp-coveralls
   - brew update
@@ -11,7 +8,7 @@ before_install:
   - gem install cocoapods
   
 script:
-  - xctool -workspace PathfinderCC.xcworkspace -scheme PathfinderCC -sdk iphonesimulator -arch i386 build test
-
+  - xctool -project PathfinderCC.xcodeproj -sdk iphonesimulator -scheme PathfinderCC -arch i386 build test
+  
 after_success:
       - ./coveralls.rb --extension m
