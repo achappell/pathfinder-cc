@@ -8,7 +8,7 @@ before_install:
   - gem install cocoapods
   
 install:
-  - pod install -no-integrate
+  - pod install --no-integrate
   
 script:
   - xctool -project PathfinderCC.xcodeproj -sdk iphonesimulator -scheme PathfinderCC -arch i386 build test
