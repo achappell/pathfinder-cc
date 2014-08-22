@@ -146,6 +146,7 @@
 - (void)testCreateCharacterWithValidInfo
 {
     PFCPersistentStack *persistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL] configuration:@"UserData"];
+    [persistentStack setupManagedObjectContext];
     
     PFCStore *store = [[PFCStore alloc] init];
     store.characterManagedObjectContext = persistentStack.managedObjectContext;

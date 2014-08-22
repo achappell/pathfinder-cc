@@ -33,6 +33,7 @@
     // Override point for customization after application launch.
     
     self.characterPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL] configuration:@"UserData"];
+    [self.characterPersistentStack setupManagedObjectContext];
     self.store = [[PFCStore alloc] init];
     self.store.characterManagedObjectContext = self.characterPersistentStack.managedObjectContext;
     

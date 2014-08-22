@@ -24,10 +24,9 @@
 {
     self = [super init];
     if (self) {
-        self.storePath = storePath;
-        self.modelURL = modelURL;
-        self.configuration = configuration;
-        [self setupManagedObjectContext];
+        _storePath = storePath;
+        _modelURL = modelURL;
+        _configuration = configuration;
     }
     return self;
 }

@@ -24,6 +24,7 @@
     [super setUp];
     
     self.characterPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL] configuration:@"UserData"];
+    [self.characterPersistentStack setupManagedObjectContext];
     PFCStore *store = [[PFCStore alloc] init];
     store.characterManagedObjectContext = self.characterPersistentStack.managedObjectContext;
     

@@ -25,6 +25,7 @@
     // Put setup code here; it will be run once, before the first test case.
 
     self.coreRulebookPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self coreRulebookStoreURL] path] modelURL:[self coreRulebookModelURL] configuration:@"CoreRulebook"];
+    [self.coreRulebookPersistentStack setupManagedObjectContext];
     self.builder = [[PFCCoreRulebookBuilder alloc] init];
 }
 

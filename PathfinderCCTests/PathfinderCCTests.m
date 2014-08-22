@@ -31,6 +31,7 @@
     // Put setup code here. This method is called before the invocation of each test method in the class.
     
     self.persistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL] configuration:@"UserData"];
+    [self.persistentStack setupManagedObjectContext];
     self.coreRulebookPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL] configuration:@"CoreRulebook"];
     
     self.store = [[PFCStore alloc] init];
