@@ -70,48 +70,6 @@
 			remoteGlobalIDString = C8DCE4B8181DBA58008AD1B6;
 			remoteInfo = PathfinderCC;
 		};
-		E02A3174191D99B700F8ACCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E02A316B191D99B700F8ACCB /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 14F89F6EE1BB487DAFF59819;
-			remoteInfo = Pods;
-		};
-		E02A3176191D99B700F8ACCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E02A316B191D99B700F8ACCB /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4441E534F9B24DE9ABCD87E1;
-			remoteInfo = "Pods-AFNetworking";
-		};
-		E02A3178191D99B700F8ACCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E02A316B191D99B700F8ACCB /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 791FD1B2FCEB42D8BDAAC6C3;
-			remoteInfo = "Pods-Mantle";
-		};
-		E02A317A191D99B700F8ACCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E02A316B191D99B700F8ACCB /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A4B88F94843E49C3ACC3F1CF;
-			remoteInfo = "Pods-Overcoat";
-		};
-		E02A317C191D99B700F8ACCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E02A316B191D99B700F8ACCB /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D3C9284795274733ABEE515D;
-			remoteInfo = "Pods-PathfinderCCTests";
-		};
-		E02A317E191D99B700F8ACCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E02A316B191D99B700F8ACCB /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AD9C53B764FF4D9BAB871DE5;
-			remoteInfo = "Pods-PathfinderCCTests-OCMock";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -163,7 +121,6 @@
 		C8DCE509181DD632008AD1B6 /* PFCAbilityScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCAbilityScore.m; sourceTree = "<group>"; };
 		C8DCE50D181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCreateCharacterAbilityScoreViewController.h; sourceTree = "<group>"; };
 		C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCreateCharacterAbilityScoreViewController.m; sourceTree = "<group>"; };
-		E02A316B191D99B700F8ACCB /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		E02A3180191D9AF300F8ACCB /* Pods-PathfinderCCTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCCTests.xcconfig"; path = "Pods/Pods-PathfinderCCTests.xcconfig"; sourceTree = "<group>"; };
 		E02A3181191D9AF300F8ACCB /* Pods.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E0709AB01905FB840075E34C /* UITextField+PFC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PFC.h"; sourceTree = "<group>"; };
@@ -277,7 +234,6 @@
 			children = (
 				E02A3180191D9AF300F8ACCB /* Pods-PathfinderCCTests.xcconfig */,
 				E02A3181191D9AF300F8ACCB /* Pods.xcconfig */,
-				E02A316B191D99B700F8ACCB /* Pods.xcodeproj */,
 				C8DCE4C2181DBA58008AD1B6 /* PathfinderCC */,
 				C8DCE4E7181DBA58008AD1B6 /* PathfinderCCTests */,
 				C8DCE4BB181DBA58008AD1B6 /* Frameworks */,
@@ -411,19 +367,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E02A316C191D99B700F8ACCB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E02A3175191D99B700F8ACCB /* libPods.a */,
-				E02A3177191D99B700F8ACCB /* libPods-AFNetworking.a */,
-				E02A3179191D99B700F8ACCB /* libPods-Mantle.a */,
-				E02A317B191D99B700F8ACCB /* libPods-Overcoat.a */,
-				E02A317D191D99B700F8ACCB /* libPods-PathfinderCCTests.a */,
-				E02A317F191D99B700F8ACCB /* libPods-PathfinderCCTests-OCMock.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		E0E0E85B18C2639000F3B2D4 /* MantleModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,12 +459,6 @@
 			mainGroup = C8DCE4B0181DBA58008AD1B6;
 			productRefGroup = C8DCE4BA181DBA58008AD1B6 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E02A316C191D99B700F8ACCB /* Products */;
-					ProjectRef = E02A316B191D99B700F8ACCB /* Pods.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C8DCE4B8181DBA58008AD1B6 /* PathfinderCC */,
@@ -529,51 +466,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E02A3175191D99B700F8ACCB /* libPods.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libPods.a;
-			remoteRef = E02A3174191D99B700F8ACCB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E02A3177191D99B700F8ACCB /* libPods-AFNetworking.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libPods-AFNetworking.a";
-			remoteRef = E02A3176191D99B700F8ACCB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E02A3179191D99B700F8ACCB /* libPods-Mantle.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libPods-Mantle.a";
-			remoteRef = E02A3178191D99B700F8ACCB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E02A317B191D99B700F8ACCB /* libPods-Overcoat.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libPods-Overcoat.a";
-			remoteRef = E02A317A191D99B700F8ACCB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E02A317D191D99B700F8ACCB /* libPods-PathfinderCCTests.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libPods-PathfinderCCTests.a";
-			remoteRef = E02A317C191D99B700F8ACCB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E02A317F191D99B700F8ACCB /* libPods-PathfinderCCTests-OCMock.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libPods-PathfinderCCTests-OCMock.a";
-			remoteRef = E02A317E191D99B700F8ACCB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C8DCE4B7181DBA58008AD1B6 /* Resources */ = {
@@ -843,10 +735,36 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Amanda Chappell (W75263856K)";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				INFOPLIST_FILE = "PathfinderCC/PathfinderCC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
@@ -862,10 +780,36 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Amanda Chappell (W75263856K)";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				INFOPLIST_FILE = "PathfinderCC/PathfinderCC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
