@@ -9,6 +9,8 @@ before_script:
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
 before_install: gem install cocoapods xcpretty obcd slather -N
+script:
+  - xctool test -workspace PathfinderCC.xcworkspace -scheme PathfinderCC -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2' GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
 after_success:
 - slather
 env:
