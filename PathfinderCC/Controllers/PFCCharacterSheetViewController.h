@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PFCCharacter.h"
 #import "PFCStore.h"
 
 @interface PFCCharacterSheetViewController : UICollectionViewController
 
-@property (nonatomic, strong) PFCCharacter *character;
+@property (nonatomic, strong) Character *character;
 @property (nonatomic, strong) PFCStore *store;
 
 @end

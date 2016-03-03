@@ -6,21 +6,21 @@
 //  Copyright (c) 2013 Amanda Chappell. All rights reserved.
 //
 
-#warning this should be an aggregate object
+
 
 #import <Foundation/Foundation.h>
 
-@class PFCCharacter;
-@class PFCCoreRulebook;
+@class Character;
+@class CoreRulebook;
 
 @interface PFCStore : NSObject
 
 @property (nonatomic, strong) NSManagedObjectContext *characterManagedObjectContext;
 @property (nonatomic, strong) NSManagedObjectContext *coreRulebookManagedObjectContext;
 
-- (PFCCharacter *)selectedCharacter;
-- (void)setSelectedCharacter:(PFCCharacter *)character;
-- (PFCCharacter *)characterWithName:(NSString *)name;
-- (PFCCoreRulebook *)coreRulebook;
+- (Character *)selectedCharacter;
+- (void)setSelectedCharacter:(Character *)character;
+- (Character *)characterWithName:(NSString *)name;
+- (CoreRulebook *)coreRulebook;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "PFCCreateCharacterNameViewController.h"
+#import "PathfinderCC-Swift.h"
 
 @interface PFCCreateCharacterNameViewController ()
 
@@ -35,7 +36,7 @@
 - (IBAction)save:(id)sender
 {
     self.character.name = self.nameTextField.text;
-    self.character.age = (int16_t)[self.ageTextField.text integerValue];
+    self.character.age = @([self.ageTextField.text integerValue]);
     
     if (self.genderSegmentedControl.selectedSegmentIndex == 0)
         self.character.gender = PFCGenderMale;

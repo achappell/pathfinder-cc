@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PFCCharacter.h"
+
+@class Character;
 
 @interface PFCAbilityScoreCollectionViewCell : UICollectionViewCell
 
-@property (nonatomic, strong) PFCCharacter *character;
+@property (nonatomic, strong) Character *character;
 
 @property (nonatomic, weak) IBOutlet UILabel *strengthLabel;
 @property (nonatomic, weak) IBOutlet UILabel *dexterityLabel;

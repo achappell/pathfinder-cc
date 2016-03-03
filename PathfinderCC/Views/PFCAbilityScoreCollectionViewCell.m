@@ -7,8 +7,8 @@
 //
 
 #import "PFCAbilityScoreCollectionViewCell.h"
-#import "PFCAbilityScore.h"
 #import <QuartzCore/QuartzCore.h>
+#import "PathfinderCC-Swift.h"
 
 @implementation PFCAbilityScoreCollectionViewCell
 
@@ -17,7 +17,7 @@
     [self configureViews];
 }
 
-- (void)setCharacter:(PFCCharacter *)character
+- (void)setCharacter:(Character *)character
 {
     if (_character == character)
         return;

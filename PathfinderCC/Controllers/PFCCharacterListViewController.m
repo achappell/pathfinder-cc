@@ -8,8 +8,8 @@
 
 #import "PFCCharacterListViewController.h"
 #import "PFCFetchedResultsControllerDataSource.h"
-#import "PFCCharacter.h"
 #import "PFCCreateCharacterAbilityScoreViewController.h"
+#import "PathfinderCC-Swift.h"
 
 @interface PFCCharacterListViewController () <PFCFetchedResultsControllerDataSourceDelegate>
 
@@ -42,7 +42,7 @@
 - (void)setupFetchedResultsController
 {
     self.fetchedResultsControllerDataSource = [[PFCFetchedResultsControllerDataSource alloc] initWithTableView:self.tableView];
-    self.fetchedResultsControllerDataSource.fetchedResultsController = [PFCCharacter allCharactersFetchedResultsControllerInManagedObjectContext:self.store.characterManagedObjectContext];
+    self.fetchedResultsControllerDataSource.fetchedResultsController = [Character allCharactersFetchedResultsController];
     self.fetchedResultsControllerDataSource.delegate = self;
     self.fetchedResultsControllerDataSource.reuseIdentifier = @"Cell";
 }
@@ -59,13 +59,13 @@
 - (void)configureCell:(id)theCell withObject:(id)object
 {
     UITableViewCell* cell = theCell;
-    PFCCharacter* character = object;
+    Character* character = object;
     cell.textLabel.text = character.name;
 }
 
 - (void)deleteObject:(id)object
 {
-    PFCCharacter* character = object;
+    Character* character = object;
     NSString* actionName = [NSString stringWithFormat:NSLocalizedString(@"Delete \"%@\"", @"Delete undo action name"), character.name];
     [self.undoManager setActionName:actionName];
     [character.managedObjectContext deleteObject:character];

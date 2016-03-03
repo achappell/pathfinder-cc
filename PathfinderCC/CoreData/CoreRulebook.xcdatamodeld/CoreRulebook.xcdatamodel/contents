@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B3116" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="PFCAbilityScore" representedClassName="PFCAbilityScore" syncable="YES">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 4.3">
+    <entity name="AbilityScore" representedClassName="AbilityScore" syncable="YES">
         <attribute name="abilityModifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="baseScore" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="tempAdjustment" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="tempModifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="type" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PFCRace" inverseName="modifiers" inverseEntity="PFCRace" syncable="YES"/>
+        <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Race" inverseName="modifiers" inverseEntity="Race" syncable="YES"/>
     </entity>
-    <entity name="PFCCharacter" representedClassName="PFCCharacter" syncable="YES">
+    <entity name="Character" representedClassName="Character" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="alignment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <relationship name="baseAbilityScores" optional="YES" toMany="YES" minCount="6" maxCount="6" deletionRule="No Action" destinationEntity="PFCAbilityScore" syncable="YES"/>
+        <relationship name="baseAbilityScores" optional="YES" toMany="YES" minCount="6" maxCount="6" deletionRule="No Action" destinationEntity="AbilityScore" syncable="YES"/>
         <fetchedProperty name="fetchedProperty" optional="YES" transient="YES" syncable="YES">
-            <fetchRequest name="fetchedPropertyFetchRequest" entity="PFCCharacter"/>
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Character"/>
         </fetchedProperty>
     </entity>
-    <entity name="PFCCoreRulebook" representedClassName="PFCCoreRulebook" syncable="YES">
-        <relationship name="races" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PFCRace" inverseName="coreRulebook" inverseEntity="PFCRace" syncable="YES"/>
+    <entity name="CoreRulebook" representedClassName="CoreRulebook" syncable="YES">
+        <relationship name="races" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Race" inverseName="coreRulebook" inverseEntity="Race" syncable="YES"/>
     </entity>
-    <entity name="PFCRace" representedClassName="PFCRace" syncable="YES">
+    <entity name="Race" representedClassName="Race" syncable="YES">
         <attribute name="adventures" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="alignmentAndReligion" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="physicalDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="relations" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="society" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="coreRulebook" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PFCCoreRulebook" inverseName="races" inverseEntity="PFCCoreRulebook" syncable="YES"/>
-        <relationship name="modifiers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PFCAbilityScore" inverseName="race" inverseEntity="PFCAbilityScore" syncable="YES"/>
+        <relationship name="coreRulebook" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoreRulebook" inverseName="races" inverseEntity="CoreRulebook" syncable="YES"/>
+        <relationship name="modifiers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AbilityScore" inverseName="race" inverseEntity="AbilityScore" syncable="YES"/>
     </entity>
     <configuration name="CoreRulebook">
-        <memberEntity name="PFCAbilityScore"/>
-        <memberEntity name="PFCCoreRulebook"/>
-        <memberEntity name="PFCRace"/>
+        <memberEntity name="AbilityScore"/>
+        <memberEntity name="CoreRulebook"/>
+        <memberEntity name="Race"/>
     </configuration>
     <configuration name="UserData">
-        <memberEntity name="PFCAbilityScore"/>
-        <memberEntity name="PFCCharacter"/>
-        <memberEntity name="PFCRace"/>
+        <memberEntity name="AbilityScore"/>
+        <memberEntity name="Character"/>
+        <memberEntity name="Race"/>
     </configuration>
     <elements>
-        <element name="PFCAbilityScore" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="PFCCoreRulebook" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="PFCRace" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="PFCCharacter" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="AbilityScore" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="Character" positionX="0" positionY="0" width="128" height="164"/>
+        <element name="CoreRulebook" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="Race" positionX="0" positionY="0" width="128" height="165"/>
     </elements>
 </model>

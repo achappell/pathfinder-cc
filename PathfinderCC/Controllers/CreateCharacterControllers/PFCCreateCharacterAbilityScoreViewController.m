@@ -7,10 +7,9 @@
 //
 
 #import "PFCCreateCharacterAbilityScoreViewController.h"
-#import "PFCCharacter.h"
-#import "PFCAbilityScore.h"
 #import "PFCCreateCharacterNameViewController.h"
 #import "UITextField+PFC.h"
+#import "PathfinderCC-Swift.h"
 
 @interface PFCCreateCharacterAbilityScoreViewController ()
 
@@ -63,28 +62,28 @@
     return shouldAllowNextNavigation;
 }
 
-- (PFCCharacter *)createCharacter
+- (Character *)createCharacter
 {
     // create character with ability scores
     NSNumber *strength = @([self.strengthTextField.text integerValue]);
-    PFCAbilityScore *strengthScore = [PFCAbilityScore insertItemWithBaseScore:strength type:PFCAbilityTypeStrength inManagedObjectContext:self.store.characterManagedObjectContext];
+    AbilityScore *strengthScore = [AbilityScore insertItemWithBaseScore:strength type:AbilityTypeStrength];
     
     NSNumber *dexterity = @([self.dexterityTextField.text integerValue]);
-    PFCAbilityScore *dexterityScore = [PFCAbilityScore insertItemWithBaseScore:dexterity type:PFCAbilityTypeDexterity inManagedObjectContext:self.store.characterManagedObjectContext];
+    AbilityScore *dexterityScore = [AbilityScore insertItemWithBaseScore:dexterity type:AbilityTypeDexterity];
     
     NSNumber *constitution = @([self.constitutionTextField.text integerValue]);
-    PFCAbilityScore *constitutionScore = [PFCAbilityScore insertItemWithBaseScore:constitution type:PFCAbilityTypeConstitution inManagedObjectContext:self.store.characterManagedObjectContext];
+    AbilityScore *constitutionScore = [AbilityScore insertItemWithBaseScore:constitution type:AbilityTypeConstitution];
     
     NSNumber *intelligence = @([self.intelligenceTextField.text integerValue]);
-    PFCAbilityScore *intelligenceScore = [PFCAbilityScore insertItemWithBaseScore:intelligence type:PFCAbilityTypeIntelligence inManagedObjectContext:self.store.characterManagedObjectContext];
+    AbilityScore *intelligenceScore = [AbilityScore insertItemWithBaseScore:intelligence type:AbilityTypeIntelligence];
     
     NSNumber *wisdom = @([self.wisdomTextField.text integerValue]);
-    PFCAbilityScore *wisdomScore = [PFCAbilityScore insertItemWithBaseScore:wisdom type:PFCAbilityTypeWisdom inManagedObjectContext:self.store.characterManagedObjectContext];
+    AbilityScore *wisdomScore = [AbilityScore insertItemWithBaseScore:wisdom type:AbilityTypeWisdom];
     
     NSNumber *charisma = @([self.charismaTextField.text integerValue]);
-    PFCAbilityScore *charismaScore = [PFCAbilityScore insertItemWithBaseScore:charisma type:PFCAbilityTypeCharisma inManagedObjectContext:self.store.characterManagedObjectContext];
+    AbilityScore *charismaScore = [AbilityScore insertItemWithBaseScore:charisma type:AbilityTypeCharisma];
     
-    PFCCharacter *character = [PFCCharacter insertItemWithAbilityScores:[NSSet setWithObjects:strengthScore, dexterityScore, constitutionScore, intelligenceScore, wisdomScore, charismaScore, nil] inManagedObjectContext:self.store.characterManagedObjectContext];
+    Character *character = [Character insertItemWithAbilityScores:[NSSet setWithObjects:strengthScore, dexterityScore, constitutionScore, intelligenceScore, wisdomScore, charismaScore, nil]];
     
     return character;
 }
@@ -168,7 +167,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    PFCCharacter *character = [self createCharacter];
+    Character *character = [self createCharacter];
     
     PFCCreateCharacterNameViewController *viewController = (PFCCreateCharacterNameViewController *)segue.destinationViewController;
     viewController.character = character;
