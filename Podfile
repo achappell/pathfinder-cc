@@ -8,9 +8,10 @@ target 'PathfinderCC' do
   pod 'FastEasyMapping'
   pod 'MagicalRecord', '~> 2.3'
 
-  target 'PathfinderCCTests' do
-    inherit! :search_paths
-    pod 'OCMock'
-  end
+end
 
+target 'PathfinderCCTests' do
+  pod 'OCMock'
+  pod 'FastEasyMapping'
+  pod 'MagicalRecord', '~> 2.3'
 end

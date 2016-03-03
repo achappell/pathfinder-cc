@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13304E5FE5B9F1377FAEF81A8ED67BB1"
+               BlueprintIdentifier = "740EE80ADB6AB85D773FB46D7A08F9C7"
                BuildableName = "Pods_PathfinderCC.framework"
                BlueprintName = "Pods-PathfinderCC"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C75E520937847503CD1015EDBF3D7CF3"
+               BlueprintIdentifier = "69789196E8DBDA67E60BD6C746B68285"
                BuildableName = "Pods_PathfinderCCTests.framework"
                BlueprintName = "Pods-PathfinderCCTests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
