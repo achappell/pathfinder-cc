@@ -55,8 +55,6 @@
 		E0E74A7C1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A7B1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m */; };
 		E0E74A7F184680F900F13FE9 /* PFCCoreRulebookBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A7E184680F900F13FE9 /* PFCCoreRulebookBuilder.m */; };
 		E0E74A811846820300F13FE9 /* corerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = E0E74A801846820300F13FE9 /* corerulebook.json */; };
-		E0EF3FCF1835C63100FA4045 /* GTMCodeCoverageApp.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EF3FCE1835C63100FA4045 /* GTMCodeCoverageApp.m */; };
-		E0EF3FD21835C6F100FA4045 /* GTMCodeCoverageTestsXC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */; };
 		E0F296F51846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F296F41846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m */; };
 		E0F296F818468A9B0007B2B6 /* testcorerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = E0F296F6184689800007B2B6 /* testcorerulebook.json */; };
 		EE32828F41B7379032F9FA85 /* Pods_PathfinderCCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FB82987F561BF5948300E6 /* Pods_PathfinderCCTests.framework */; };
@@ -142,9 +140,6 @@
 		E0E74A7D184680F900F13FE9 /* PFCCoreRulebookBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCoreRulebookBuilder.h; sourceTree = "<group>"; };
 		E0E74A7E184680F900F13FE9 /* PFCCoreRulebookBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCoreRulebookBuilder.m; sourceTree = "<group>"; };
 		E0E74A801846820300F13FE9 /* corerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = corerulebook.json; sourceTree = "<group>"; };
-		E0EF3FCD1835C63100FA4045 /* GTMCodeCoverageApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMCodeCoverageApp.h; sourceTree = "<group>"; };
-		E0EF3FCE1835C63100FA4045 /* GTMCodeCoverageApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMCodeCoverageApp.m; sourceTree = "<group>"; };
-		E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMCodeCoverageTestsXC.m; sourceTree = "<group>"; };
 		E0F296F41846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCoreRulebookVersionCoordinatorTests.m; sourceTree = "<group>"; };
 		E0F296F6184689800007B2B6 /* testcorerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testcorerulebook.json; sourceTree = "<group>"; };
 		F28BCAEEDCD56A9CB025DD5A /* Pods-PathfinderCC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCC.release.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCC/Pods-PathfinderCC.release.xcconfig"; sourceTree = "<group>"; };
@@ -294,9 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				E09C3A7A1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m */,
-				E0EF3FCD1835C63100FA4045 /* GTMCodeCoverageApp.h */,
-				E0EF3FCE1835C63100FA4045 /* GTMCodeCoverageApp.m */,
-				E0EF3FD01835C6DD00FA4045 /* GTMCodeCoverageTestsXC.m */,
 				C8DCE4ED181DBA58008AD1B6 /* PathfinderCCTests.m */,
 				C8DCE4E8181DBA58008AD1B6 /* Supporting Files */,
 				E0E74A72184642D300F13FE9 /* PFCMenuViewControllerTests.m */,
@@ -432,7 +424,7 @@
 			attributes = {
 				CLASSPREFIX = PFC;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Amanda Chappell";
 				TargetAttributes = {
 					C8DCE4B8181DBA58008AD1B6 = {
@@ -618,7 +610,6 @@
 				E0E74A7F184680F900F13FE9 /* PFCCoreRulebookBuilder.m in Sources */,
 				E022993F1C87ED8E008AC991 /* AbilityScore.swift in Sources */,
 				E022993E1C87ED8E008AC991 /* AbilityScore+CoreDataProperties.swift in Sources */,
-				E0EF3FCF1835C63100FA4045 /* GTMCodeCoverageApp.m in Sources */,
 				E02299401C87ED8E008AC991 /* CoreRulebook+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,7 +618,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0EF3FD21835C6F100FA4045 /* GTMCodeCoverageTestsXC.m in Sources */,
 				C8DCE4EE181DBA58008AD1B6 /* PathfinderCCTests.m in Sources */,
 				E09C3A7B1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m in Sources */,
 				E0E74A7C1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m in Sources */,
@@ -689,7 +679,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -704,6 +693,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
@@ -730,7 +720,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -781,7 +770,8 @@
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Amanda Chappell (W75263856K)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
@@ -803,6 +793,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amplifiedproejcts.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PathfinderCC/Models/Mapping/PathfinderCC-Bridging-Header.h";
@@ -830,7 +821,8 @@
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Amanda Chappell (W75263856K)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
@@ -852,6 +844,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amplifiedproejcts.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PathfinderCC/Models/Mapping/PathfinderCC-Bridging-Header.h";
@@ -863,7 +856,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AC5AEF4146A2239DCF121E5 /* Pods-PathfinderCCTests.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PathfinderCC.app/PathfinderCC";
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -879,6 +871,7 @@
 				);
 				INFOPLIST_FILE = "PathfinderCCTests/PathfinderCCTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amplifiedproejcts.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PathfinderCCTests/PathfinderCCTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -891,7 +884,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B1694D5FBE5C11EA71E312C /* Pods-PathfinderCCTests.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PathfinderCC.app/PathfinderCC";
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -903,6 +895,7 @@
 				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
 				INFOPLIST_FILE = "PathfinderCCTests/PathfinderCCTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amplifiedproejcts.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PathfinderCCTests/PathfinderCCTests-Bridging-Header.h";
 				TEST_HOST = "$(BUNDLE_LOADER)";
