@@ -1,4 +1,6 @@
 ci_service: travis_ci
 coverage_service: coveralls
 xcodeproj: PathfinderCC.xcodeproj
+scheme: PathfinderCC
 source_directory: PathfinderCC
+coverage_access_token: FMHVHzbu8PdoeIrenQNdWOZb8Qvkr9c7M
