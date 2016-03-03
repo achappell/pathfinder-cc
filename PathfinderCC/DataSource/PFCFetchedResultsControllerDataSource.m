@@ -37,13 +37,13 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView*)tableView
 {
-    return self.fetchedResultsController.sections.count;
+    return (NSInteger)self.fetchedResultsController.sections.count;
 }
 
 - (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    id<NSFetchedResultsSectionInfo> section = self.fetchedResultsController.sections[sectionIndex];
-    return section.numberOfObjects;
+    id<NSFetchedResultsSectionInfo> section = self.fetchedResultsController.sections[(NSUInteger)sectionIndex];
+    return (NSInteger)section.numberOfObjects;
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView

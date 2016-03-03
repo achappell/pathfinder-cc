@@ -8,20 +8,16 @@
 
 #import "PFCAppDelegate.h"
 #import "PFCCharacterSheetViewController.h"
-#import "PFCAbilityScore.h"
-#import "PFCPersistentStack.h"
 #import "PFCStore.h"
 #import "PFCMenuViewController.h"
 #import "PFCCoreRulebookVersionCoordinator.h"
 #import "PFCCoreRulebookBuilder.h"
 #import <CoreData/CoreData.h>
-#import "PFCCoreRulebook.h"
-#import "PFCCoreRulebookMappingModel.h"
+@import FastEasyMapping;
+#import "PathfinderCC-Swift.h"
 
 @interface PFCAppDelegate ()
 
-@property (nonatomic, strong) PFCPersistentStack *characterPersistentStack;
-@property (nonatomic, strong) PFCPersistentStack *coreRulebookPersistentStack;
 @property (nonatomic, strong) PFCStore *store;
 
 @end
@@ -32,14 +28,10 @@
 {
     // Override point for customization after application launch.
     
-    self.characterPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL] configuration:@"UserData"];
+    [MagicalRecord setupCoreDataStack];
     self.store = [[PFCStore alloc] init];
-    self.store.characterManagedObjectContext = self.characterPersistentStack.managedObjectContext;
     
-    self.coreRulebookPersistentStack = [[PFCPersistentStack alloc] initWithStorePath:[[self storeURL] path] modelURL:[self modelURL] configuration:@"CoreRulebook"];
-    self.store.coreRulebookManagedObjectContext = self.coreRulebookPersistentStack.managedObjectContext;
-    
-    PFCCharacter *selectedCharacter = [self.store selectedCharacter];
+    Character *selectedCharacter = [self.store selectedCharacter];
     
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     
@@ -67,9 +59,7 @@
     NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
     jsonDictionary = jsonDictionary[@"coreRulebook"];
     
-    PFCCoreRulebookMappingModel *coreRulebook = [MTLJSONAdapter modelOfClass:[PFCCoreRulebookMappingModel class] fromJSONDictionary:jsonDictionary error:&error];
-    
-    NSManagedObject *coreRulebookManagedModel = [MTLManagedObjectAdapter managedObjectFromModel:coreRulebook insertingIntoContext:self.store.coreRulebookManagedObjectContext error:&error];
+    CoreRulebook *coreRulebook = [FEMDeserializer objectFromRepresentation:jsonDictionary mapping:nil];
     
     [self.store.coreRulebookManagedObjectContext save:&error];
     

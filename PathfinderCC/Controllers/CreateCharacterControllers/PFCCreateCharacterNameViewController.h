@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PFCCharacter.h"
 #import "PFCStore.h"
 
 @interface PFCCreateCharacterNameViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
@@ -18,7 +17,7 @@
 @property (nonatomic, weak) IBOutlet UITextField *ageTextField;
 @property (nonatomic, weak) IBOutlet UIPickerView *alignmentPickerView;
 
-@property (nonatomic, strong) PFCCharacter *character;
+@property (nonatomic, strong) Character *character;
 @property (nonatomic, strong) PFCStore *store;
 @property (nonatomic, strong) NSString *selectedAlignment;
 @property (nonatomic, strong) NSArray *alignments;

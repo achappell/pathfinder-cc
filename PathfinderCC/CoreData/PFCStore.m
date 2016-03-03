@@ -8,23 +8,22 @@
 
 #import "PFCStore.h"
 #import <CoreData/CoreData.h>
-#import "PFCCharacter.h"
-#import "PFCCoreRulebook.h"
+#import "PathfinderCC-Swift.h"
 
 @implementation PFCStore
 
-- (PFCCharacter *)selectedCharacter
+- (Character *)selectedCharacter
 {
     // todo: use a cache?
     NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCharacter"];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"selected == 1"];
     request.predicate = predicate;
     NSArray* objects = [self.characterManagedObjectContext executeFetchRequest:request error:NULL];
-    PFCCharacter* rootCharacter = [objects lastObject];
+    Character* rootCharacter = [objects lastObject];
     return rootCharacter;
 }
 
-- (void)setSelectedCharacter:(PFCCharacter *)character
+- (void)setSelectedCharacter:(Character *)character
 {
     NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCharacter"];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"selected == 1"];
@@ -32,28 +31,28 @@
     NSArray* objects = [self.characterManagedObjectContext executeFetchRequest:request error:NULL];
     
     [objects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        PFCCharacter *deselectedCharacter = (PFCCharacter *)obj;
+        Character *deselectedCharacter = (Character *)obj;
         deselectedCharacter.selected = NO;
     }];
     
-    character.selected = YES;
+    character.selected = @(YES);
 }
 
-- (PFCCharacter *)characterWithName:(NSString *)name
+- (Character *)characterWithName:(NSString *)name
 {
     NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCharacter"];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name = %@",name];
     request.predicate = predicate;
     NSArray* objects = [self.characterManagedObjectContext executeFetchRequest:request error:NULL];
-    PFCCharacter* rootCharacter = [objects lastObject];
+    Character* rootCharacter = [objects lastObject];
     return rootCharacter;
 }
 
-- (PFCCoreRulebook *)coreRulebook
+- (CoreRulebook *)coreRulebook
 {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"PFCCoreRulebook"];
     NSArray *objects = [self.coreRulebookManagedObjectContext executeFetchRequest:request error:NULL];
-    PFCCoreRulebook *coreRulebook = [objects lastObject];
+    CoreRulebook *coreRulebook = [objects lastObject];
     return coreRulebook;
 }
 

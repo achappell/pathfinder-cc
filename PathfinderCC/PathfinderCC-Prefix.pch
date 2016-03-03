@@ -10,6 +10,9 @@
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif
 
+#define MR_SHORTHAND 0
+#import <MagicalRecord/MagicalRecord.h>
+
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>

@@ -10,9 +10,12 @@
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
-profile
 *.moved-aside
 DerivedData
 .idea/
 *.hmap
 *.xccheckout
+CoreData.gcda
+CoreData.gcno
+ObjectiveC.gcda
+ObjectiveC.gcno

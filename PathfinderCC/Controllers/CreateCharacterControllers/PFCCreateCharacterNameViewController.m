@@ -7,6 +7,7 @@
 //
 
 #import "PFCCreateCharacterNameViewController.h"
+#import "PathfinderCC-Swift.h"
 
 @interface PFCCreateCharacterNameViewController ()
 
@@ -35,7 +36,7 @@
 - (IBAction)save:(id)sender
 {
     self.character.name = self.nameTextField.text;
-    self.character.age = [self.ageTextField.text integerValue];
+    self.character.age = @([self.ageTextField.text integerValue]);
     
     if (self.genderSegmentedControl.selectedSegmentIndex == 0)
         self.character.gender = PFCGenderMale;
@@ -65,23 +66,23 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return [self.alignments count];
+    return (NSInteger)[self.alignments count];
 }
 
 #pragma mark - UIPickerViewDelegate
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    if (self.alignments.count > row)
-        return [PFCAlignment displayNameForAlignment: self.alignments[row]];
+    if (self.alignments.count > (NSUInteger)row)
+        return [PFCAlignment displayNameForAlignment: self.alignments[(NSUInteger)row]];
     
     return [PFCAlignment displayNameForAlignment: PFCAlignmentLawfulGood];
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    if (self.alignments.count > row)
-        self.selectedAlignment = self.alignments[row];
+    if (self.alignments.count > (NSUInteger)row)
+        self.selectedAlignment = self.alignments[(NSUInteger)row];
     
     [self.alignmentButton setTitle:[PFCAlignment displayNameForAlignment:self.selectedAlignment] forState:UIControlStateNormal];
 }
