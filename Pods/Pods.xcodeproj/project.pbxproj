@@ -986,23 +986,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					69789196E8DBDA67E60BD6C746B68285 = {
-						DevelopmentTeam = 37CAHGRH45;
-					};
-					740EE80ADB6AB85D773FB46D7A08F9C7 = {
-						DevelopmentTeam = 37CAHGRH45;
-					};
-					7ECA96D6C90DAF876C8DEBD9C44F70F9 = {
-						DevelopmentTeam = 37CAHGRH45;
-					};
-					BCB13CDF5AD4DCA2BA0D08522E4CBCF8 = {
-						DevelopmentTeam = 37CAHGRH45;
-					};
-					D58D76EC529B4A92F3E5EDADE0A96661 = {
-						DevelopmentTeam = 37CAHGRH45;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1172,7 +1155,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9AD147BC3A52F27BA30C6247D572F200 /* OCMock.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1200,7 +1182,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A71E2C26ED4AF1B7FE12FEAF3E506678 /* Pods-PathfinderCCTests.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1231,7 +1212,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C52040B3BF4F8CF9BC6D4CC05028C52D /* Pods-PathfinderCC.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1301,7 +1281,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D14121587807E1687DE070B6E4E40A16 /* MagicalRecord.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1363,7 +1342,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C36F8A7DCC083460BCC9E0C03CAA0C92 /* FastEasyMapping.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1391,7 +1369,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 270E8CA3F5FC0854F1BF0E056FDE0CF4 /* Pods-PathfinderCC.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1422,7 +1399,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9AD147BC3A52F27BA30C6247D572F200 /* OCMock.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1450,7 +1426,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C36F8A7DCC083460BCC9E0C03CAA0C92 /* FastEasyMapping.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1478,7 +1453,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4CBF2CA8A74F141538176BAD2EF51C00 /* Pods-PathfinderCCTests.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1509,7 +1483,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D14121587807E1687DE070B6E4E40A16 /* MagicalRecord.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

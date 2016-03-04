@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-@objc enum AbilityType : Int {
+@objc enum AbilityType : Int16 {
     case Strength
     case Dexterity
     case Constitution
@@ -21,7 +21,7 @@ import CoreData
 @objc(AbilityScore)
 class AbilityScore: NSManagedObject {
 
-    class func insertItemWithBaseScore(baseScore: NSNumber, type: AbilityType) -> AbilityScore {
+    class func insertItemWithBaseScore(baseScore: Int16, type: AbilityType) -> AbilityScore {
         
         let abilityScore = AbilityScore.MR_createEntity()!
         abilityScore.baseScore = baseScore

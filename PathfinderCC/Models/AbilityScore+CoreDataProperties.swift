@@ -2,7 +2,7 @@
 //  AbilityScore+CoreDataProperties.swift
 //  
 //
-//  Created by Amanda Chappell on 3/2/16.
+//  Created by Amanda Chappell on 3/3/16.
 //
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,11 +14,12 @@ import CoreData
 
 extension AbilityScore {
 
-    @NSManaged var abilityModifier: NSNumber?
-    @NSManaged var baseScore: NSNumber?
-    @NSManaged var tempAdjustment: NSNumber?
-    @NSManaged var tempModifier: NSNumber?
-    @NSManaged var type: NSNumber?
+    @NSManaged var abilityModifier: Int16
+    @NSManaged var baseScore: Int16
+    @NSManaged var tempAdjustment: Int16
+    @NSManaged var tempModifier: Int16
+    @NSManaged var type: Int16
+    @NSManaged var character: Character?
     @NSManaged var race: Race?
 
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import MagicalRecord
 
 @objc(Character)
 class Character: NSManagedObject {
@@ -25,41 +26,60 @@ class Character: NSManagedObject {
         return Character.MR_fetchAllWithDelegate(nil)
     }
     
-    func abilityScoreOfType(abilityType: AbilityType) -> AbilityScore? {
-        if let abilityScores = baseAbilityScores {
-            for abilityScore in abilityScores as! Set<AbilityScore> {
-                if let type = abilityScore.type {
-                    if type.integerValue == abilityType.rawValue {
-                        return abilityScore
-                    }
+    class func selectedCharacter() -> Character? {
+        return Character.MR_findFirstByAttribute("selected", withValue: 1)
+    }
+    
+    class func setSelectedCharacter(character: Character) {
+        MagicalRecord.saveWithBlock { (context) -> Void in
+            if let selectedCharacters = Character.MR_findAllWithPredicate(NSPredicate(format: "selected ==1")) as! [Character]? {
+                for selectedCharacter in selectedCharacters {
+                    selectedCharacter.selected = false
                 }
+            }
+            
+            character.selected = true
+        }
+    }
+    
+    class func characterWithName(name: String) -> Character? {
+        return Character.MR_findFirstByAttribute("name", withValue: name)
+    }
+    
+    func abilityScoreOfType(abilityType: AbilityType) -> AbilityScore {
+        for abilityScore in baseAbilityScores as! Set<AbilityScore> {
+            if abilityScore.type == abilityType.rawValue {
+                return abilityScore
             }
         }
         
-        return nil
+        let defaultAbilityScore = AbilityScore.MR_createEntity()!
+        defaultAbilityScore.baseScore = 10
+        defaultAbilityScore.type = abilityType.rawValue
+        return defaultAbilityScore
     }
     
-    func strength() -> AbilityScore? {
+    func strength() -> AbilityScore {
         return abilityScoreOfType(.Strength)
     }
     
-    func dexterity() -> AbilityScore? {
+    func dexterity() -> AbilityScore {
         return abilityScoreOfType(.Dexterity)
     }
     
-    func constitution() -> AbilityScore? {
+    func constitution() -> AbilityScore {
         return abilityScoreOfType(.Constitution)
     }
     
-    func intelligence() -> AbilityScore? {
+    func intelligence() -> AbilityScore {
         return abilityScoreOfType(.Intelligence)
     }
     
-    func wisdom() -> AbilityScore? {
+    func wisdom() -> AbilityScore {
         return abilityScoreOfType(.Wisdom)
     }
     
-    func charisma() -> AbilityScore? {
+    func charisma() -> AbilityScore {
         return abilityScoreOfType(.Charisma)
     }
 
