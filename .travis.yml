@@ -4,7 +4,7 @@ xcode_workspace: PathfinderCC.xcworkspace
 xcode_scheme: PathfinderCCTravis
 xcode_sdk: iphonesimulator9.2
 script:
-  - xctool -workspace PathfinderCC.xcworkspace -scheme PathfindeCCTravis build test -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+  - xcodebuild test -workspace PathfinderCC.xcworkspace -scheme PathfinderCCTravis -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2'
 after_success:
 - bash <(curl -s https://codecov.io/bash)
 before_script:
