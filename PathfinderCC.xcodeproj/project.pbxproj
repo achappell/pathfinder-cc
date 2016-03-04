@@ -14,7 +14,6 @@
 		C817C25C1C88D8AB00C21742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C817C25A1C88D8AB00C21742 /* Main.storyboard */; };
 		C817C2611C88D8AB00C21742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C817C2601C88D8AB00C21742 /* Assets.xcassets */; };
 		C817C2641C88D8AB00C21742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C817C2621C88D8AB00C21742 /* LaunchScreen.storyboard */; };
-		C817C26F1C88D8AB00C21742 /* PathfinderCCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C26E1C88D8AB00C21742 /* PathfinderCCTests.swift */; };
 		C817C27A1C88D8AB00C21742 /* PathfinderCCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2791C88D8AB00C21742 /* PathfinderCCUITests.swift */; };
 		C817C2891C88D90700C21742 /* CoreRulebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C817C2871C88D90700C21742 /* CoreRulebook.xcdatamodeld */; };
 		C817C2951C88D91700C21742 /* AbilityScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C28C1C88D91700C21742 /* AbilityScore.swift */; };
@@ -29,6 +28,9 @@
 		C871BE541C89E1D000FE8E2D /* CreateCharacterAbilityScoreViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871BE531C89E1D000FE8E2D /* CreateCharacterAbilityScoreViewControllerTests.swift */; };
 		C88EE2F31C8A130100405F76 /* MenuViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EE2F21C8A130100405F76 /* MenuViewControllerTests.swift */; };
 		C88EE2F61C8A165D00405F76 /* CoreRulebookCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EE2F51C8A165D00405F76 /* CoreRulebookCoordinator.swift */; };
+		C88EE2F81C8A1E2500405F76 /* ScoreLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EE2F71C8A1E2500405F76 /* ScoreLabel.swift */; };
+		C88EE2FB1C8A1F7E00405F76 /* AbilityScoreCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EE2FA1C8A1F7E00405F76 /* AbilityScoreCollectionViewCellTests.swift */; };
+		C88EE2FD1C8A20CD00405F76 /* CharacterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EE2FC1C8A20CD00405F76 /* CharacterHelper.swift */; };
 		C8E1FFAD1C891FA70097FF62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFAC1C891FA70097FF62 /* Constants.swift */; };
 		C8E1FFB21C8922CE0097FF62 /* AbilityScoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFB01C8922CE0097FF62 /* AbilityScoreCollectionViewCell.swift */; };
 		C8E1FFB31C8922CE0097FF62 /* CharacterSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFB11C8922CE0097FF62 /* CharacterSheetViewController.swift */; };
@@ -70,7 +72,6 @@
 		C817C2631C88D8AB00C21742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C817C2651C88D8AB00C21742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C817C26A1C88D8AB00C21742 /* PathfinderCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PathfinderCCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C817C26E1C88D8AB00C21742 /* PathfinderCCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathfinderCCTests.swift; sourceTree = "<group>"; };
 		C817C2701C88D8AB00C21742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C817C2751C88D8AB00C21742 /* PathfinderCCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PathfinderCCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C817C2791C88D8AB00C21742 /* PathfinderCCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathfinderCCUITests.swift; sourceTree = "<group>"; };
@@ -88,6 +89,9 @@
 		C871BE531C89E1D000FE8E2D /* CreateCharacterAbilityScoreViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCharacterAbilityScoreViewControllerTests.swift; sourceTree = "<group>"; };
 		C88EE2F21C8A130100405F76 /* MenuViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewControllerTests.swift; sourceTree = "<group>"; };
 		C88EE2F51C8A165D00405F76 /* CoreRulebookCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreRulebookCoordinator.swift; sourceTree = "<group>"; };
+		C88EE2F71C8A1E2500405F76 /* ScoreLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreLabel.swift; sourceTree = "<group>"; };
+		C88EE2FA1C8A1F7E00405F76 /* AbilityScoreCollectionViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbilityScoreCollectionViewCellTests.swift; sourceTree = "<group>"; };
+		C88EE2FC1C8A20CD00405F76 /* CharacterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterHelper.swift; sourceTree = "<group>"; };
 		C8E1FFAC1C891FA70097FF62 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C8E1FFB01C8922CE0097FF62 /* AbilityScoreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbilityScoreCollectionViewCell.swift; sourceTree = "<group>"; };
 		C8E1FFB11C8922CE0097FF62 /* CharacterSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSheetViewController.swift; sourceTree = "<group>"; };
@@ -192,10 +196,11 @@
 		C817C26D1C88D8AB00C21742 /* PathfinderCCTests */ = {
 			isa = PBXGroup;
 			children = (
-				C817C26E1C88D8AB00C21742 /* PathfinderCCTests.swift */,
+				C88EE2F91C8A1F6800405F76 /* CharacterSheet */,
 				C817C2701C88D8AB00C21742 /* Info.plist */,
 				C871BE531C89E1D000FE8E2D /* CreateCharacterAbilityScoreViewControllerTests.swift */,
 				C88EE2F21C8A130100405F76 /* MenuViewControllerTests.swift */,
+				C88EE2FC1C8A20CD00405F76 /* CharacterHelper.swift */,
 			);
 			path = PathfinderCCTests;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			children = (
 				C8E1FFB01C8922CE0097FF62 /* AbilityScoreCollectionViewCell.swift */,
 				C8E1FFB11C8922CE0097FF62 /* CharacterSheetViewController.swift */,
+				C88EE2F71C8A1E2500405F76 /* ScoreLabel.swift */,
 			);
 			path = CharacterSheet;
 			sourceTree = "<group>";
@@ -266,6 +272,14 @@
 				C88EE2F51C8A165D00405F76 /* CoreRulebookCoordinator.swift */,
 			);
 			path = CoreRulebook;
+			sourceTree = "<group>";
+		};
+		C88EE2F91C8A1F6800405F76 /* CharacterSheet */ = {
+			isa = PBXGroup;
+			children = (
+				C88EE2FA1C8A1F7E00405F76 /* AbilityScoreCollectionViewCellTests.swift */,
+			);
+			path = CharacterSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,6 +523,7 @@
 				C817C2571C88D8AB00C21742 /* AppDelegate.swift in Sources */,
 				C88EE2F61C8A165D00405F76 /* CoreRulebookCoordinator.swift in Sources */,
 				C8E1FFBB1C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift in Sources */,
+				C88EE2F81C8A1E2500405F76 /* ScoreLabel.swift in Sources */,
 				C817C29B1C88D91700C21742 /* Race.swift in Sources */,
 				C817C2951C88D91700C21742 /* AbilityScore.swift in Sources */,
 				C8E1FFBA1C892D890097FF62 /* AbilityScore+CoreDataProperties.swift in Sources */,
@@ -526,9 +541,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88EE2FB1C8A1F7E00405F76 /* AbilityScoreCollectionViewCellTests.swift in Sources */,
+				C88EE2FD1C8A20CD00405F76 /* CharacterHelper.swift in Sources */,
 				C88EE2F31C8A130100405F76 /* MenuViewControllerTests.swift in Sources */,
 				C871BE541C89E1D000FE8E2D /* CreateCharacterAbilityScoreViewControllerTests.swift in Sources */,
-				C817C26F1C88D8AB00C21742 /* PathfinderCCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

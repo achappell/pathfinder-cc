@@ -11,33 +11,33 @@ import Foundation
 
 class AbilityScoreCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet var strengthLabel: UILabel!
-    @IBOutlet var dexterityLabel: UILabel!
-    @IBOutlet var constitutionLabel: UILabel!
-    @IBOutlet var intelligenceLabel: UILabel!
-    @IBOutlet var wisdomLabel: UILabel!
-    @IBOutlet var charismaLabel: UILabel!
+    @IBOutlet var strengthLabel: ScoreLabel!
+    @IBOutlet var dexterityLabel: ScoreLabel!
+    @IBOutlet var constitutionLabel: ScoreLabel!
+    @IBOutlet var intelligenceLabel: ScoreLabel!
+    @IBOutlet var wisdomLabel: ScoreLabel!
+    @IBOutlet var charismaLabel: ScoreLabel!
     
-    @IBOutlet var strengthModLabel: UILabel!
-    @IBOutlet var dexterityModLabel: UILabel!
-    @IBOutlet var constitutionModLabel: UILabel!
-    @IBOutlet var intelligenceModLabel: UILabel!
-    @IBOutlet var wisdomModLabel: UILabel!
-    @IBOutlet var charismaModLabel: UILabel!
+    @IBOutlet var strengthModLabel: ScoreLabel!
+    @IBOutlet var dexterityModLabel: ScoreLabel!
+    @IBOutlet var constitutionModLabel: ScoreLabel!
+    @IBOutlet var intelligenceModLabel: ScoreLabel!
+    @IBOutlet var wisdomModLabel: ScoreLabel!
+    @IBOutlet var charismaModLabel: ScoreLabel!
     
-    @IBOutlet var strengthTempAdjLabel: UILabel!
-    @IBOutlet var dexterityTempAdjLabel: UILabel!
-    @IBOutlet var constitutionTempAdjLabel: UILabel!
-    @IBOutlet var intelligenceTempAdjLabel: UILabel!
-    @IBOutlet var wisdomTempAdjLabel: UILabel!
-    @IBOutlet var charismaTempAdjLabel: UILabel!
+    @IBOutlet var strengthTempAdjLabel: ScoreLabel!
+    @IBOutlet var dexterityTempAdjLabel: ScoreLabel!
+    @IBOutlet var constitutionTempAdjLabel: ScoreLabel!
+    @IBOutlet var intelligenceTempAdjLabel: ScoreLabel!
+    @IBOutlet var wisdomTempAdjLabel: ScoreLabel!
+    @IBOutlet var charismaTempAdjLabel: ScoreLabel!
     
-    @IBOutlet var strengthTempModLabel: UILabel!
-    @IBOutlet var dexterityTempModLabel: UILabel!
-    @IBOutlet var constitutionTempModLabel: UILabel!
-    @IBOutlet var intelligenceTempModLabel: UILabel!
-    @IBOutlet var wisdomTempModLabel: UILabel!
-    @IBOutlet var charismaTempModLabel: UILabel!
+    @IBOutlet var strengthTempModLabel: ScoreLabel!
+    @IBOutlet var dexterityTempModLabel: ScoreLabel!
+    @IBOutlet var constitutionTempModLabel: ScoreLabel!
+    @IBOutlet var intelligenceTempModLabel: ScoreLabel!
+    @IBOutlet var wisdomTempModLabel: ScoreLabel!
+    @IBOutlet var charismaTempModLabel: ScoreLabel!
     
     var character : Character? {
         didSet {
@@ -72,61 +72,6 @@ class AbilityScoreCollectionViewCell: UICollectionViewCell {
                 charismaTempModLabel.text = String(format: "%\(2)d", character.charisma().tempModifier)
             }
         }
-    }
-    
-    func configureViews() {
-        
-        strengthLabel.layer.borderColor = UIColor.blackColor().CGColor
-        strengthLabel.layer.borderWidth = 1
-        dexterityLabel.layer.borderColor = UIColor.blackColor().CGColor
-        dexterityLabel.layer.borderWidth = 1
-        constitutionLabel.layer.borderColor = UIColor.blackColor().CGColor
-        constitutionLabel.layer.borderWidth = 1
-        intelligenceLabel.layer.borderColor = UIColor.blackColor().CGColor
-        intelligenceLabel.layer.borderWidth = 1
-        wisdomLabel.layer.borderColor = UIColor.blackColor().CGColor
-        wisdomLabel.layer.borderWidth = 1
-        charismaLabel.layer.borderColor = UIColor.blackColor().CGColor
-        charismaLabel.layer.borderWidth = 1
-        
-        strengthModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        strengthModLabel.layer.borderWidth = 1
-        dexterityModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        dexterityModLabel.layer.borderWidth = 1
-        constitutionModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        constitutionModLabel.layer.borderWidth = 1
-        intelligenceModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        intelligenceModLabel.layer.borderWidth = 1
-        wisdomModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        wisdomModLabel.layer.borderWidth = 1
-        charismaModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        charismaModLabel.layer.borderWidth = 1
-        
-        strengthTempAdjLabel.layer.borderColor = UIColor.blackColor().CGColor
-        strengthTempAdjLabel.layer.borderWidth = 1
-        dexterityTempAdjLabel.layer.borderColor = UIColor.blackColor().CGColor
-        dexterityTempAdjLabel.layer.borderWidth = 1
-        constitutionTempAdjLabel.layer.borderColor = UIColor.blackColor().CGColor
-        constitutionTempAdjLabel.layer.borderWidth = 1
-        intelligenceTempAdjLabel.layer.borderColor = UIColor.blackColor().CGColor
-        intelligenceTempAdjLabel.layer.borderWidth = 1
-        wisdomTempAdjLabel.layer.borderColor = UIColor.blackColor().CGColor
-        wisdomTempAdjLabel.layer.borderWidth = 1
-        charismaTempAdjLabel.layer.borderColor = UIColor.blackColor().CGColor
-        charismaTempAdjLabel.layer.borderWidth = 1
-        
-        strengthTempModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        strengthTempModLabel.layer.borderWidth = 1
-        dexterityTempModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        dexterityTempModLabel.layer.borderWidth = 1
-        constitutionTempModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        constitutionTempModLabel.layer.borderWidth = 1
-        intelligenceTempModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        intelligenceTempModLabel.layer.borderWidth = 1
-        wisdomTempModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        wisdomTempModLabel.layer.borderWidth = 1
-        charismaTempModLabel.layer.borderColor = UIColor.blackColor().CGColor
-        charismaTempModLabel.layer.borderWidth = 1
     }
     
 }

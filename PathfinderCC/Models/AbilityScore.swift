@@ -25,7 +25,7 @@ class AbilityScore: NSManagedObject {
         
         let abilityScore = AbilityScore.MR_createEntity()!
         abilityScore.baseScore = baseScore
-    
+        abilityScore.type = type.rawValue
     
         return abilityScore
     }
