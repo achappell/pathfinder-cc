@@ -67,16 +67,6 @@
                ReferencedContainer = "container:PathfinderCC.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C817C2741C88D8AB00C21742"
-               BuildableName = "PathfinderCCUITests.xctest"
-               BlueprintName = "PathfinderCCUITests"
-               ReferencedContainer = "container:PathfinderCC.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
