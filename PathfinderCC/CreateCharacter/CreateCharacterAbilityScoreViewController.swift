@@ -11,7 +11,7 @@ import MagicalRecord
 
 extension UITextField {
     func hasValidText() -> Bool {
-        return self.text == "" || (self.text != nil)
+        return self.text != "" && (self.text != nil)
     }
 }
 
@@ -26,17 +26,12 @@ class CreateCharacterAbilityScoreViewController: UIViewController, UITextFieldDe
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var nextBarButtonItem: UIBarButtonItem!
     
-    var activeField: UITextField?
+    weak var activeField: UITextField?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        registerForKeyboardNotifications()
     }
     
     func registerForKeyboardNotifications() {
@@ -73,18 +68,17 @@ class CreateCharacterAbilityScoreViewController: UIViewController, UITextFieldDe
     }
     
     func keyboardWasShown(aNotification: NSNotification) {
-        let info = aNotification.userInfo
-        let kbSize = info![UIKeyboardFrameBeginUserInfoKey]?.CGRectValue.size
+        if let info = aNotification.userInfo, kbSize = info[UIKeyboardFrameBeginUserInfoKey]?.CGRectValue.size {
         
-        let contentInsets = UIEdgeInsetsMake(0, 0, kbSize!.height, 0)
-        scrollView.contentInset = contentInsets
-        scrollView.scrollIndicatorInsets = contentInsets
+            let contentInsets = UIEdgeInsetsMake(0, 0, kbSize.height, 0)
+            scrollView.contentInset = contentInsets
+            scrollView.scrollIndicatorInsets = contentInsets
         
-        view.frame.size.height -= kbSize!.height
-        if !CGRectContainsPoint(view.frame, activeField!.frame.origin) {
-            scrollView.scrollRectToVisible(activeField!.frame, animated: true)
+            view.frame.size.height -= kbSize.height
+            if !CGRectContainsPoint(view.frame, activeField!.frame.origin) {
+                scrollView.scrollRectToVisible(activeField!.frame, animated: true)
+            }
         }
-
     }
     
     func keyboardWillBeHidden(aNotification: NSNotification) {

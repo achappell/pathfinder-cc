@@ -23,11 +23,11 @@ class Character: NSManagedObject {
     }
     
     class func allCharactersFetchedResultsController() -> NSFetchedResultsController {
-        return Character.MR_fetchAllWithDelegate(nil)
+        return Character.MR_fetchAllSortedBy("name", ascending: true, withPredicate: nil, groupBy: nil, delegate: nil)
     }
     
-    class func selectedCharacter() -> Character? {
-        return Character.MR_findFirstByAttribute("selected", withValue: 1)
+    class func selectedCharacterFetchedResultsController(delegate: NSFetchedResultsControllerDelegate) -> NSFetchedResultsController {
+        return Character.MR_fetchAllGroupedBy(nil, withPredicate: NSPredicate(format: "selected=1"), sortedBy: nil, ascending: true, delegate: delegate)
     }
     
     class func setSelectedCharacter(character: Character) {

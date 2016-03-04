@@ -10,11 +10,11 @@
         <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Race" inverseName="modifiers" inverseEntity="Race" syncable="YES"/>
     </entity>
     <entity name="Character" representedClassName="Character" syncable="YES">
-        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="age" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="alignment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="selected" attributeType="Boolean" syncable="YES"/>
         <relationship name="baseAbilityScores" toMany="YES" minCount="6" maxCount="6" deletionRule="Nullify" destinationEntity="AbilityScore" inverseName="character" inverseEntity="AbilityScore" syncable="YES"/>
         <fetchedProperty name="fetchedProperty" optional="YES" transient="YES" syncable="YES">
             <fetchRequest name="fetchedPropertyFetchRequest" entity="Character"/>

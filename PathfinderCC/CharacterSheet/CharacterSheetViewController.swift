@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
-class CharacterSheetViewController: UICollectionViewController {
+class CharacterSheetViewController: UICollectionViewController, NSFetchedResultsControllerDelegate {
     
-    var character : Character? {
-        return Character.selectedCharacter()
-    }
+    var character : Character?
+    lazy var characterFetchedResultsController : NSFetchedResultsController = Character.selectedCharacterFetchedResultsController(self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +68,17 @@ class CharacterSheetViewController: UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+    }
+    
+    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+        if let character = anObject as? Character {
+            if type == .Delete {
+                self.character = nil
+            } else {
+                self.character = character
+            }
+            collectionView?.reloadData()
+        }
     }
 
 }
