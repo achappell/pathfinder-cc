@@ -92,16 +92,8 @@ class CreateCharacterAbilityScoreViewController: UIViewController, UITextFieldDe
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if textField == strengthTextField {
-            dexterityTextField.becomeFirstResponder()
-        } else if textField == dexterityTextField {
-            constitutionTextField.becomeFirstResponder()
-        } else if textField == constitutionTextField {
-            intelligenceTextField.becomeFirstResponder()
-        } else if textField == intelligenceTextField {
-            wisdomTextField.becomeFirstResponder()
-        } else if textField == wisdomTextField {
-            charismaTextField.becomeFirstResponder()
+        if let textField = nextTextField(textField) {
+            textField.becomeFirstResponder()
         } else {
             textField.resignFirstResponder()
         }
@@ -109,6 +101,22 @@ class CreateCharacterAbilityScoreViewController: UIViewController, UITextFieldDe
         nextBarButtonItem.enabled = shouldAllowNextNavigation()
         
         return true
+    }
+    
+    func nextTextField(textField: UITextField) -> UITextField? {
+        if textField == strengthTextField {
+            return dexterityTextField
+        } else if textField == dexterityTextField {
+            return constitutionTextField
+        } else if textField == constitutionTextField {
+            return intelligenceTextField
+        } else if textField == intelligenceTextField {
+            return wisdomTextField
+        } else if textField == wisdomTextField {
+            return charismaTextField
+        }
+
+        return nil
     }
 
     @IBAction func cancel(sender: AnyObject) {

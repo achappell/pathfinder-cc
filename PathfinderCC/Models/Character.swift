@@ -31,7 +31,7 @@ class Character: NSManagedObject {
     }
     
     class func setSelectedCharacter(character: Character) {
-        MagicalRecord.saveWithBlock { (context) -> Void in
+        MagicalRecord.saveWithBlockAndWait { (context) -> Void in
             if let selectedCharacters = Character.MR_findAllWithPredicate(NSPredicate(format: "selected ==1")) as! [Character]? {
                 for selectedCharacter in selectedCharacters {
                     selectedCharacter.selected = false

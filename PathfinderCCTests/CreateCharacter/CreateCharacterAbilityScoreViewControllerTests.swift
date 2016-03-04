@@ -37,6 +37,7 @@ class CreateCharacterAbilityScoreViewControllerTests: XCTestCase {
     
     var viewController : CreateCharacterAbilityScoreViewController!
     var viewControllerMock : CreateCharacterAbilityMock!
+    var expectation : XCTestExpectation!
 
     override func setUp() {
         super.setUp()
@@ -168,5 +169,35 @@ class CreateCharacterAbilityScoreViewControllerTests: XCTestCase {
         
         XCTAssertNotNil(character, "Character was not created correctly")
         XCTAssertEqual(character.baseAbilityScores?.count, 6, "There should be 6 ability scores on the character now")
+    }
+    
+    func testSetActiveFieldOnResponder() {
+        viewController.textFieldDidBeginEditing(viewController.strengthTextField)
+        
+        XCTAssertEqual(viewController.activeField, viewController.strengthTextField)
+    }
+    
+    func testDexAfterStr() {
+        XCTAssertEqual(viewController.nextTextField(viewController.strengthTextField), viewController.dexterityTextField)
+    }
+    
+    func testConAfterDex() {
+        XCTAssertEqual(viewController.nextTextField(viewController.dexterityTextField), viewController.constitutionTextField)
+    }
+    
+    func testIntAfterCon() {
+        XCTAssertEqual(viewController.nextTextField(viewController.constitutionTextField), viewController.intelligenceTextField)
+    }
+    
+    func testWisAfterInt() {
+        XCTAssertEqual(viewController.nextTextField(viewController.intelligenceTextField), viewController.wisdomTextField)
+    }
+    
+    func testChaAfterWis() {
+        XCTAssertEqual(viewController.nextTextField(viewController.wisdomTextField), viewController.charismaTextField)
+    }
+    
+    func testNothingAfterCha() {
+        XCTAssertNil(viewController.nextTextField(viewController.charismaTextField))
     }
 }

@@ -21,8 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         MagicalRecord.setupCoreDataStack()
         
-        let tabBarController = self.window?.rootViewController as! UITabBarController
-        
         return true
     }
 

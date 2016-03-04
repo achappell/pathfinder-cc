@@ -15,17 +15,6 @@ class CharacterListViewController: UIViewController, FetchedResultsControllerDat
         return FetchedResultsControllerDataSource(tableView: tableView, fetchedResultsController: Character.allCharactersFetchedResultsController(), reuseIdentifier: "Cell")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -38,7 +27,7 @@ class CharacterListViewController: UIViewController, FetchedResultsControllerDat
         fetchedResultsControllerDataSource.paused = true
     }
     
-    func fetchedResultsControllerDataSource(deleteObject: AnyObject) {
+    func fetchedResultsControllerDataSource(deleteObject deleteObject: AnyObject) {
         if let character = deleteObject as? Character {
             let actionName = String(format: NSLocalizedString("Delete \(character.name)", comment: "Delete undo action name"))
             undoManager?.setActionName(actionName)

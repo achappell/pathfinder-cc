@@ -11,7 +11,7 @@ import CoreData
 
 protocol FetchedResultsControllerDataSourceDelegate {
     func fetchedResultsControllerDataSource(inout configureCell: UITableViewCell, withObject: AnyObject) -> Void
-    func fetchedResultsControllerDataSource(deleteObject: AnyObject) -> Void
+    func fetchedResultsControllerDataSource(deleteObject deleteObject: AnyObject) -> Void
 }
 
 class FetchedResultsControllerDataSource : NSObject, UITableViewDataSource, NSFetchedResultsControllerDelegate {
@@ -87,7 +87,7 @@ class FetchedResultsControllerDataSource : NSObject, UITableViewDataSource, NSFe
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             if let delegate = delegate {
-                delegate.fetchedResultsControllerDataSource(self.fetchedResultsController.objectAtIndexPath(indexPath))
+                delegate.fetchedResultsControllerDataSource(deleteObject: self.fetchedResultsController.objectAtIndexPath(indexPath))
             }
         }
     }
