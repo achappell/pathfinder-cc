@@ -10,7 +10,6 @@
 		57270205A98CBB246FDB47B4 /* Pods_PathfinderCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F63631E885683C3D88981A /* Pods_PathfinderCC.framework */; };
 		72124284DC6E9E3D73F8FD6A /* Pods_PathfinderCCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4C123CC7FDA3A92FDDA5A8 /* Pods_PathfinderCCTests.framework */; };
 		C817C2571C88D8AB00C21742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2561C88D8AB00C21742 /* AppDelegate.swift */; };
-		C817C2591C88D8AB00C21742 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2581C88D8AB00C21742 /* ViewController.swift */; };
 		C817C25C1C88D8AB00C21742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C817C25A1C88D8AB00C21742 /* Main.storyboard */; };
 		C817C2611C88D8AB00C21742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C817C2601C88D8AB00C21742 /* Assets.xcassets */; };
 		C817C2641C88D8AB00C21742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C817C2621C88D8AB00C21742 /* LaunchScreen.storyboard */; };
@@ -42,6 +41,7 @@
 		C8E1FFBA1C892D890097FF62 /* AbilityScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFB61C892D890097FF62 /* AbilityScore+CoreDataProperties.swift */; };
 		C8E1FFBB1C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFB71C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift */; };
 		C8E1FFBD1C8947590097FF62 /* corerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = C8E1FFBC1C8947590097FF62 /* corerulebook.json */; };
+		C8FD15361C8A3E0C00473164 /* testcorerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = C8FD15351C8A3E0C00473164 /* testcorerulebook.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,6 @@
 		B6F63631E885683C3D88981A /* Pods_PathfinderCC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PathfinderCC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C817C2531C88D8AB00C21742 /* PathfinderCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathfinderCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C817C2561C88D8AB00C21742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C817C2581C88D8AB00C21742 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C817C25B1C88D8AB00C21742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C817C2601C88D8AB00C21742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C817C2631C88D8AB00C21742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		C8E1FFB61C892D890097FF62 /* AbilityScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AbilityScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C8E1FFB71C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreRulebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C8E1FFBC1C8947590097FF62 /* corerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = corerulebook.json; sourceTree = "<group>"; };
+		C8FD15351C8A3E0C00473164 /* testcorerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testcorerulebook.json; sourceTree = "<group>"; };
 		F6F11746032D1042BD80E926 /* Pods-PathfinderCC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCC.release.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCC/Pods-PathfinderCC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,7 +188,6 @@
 				C817C29C1C88DA2800C21742 /* CharacterSheet */,
 				C817C28A1C88D91700C21742 /* Models */,
 				C817C2561C88D8AB00C21742 /* AppDelegate.swift */,
-				C817C2581C88D8AB00C21742 /* ViewController.swift */,
 				C817C25A1C88D8AB00C21742 /* Main.storyboard */,
 				C817C2601C88D8AB00C21742 /* Assets.xcassets */,
 				C817C2621C88D8AB00C21742 /* LaunchScreen.storyboard */,
@@ -202,6 +201,7 @@
 		C817C26D1C88D8AB00C21742 /* PathfinderCCTests */ = {
 			isa = PBXGroup;
 			children = (
+				C8FD15351C8A3E0C00473164 /* testcorerulebook.json */,
 				C88EE3031C8A310D00405F76 /* Menu */,
 				C88EE2FE1C8A2E6100405F76 /* CreateCharacter */,
 				C88EE2F91C8A1F6800405F76 /* CharacterSheet */,
@@ -428,6 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FD15361C8A3E0C00473164 /* testcorerulebook.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +542,6 @@
 				C8E1FFAD1C891FA70097FF62 /* Constants.swift in Sources */,
 				C8E1FFB91C892D890097FF62 /* Race+CoreDataProperties.swift in Sources */,
 				C817C2A61C88DCB000C21742 /* MenuViewController.swift in Sources */,
-				C817C2591C88D8AB00C21742 /* ViewController.swift in Sources */,
 				C817C2891C88D90700C21742 /* CoreRulebook.xcdatamodeld in Sources */,
 				C817C2A31C88DC7800C21742 /* CreateCharacterNameViewController.swift in Sources */,
 				C8E1FFB21C8922CE0097FF62 /* AbilityScoreCollectionViewCell.swift in Sources */,
