@@ -12,6 +12,8 @@ import CoreData
 @objc(CoreRulebook)
 class CoreRulebook: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+    class func coreRulebook() -> CoreRulebook? {
+        return CoreRulebook.MR_findFirst()
+    }
 
 }

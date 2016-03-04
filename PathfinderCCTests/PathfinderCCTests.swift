@@ -1,40 +1,36 @@
 //
 //  PathfinderCCTests.swift
-//  PathfinderCC
+//  PathfinderCCTests
 //
-//  Created by Amanda Chappell on 3/2/16.
-//  Copyright © 2016 Amanda Chappell. All rights reserved.
+//  Created by Amanda Chappell on 3/3/16.
+//  Copyright © 2016 AmplifiedProjects. All rights reserved.
 //
 
 import XCTest
+@testable import PathfinderCC
 
 class PathfinderCCTests: XCTestCase {
     
-    var store : PFCStore {
-        return PFCStore()
-    }
-
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
 }

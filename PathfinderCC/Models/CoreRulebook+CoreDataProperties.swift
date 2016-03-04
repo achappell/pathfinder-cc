@@ -2,7 +2,7 @@
 //  CoreRulebook+CoreDataProperties.swift
 //  
 //
-//  Created by Amanda Chappell on 3/2/16.
+//  Created by Amanda Chappell on 3/3/16.
 //
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu

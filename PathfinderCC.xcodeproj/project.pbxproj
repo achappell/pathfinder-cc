@@ -7,384 +7,280 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE5B0CD2182D82990039E623 /* PFCWrittenTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5B0CD1182D82990039E623 /* PFCWrittenTextField.m */; };
-		C8B5BEC8181F57E500602206 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B5BEC7181F57E500602206 /* CoreData.framework */; };
-		C8B5BECB181F59B600602206 /* PFCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BECA181F59B600602206 /* PFCStore.m */; };
-		C8B5BED7181FE39900602206 /* PFCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BED6181FE39900602206 /* PFCMenuViewController.m */; };
-		C8B5BEDA1820970B00602206 /* PFCCharacterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BED91820970B00602206 /* PFCCharacterListViewController.m */; };
-		C8B5BEDE182097E500602206 /* PFCFetchedResultsControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEDD182097E500602206 /* PFCFetchedResultsControllerDataSource.m */; };
-		C8B5BEE218209DDF00602206 /* PFCCreateCharacterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BEE118209DDF00602206 /* PFCCreateCharacterNameViewController.m */; };
-		C8DA37641821E6BF00DBC2F7 /* PFCAlignment.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA37631821E6BF00DBC2F7 /* PFCAlignment.m */; };
-		C8DA37671821E92A00DBC2F7 /* PFCGender.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA37661821E92A00DBC2F7 /* PFCGender.m */; };
-		C8DCE4BD181DBA58008AD1B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */; };
-		C8DCE4BF181DBA58008AD1B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */; };
-		C8DCE4C1181DBA58008AD1B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4C0181DBA58008AD1B6 /* UIKit.framework */; };
-		C8DCE4C7181DBA58008AD1B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4C5181DBA58008AD1B6 /* InfoPlist.strings */; };
-		C8DCE4C9181DBA58008AD1B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE4C8181DBA58008AD1B6 /* main.m */; };
-		C8DCE4CD181DBA58008AD1B6 /* PFCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE4CC181DBA58008AD1B6 /* PFCAppDelegate.m */; };
-		C8DCE4D0181DBA58008AD1B6 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4CE181DBA58008AD1B6 /* Main_iPhone.storyboard */; };
-		C8DCE4D3181DBA58008AD1B6 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4D1181DBA58008AD1B6 /* Main_iPad.storyboard */; };
-		C8DCE4DB181DBA58008AD1B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4DA181DBA58008AD1B6 /* Images.xcassets */; };
-		C8DCE4E2181DBA58008AD1B6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4E1181DBA58008AD1B6 /* XCTest.framework */; };
-		C8DCE4E3181DBA58008AD1B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */; };
-		C8DCE4E4181DBA58008AD1B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DCE4C0181DBA58008AD1B6 /* UIKit.framework */; };
-		C8DCE4EC181DBA58008AD1B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8DCE4EA181DBA58008AD1B6 /* InfoPlist.strings */; };
-		C8DCE4EE181DBA58008AD1B6 /* PathfinderCCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE4ED181DBA58008AD1B6 /* PathfinderCCTests.m */; };
-		C8DCE4FE181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE4FC181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m */; };
-		C8DCE503181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE502181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m */; };
-		C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */; };
-		CB8CBD8A1495262012B141D9 /* Pods_PathfinderCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 879A0F2D10FEA719EB5B00FE /* Pods_PathfinderCC.framework */; };
-		E022993A1C87ED8E008AC991 /* Character+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02299321C87ED8E008AC991 /* Character+CoreDataProperties.swift */; };
-		E022993B1C87ED8E008AC991 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02299331C87ED8E008AC991 /* Character.swift */; };
-		E022993C1C87ED8E008AC991 /* Race+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02299341C87ED8E008AC991 /* Race+CoreDataProperties.swift */; };
-		E022993D1C87ED8E008AC991 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02299351C87ED8E008AC991 /* Race.swift */; };
-		E022993E1C87ED8E008AC991 /* AbilityScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02299361C87ED8E008AC991 /* AbilityScore+CoreDataProperties.swift */; };
-		E022993F1C87ED8E008AC991 /* AbilityScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02299371C87ED8E008AC991 /* AbilityScore.swift */; };
-		E02299401C87ED8E008AC991 /* CoreRulebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02299381C87ED8E008AC991 /* CoreRulebook+CoreDataProperties.swift */; };
-		E02299411C87ED8E008AC991 /* CoreRulebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02299391C87ED8E008AC991 /* CoreRulebook.swift */; };
-		E02299481C87F630008AC991 /* PathfinderCCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02299471C87F630008AC991 /* PathfinderCCTests.swift */; };
-		E02A3182191D9AF300F8ACCB /* (null) in Resources */ = {isa = PBXBuildFile; };
-		E02A3183191D9AF300F8ACCB /* (null) in Resources */ = {isa = PBXBuildFile; };
-		E0709AB21905FB840075E34C /* UITextField+PFC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0709AB11905FB840075E34C /* UITextField+PFC.m */; };
-		E0709AB4190600BA0075E34C /* PFCCharacterListViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0709AB3190600BA0075E34C /* PFCCharacterListViewControllerTests.m */; };
-		E072507F182DA7A800E523B6 /* CoreRulebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */; };
-		E09C3A7B1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E09C3A7A1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m */; };
-		E0E74A73184642D300F13FE9 /* PFCMenuViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A72184642D300F13FE9 /* PFCMenuViewControllerTests.m */; };
-		E0E74A771846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A761846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m */; };
-		E0E74A7A1846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A791846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m */; };
-		E0E74A7C1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A7B1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m */; };
-		E0E74A7F184680F900F13FE9 /* PFCCoreRulebookBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E74A7E184680F900F13FE9 /* PFCCoreRulebookBuilder.m */; };
-		E0E74A811846820300F13FE9 /* corerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = E0E74A801846820300F13FE9 /* corerulebook.json */; };
-		E0F296F51846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F296F41846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m */; };
-		E0F296F818468A9B0007B2B6 /* testcorerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = E0F296F6184689800007B2B6 /* testcorerulebook.json */; };
-		EE32828F41B7379032F9FA85 /* Pods_PathfinderCCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FB82987F561BF5948300E6 /* Pods_PathfinderCCTests.framework */; };
+		57270205A98CBB246FDB47B4 /* Pods_PathfinderCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F63631E885683C3D88981A /* Pods_PathfinderCC.framework */; };
+		72124284DC6E9E3D73F8FD6A /* Pods_PathfinderCCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4C123CC7FDA3A92FDDA5A8 /* Pods_PathfinderCCTests.framework */; };
+		C817C2571C88D8AB00C21742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2561C88D8AB00C21742 /* AppDelegate.swift */; };
+		C817C2591C88D8AB00C21742 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2581C88D8AB00C21742 /* ViewController.swift */; };
+		C817C25C1C88D8AB00C21742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C817C25A1C88D8AB00C21742 /* Main.storyboard */; };
+		C817C2611C88D8AB00C21742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C817C2601C88D8AB00C21742 /* Assets.xcassets */; };
+		C817C2641C88D8AB00C21742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C817C2621C88D8AB00C21742 /* LaunchScreen.storyboard */; };
+		C817C26F1C88D8AB00C21742 /* PathfinderCCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C26E1C88D8AB00C21742 /* PathfinderCCTests.swift */; };
+		C817C27A1C88D8AB00C21742 /* PathfinderCCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2791C88D8AB00C21742 /* PathfinderCCUITests.swift */; };
+		C817C2891C88D90700C21742 /* CoreRulebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C817C2871C88D90700C21742 /* CoreRulebook.xcdatamodeld */; };
+		C817C2951C88D91700C21742 /* AbilityScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C28C1C88D91700C21742 /* AbilityScore.swift */; };
+		C817C2971C88D91700C21742 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C28E1C88D91700C21742 /* Character.swift */; };
+		C817C2991C88D91700C21742 /* CoreRulebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2901C88D91700C21742 /* CoreRulebook.swift */; };
+		C817C29B1C88D91700C21742 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2931C88D91700C21742 /* Race.swift */; };
+		C817C2A11C88DC6500C21742 /* CreateCharacterAbilityScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2A01C88DC6500C21742 /* CreateCharacterAbilityScoreViewController.swift */; };
+		C817C2A31C88DC7800C21742 /* CreateCharacterNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2A21C88DC7800C21742 /* CreateCharacterNameViewController.swift */; };
+		C817C2A61C88DCB000C21742 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2A51C88DCB000C21742 /* MenuViewController.swift */; };
+		C817C2A81C88DCCF00C21742 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817C2A71C88DCCF00C21742 /* CharacterListViewController.swift */; };
+		C86FA5871C89CAA800404C82 /* FetchedResultsControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86FA5861C89CAA800404C82 /* FetchedResultsControllerDataSource.swift */; };
+		C871BE541C89E1D000FE8E2D /* CreateCharacterAbilityScoreViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871BE531C89E1D000FE8E2D /* CreateCharacterAbilityScoreViewControllerTests.swift */; };
+		C88EE2F31C8A130100405F76 /* MenuViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EE2F21C8A130100405F76 /* MenuViewControllerTests.swift */; };
+		C88EE2F61C8A165D00405F76 /* CoreRulebookCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EE2F51C8A165D00405F76 /* CoreRulebookCoordinator.swift */; };
+		C8E1FFAD1C891FA70097FF62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFAC1C891FA70097FF62 /* Constants.swift */; };
+		C8E1FFB21C8922CE0097FF62 /* AbilityScoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFB01C8922CE0097FF62 /* AbilityScoreCollectionViewCell.swift */; };
+		C8E1FFB31C8922CE0097FF62 /* CharacterSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFB11C8922CE0097FF62 /* CharacterSheetViewController.swift */; };
+		C8E1FFB81C892D890097FF62 /* Character+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFB41C892D890097FF62 /* Character+CoreDataProperties.swift */; };
+		C8E1FFB91C892D890097FF62 /* Race+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFB51C892D890097FF62 /* Race+CoreDataProperties.swift */; };
+		C8E1FFBA1C892D890097FF62 /* AbilityScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFB61C892D890097FF62 /* AbilityScore+CoreDataProperties.swift */; };
+		C8E1FFBB1C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFB71C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift */; };
+		C8E1FFBD1C8947590097FF62 /* corerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = C8E1FFBC1C8947590097FF62 /* corerulebook.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C8DCE4E5181DBA58008AD1B6 /* PBXContainerItemProxy */ = {
+		C817C26B1C88D8AB00C21742 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C8DCE4B1181DBA58008AD1B6 /* Project object */;
+			containerPortal = C817C24B1C88D8AB00C21742 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C8DCE4B8181DBA58008AD1B6;
+			remoteGlobalIDString = C817C2521C88D8AB00C21742;
+			remoteInfo = PathfinderCC;
+		};
+		C817C2761C88D8AB00C21742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C817C24B1C88D8AB00C21742 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C817C2521C88D8AB00C21742;
 			remoteInfo = PathfinderCC;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		39FB82987F561BF5948300E6 /* Pods_PathfinderCCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PathfinderCCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AC5AEF4146A2239DCF121E5 /* Pods-PathfinderCCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCCTests/Pods-PathfinderCCTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6B1694D5FBE5C11EA71E312C /* Pods-PathfinderCCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCCTests/Pods-PathfinderCCTests.release.xcconfig"; sourceTree = "<group>"; };
-		879A0F2D10FEA719EB5B00FE /* Pods_PathfinderCC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PathfinderCC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE5B0CD0182D82990039E623 /* PFCWrittenTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCWrittenTextField.h; sourceTree = "<group>"; };
-		BE5B0CD1182D82990039E623 /* PFCWrittenTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCWrittenTextField.m; sourceTree = "<group>"; };
-		C8B5BEC7181F57E500602206 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		C8B5BEC9181F59B600602206 /* PFCStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCStore.h; sourceTree = "<group>"; };
-		C8B5BECA181F59B600602206 /* PFCStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCStore.m; sourceTree = "<group>"; };
-		C8B5BED5181FE39900602206 /* PFCMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCMenuViewController.h; sourceTree = "<group>"; };
-		C8B5BED6181FE39900602206 /* PFCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCMenuViewController.m; sourceTree = "<group>"; };
-		C8B5BED81820970B00602206 /* PFCCharacterListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCharacterListViewController.h; sourceTree = "<group>"; };
-		C8B5BED91820970B00602206 /* PFCCharacterListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCharacterListViewController.m; sourceTree = "<group>"; };
-		C8B5BEDC182097E500602206 /* PFCFetchedResultsControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCFetchedResultsControllerDataSource.h; sourceTree = "<group>"; };
-		C8B5BEDD182097E500602206 /* PFCFetchedResultsControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCFetchedResultsControllerDataSource.m; sourceTree = "<group>"; };
-		C8B5BEE018209DDF00602206 /* PFCCreateCharacterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCreateCharacterNameViewController.h; sourceTree = "<group>"; };
-		C8B5BEE118209DDF00602206 /* PFCCreateCharacterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCreateCharacterNameViewController.m; sourceTree = "<group>"; };
-		C8DA37621821E6BF00DBC2F7 /* PFCAlignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCAlignment.h; sourceTree = "<group>"; };
-		C8DA37631821E6BF00DBC2F7 /* PFCAlignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCAlignment.m; sourceTree = "<group>"; };
-		C8DA37651821E92A00DBC2F7 /* PFCGender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCGender.h; sourceTree = "<group>"; };
-		C8DA37661821E92A00DBC2F7 /* PFCGender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCGender.m; sourceTree = "<group>"; };
-		C8DCE4B9181DBA58008AD1B6 /* PathfinderCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathfinderCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C8DCE4C0181DBA58008AD1B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C8DCE4C4181DBA58008AD1B6 /* PathfinderCC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PathfinderCC-Info.plist"; sourceTree = "<group>"; };
-		C8DCE4C6181DBA58008AD1B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C8DCE4C8181DBA58008AD1B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C8DCE4CA181DBA58008AD1B6 /* PathfinderCC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PathfinderCC-Prefix.pch"; sourceTree = "<group>"; };
-		C8DCE4CB181DBA58008AD1B6 /* PFCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFCAppDelegate.h; sourceTree = "<group>"; };
-		C8DCE4CC181DBA58008AD1B6 /* PFCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFCAppDelegate.m; sourceTree = "<group>"; };
-		C8DCE4CF181DBA58008AD1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		C8DCE4D2181DBA58008AD1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		C8DCE4DA181DBA58008AD1B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C8DCE4E0181DBA58008AD1B6 /* PathfinderCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PathfinderCCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8DCE4E1181DBA58008AD1B6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C8DCE4E9181DBA58008AD1B6 /* PathfinderCCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PathfinderCCTests-Info.plist"; sourceTree = "<group>"; };
-		C8DCE4EB181DBA58008AD1B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C8DCE4ED181DBA58008AD1B6 /* PathfinderCCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PathfinderCCTests.m; sourceTree = "<group>"; };
-		C8DCE4FB181DBF0B008AD1B6 /* PFCCharacterSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFCCharacterSheetViewController.h; path = PathfinderCC/Controllers/PFCCharacterSheetViewController.h; sourceTree = SOURCE_ROOT; };
-		C8DCE4FC181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFCCharacterSheetViewController.m; path = PathfinderCC/Controllers/PFCCharacterSheetViewController.m; sourceTree = SOURCE_ROOT; };
-		C8DCE501181DC084008AD1B6 /* PFCAbilityScoreCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCAbilityScoreCollectionViewCell.h; sourceTree = "<group>"; };
-		C8DCE502181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCAbilityScoreCollectionViewCell.m; sourceTree = "<group>"; };
-		C8DCE50D181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCreateCharacterAbilityScoreViewController.h; sourceTree = "<group>"; };
-		C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCreateCharacterAbilityScoreViewController.m; sourceTree = "<group>"; };
-		E022991F1C87EC6C008AC991 /* PathfinderCC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PathfinderCC-Bridging-Header.h"; sourceTree = "<group>"; };
-		E02299321C87ED8E008AC991 /* Character+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E02299331C87ED8E008AC991 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
-		E02299341C87ED8E008AC991 /* Race+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Race+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E02299351C87ED8E008AC991 /* Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
-		E02299361C87ED8E008AC991 /* AbilityScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AbilityScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E02299371C87ED8E008AC991 /* AbilityScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbilityScore.swift; sourceTree = "<group>"; };
-		E02299381C87ED8E008AC991 /* CoreRulebook+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreRulebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E02299391C87ED8E008AC991 /* CoreRulebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreRulebook.swift; sourceTree = "<group>"; };
-		E02299421C87F131008AC991 /* PathfinderCCTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PathfinderCCTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		E02299471C87F630008AC991 /* PathfinderCCTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderCCTests.swift; sourceTree = "<group>"; };
-		E0709AB01905FB840075E34C /* UITextField+PFC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PFC.h"; sourceTree = "<group>"; };
-		E0709AB11905FB840075E34C /* UITextField+PFC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PFC.m"; sourceTree = "<group>"; };
-		E0709AB3190600BA0075E34C /* PFCCharacterListViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCharacterListViewControllerTests.m; sourceTree = "<group>"; };
-		E072507E182DA7A800E523B6 /* CoreRulebook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreRulebook.xcdatamodel; sourceTree = "<group>"; };
-		E09C3A7A1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFCCreateCharacterAbilityScoreViewControllerTest.m; path = PathfinderCCTests/PFCCreateCharacterAbilityScoreViewControllerTest.m; sourceTree = SOURCE_ROOT; };
-		E0E74A72184642D300F13FE9 /* PFCMenuViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCMenuViewControllerTests.m; sourceTree = "<group>"; };
-		E0E74A761846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCharacterSheetViewControllerTests.m; sourceTree = "<group>"; };
-		E0E74A781846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCoreRulebookVersionCoordinator.h; sourceTree = "<group>"; };
-		E0E74A791846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCoreRulebookVersionCoordinator.m; sourceTree = "<group>"; };
-		E0E74A7B1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCreateCharacterNameViewControllerTests.m; sourceTree = "<group>"; };
-		E0E74A7D184680F900F13FE9 /* PFCCoreRulebookBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCCoreRulebookBuilder.h; sourceTree = "<group>"; };
-		E0E74A7E184680F900F13FE9 /* PFCCoreRulebookBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCoreRulebookBuilder.m; sourceTree = "<group>"; };
-		E0E74A801846820300F13FE9 /* corerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = corerulebook.json; sourceTree = "<group>"; };
-		E0F296F41846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCCoreRulebookVersionCoordinatorTests.m; sourceTree = "<group>"; };
-		E0F296F6184689800007B2B6 /* testcorerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testcorerulebook.json; sourceTree = "<group>"; };
-		F28BCAEEDCD56A9CB025DD5A /* Pods-PathfinderCC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCC.release.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCC/Pods-PathfinderCC.release.xcconfig"; sourceTree = "<group>"; };
-		FB1F725C26F423F86B558E05 /* Pods-PathfinderCC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCC/Pods-PathfinderCC.debug.xcconfig"; sourceTree = "<group>"; };
+		16D4FD7D0706E9CCE42C0394 /* Pods-PathfinderCCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCCTests/Pods-PathfinderCCTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D4C123CC7FDA3A92FDDA5A8 /* Pods_PathfinderCCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PathfinderCCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EFB2E5BD27FCB93CABA741 /* Pods-PathfinderCC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCC/Pods-PathfinderCC.debug.xcconfig"; sourceTree = "<group>"; };
+		A8BCDECA606A3F022C126719 /* Pods-PathfinderCCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCCTests/Pods-PathfinderCCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6F63631E885683C3D88981A /* Pods_PathfinderCC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PathfinderCC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C817C2531C88D8AB00C21742 /* PathfinderCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathfinderCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C817C2561C88D8AB00C21742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C817C2581C88D8AB00C21742 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C817C25B1C88D8AB00C21742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C817C2601C88D8AB00C21742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C817C2631C88D8AB00C21742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C817C2651C88D8AB00C21742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C817C26A1C88D8AB00C21742 /* PathfinderCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PathfinderCCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C817C26E1C88D8AB00C21742 /* PathfinderCCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathfinderCCTests.swift; sourceTree = "<group>"; };
+		C817C2701C88D8AB00C21742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C817C2751C88D8AB00C21742 /* PathfinderCCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PathfinderCCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C817C2791C88D8AB00C21742 /* PathfinderCCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathfinderCCUITests.swift; sourceTree = "<group>"; };
+		C817C27B1C88D8AB00C21742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C817C2881C88D90700C21742 /* CoreRulebook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreRulebook.xcdatamodel; sourceTree = "<group>"; };
+		C817C28C1C88D91700C21742 /* AbilityScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbilityScore.swift; sourceTree = "<group>"; };
+		C817C28E1C88D91700C21742 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		C817C2901C88D91700C21742 /* CoreRulebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreRulebook.swift; sourceTree = "<group>"; };
+		C817C2931C88D91700C21742 /* Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		C817C2A01C88DC6500C21742 /* CreateCharacterAbilityScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCharacterAbilityScoreViewController.swift; sourceTree = "<group>"; };
+		C817C2A21C88DC7800C21742 /* CreateCharacterNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCharacterNameViewController.swift; sourceTree = "<group>"; };
+		C817C2A51C88DCB000C21742 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C817C2A71C88DCCF00C21742 /* CharacterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
+		C86FA5861C89CAA800404C82 /* FetchedResultsControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerDataSource.swift; sourceTree = "<group>"; };
+		C871BE531C89E1D000FE8E2D /* CreateCharacterAbilityScoreViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCharacterAbilityScoreViewControllerTests.swift; sourceTree = "<group>"; };
+		C88EE2F21C8A130100405F76 /* MenuViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewControllerTests.swift; sourceTree = "<group>"; };
+		C88EE2F51C8A165D00405F76 /* CoreRulebookCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreRulebookCoordinator.swift; sourceTree = "<group>"; };
+		C8E1FFAC1C891FA70097FF62 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C8E1FFB01C8922CE0097FF62 /* AbilityScoreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbilityScoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		C8E1FFB11C8922CE0097FF62 /* CharacterSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSheetViewController.swift; sourceTree = "<group>"; };
+		C8E1FFB41C892D890097FF62 /* Character+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C8E1FFB51C892D890097FF62 /* Race+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Race+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C8E1FFB61C892D890097FF62 /* AbilityScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AbilityScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C8E1FFB71C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreRulebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C8E1FFBC1C8947590097FF62 /* corerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = corerulebook.json; sourceTree = "<group>"; };
+		F6F11746032D1042BD80E926 /* Pods-PathfinderCC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCC.release.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCC/Pods-PathfinderCC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C8DCE4B6181DBA58008AD1B6 /* Frameworks */ = {
+		C817C2501C88D8AB00C21742 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B5BEC8181F57E500602206 /* CoreData.framework in Frameworks */,
-				C8DCE4BF181DBA58008AD1B6 /* CoreGraphics.framework in Frameworks */,
-				C8DCE4C1181DBA58008AD1B6 /* UIKit.framework in Frameworks */,
-				C8DCE4BD181DBA58008AD1B6 /* Foundation.framework in Frameworks */,
-				CB8CBD8A1495262012B141D9 /* Pods_PathfinderCC.framework in Frameworks */,
+				57270205A98CBB246FDB47B4 /* Pods_PathfinderCC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8DCE4DD181DBA58008AD1B6 /* Frameworks */ = {
+		C817C2671C88D8AB00C21742 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8DCE4E2181DBA58008AD1B6 /* XCTest.framework in Frameworks */,
-				C8DCE4E4181DBA58008AD1B6 /* UIKit.framework in Frameworks */,
-				C8DCE4E3181DBA58008AD1B6 /* Foundation.framework in Frameworks */,
-				EE32828F41B7379032F9FA85 /* Pods_PathfinderCCTests.framework in Frameworks */,
+				72124284DC6E9E3D73F8FD6A /* Pods_PathfinderCCTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C817C2721C88D8AB00C21742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C8B5BEC3181F578000602206 /* CoreData */ = {
+		2760349168D78B32C0080C02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C8B5BEC9181F59B600602206 /* PFCStore.h */,
-				C8B5BECA181F59B600602206 /* PFCStore.m */,
-				E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */,
-				E0E74A781846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.h */,
-				E0E74A791846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m */,
-				E0E74A7D184680F900F13FE9 /* PFCCoreRulebookBuilder.h */,
-				E0E74A7E184680F900F13FE9 /* PFCCoreRulebookBuilder.m */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		C8B5BEDB182097BF00602206 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				C8B5BEDC182097E500602206 /* PFCFetchedResultsControllerDataSource.h */,
-				C8B5BEDD182097E500602206 /* PFCFetchedResultsControllerDataSource.m */,
-			);
-			path = DataSource;
-			sourceTree = "<group>";
-		};
-		C8B5BEDF18209D9200602206 /* CreateCharacterControllers */ = {
-			isa = PBXGroup;
-			children = (
-				C8DCE50D181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.h */,
-				C8DCE50E181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m */,
-				C8B5BEE018209DDF00602206 /* PFCCreateCharacterNameViewController.h */,
-				C8B5BEE118209DDF00602206 /* PFCCreateCharacterNameViewController.m */,
-			);
-			path = CreateCharacterControllers;
-			sourceTree = "<group>";
-		};
-		C8DA37611821E69600DBC2F7 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				C8DA37621821E6BF00DBC2F7 /* PFCAlignment.h */,
-				C8DA37631821E6BF00DBC2F7 /* PFCAlignment.m */,
-				C8DA37651821E92A00DBC2F7 /* PFCGender.h */,
-				C8DA37661821E92A00DBC2F7 /* PFCGender.m */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		C8DCE4B0181DBA58008AD1B6 = {
-			isa = PBXGroup;
-			children = (
-				C8DCE4C2181DBA58008AD1B6 /* PathfinderCC */,
-				C8DCE4E7181DBA58008AD1B6 /* PathfinderCCTests */,
-				C8DCE4BB181DBA58008AD1B6 /* Frameworks */,
-				C8DCE4BA181DBA58008AD1B6 /* Products */,
-				D14039F719AD28079B51C668 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		C8DCE4BA181DBA58008AD1B6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C8DCE4B9181DBA58008AD1B6 /* PathfinderCC.app */,
-				C8DCE4E0181DBA58008AD1B6 /* PathfinderCCTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C8DCE4BB181DBA58008AD1B6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C8B5BEC7181F57E500602206 /* CoreData.framework */,
-				C8DCE4BC181DBA58008AD1B6 /* Foundation.framework */,
-				C8DCE4BE181DBA58008AD1B6 /* CoreGraphics.framework */,
-				C8DCE4C0181DBA58008AD1B6 /* UIKit.framework */,
-				C8DCE4E1181DBA58008AD1B6 /* XCTest.framework */,
-				39FB82987F561BF5948300E6 /* Pods_PathfinderCCTests.framework */,
-				879A0F2D10FEA719EB5B00FE /* Pods_PathfinderCC.framework */,
+				B6F63631E885683C3D88981A /* Pods_PathfinderCC.framework */,
+				8D4C123CC7FDA3A92FDDA5A8 /* Pods_PathfinderCCTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C8DCE4C2181DBA58008AD1B6 /* PathfinderCC */ = {
+		39892E5792EBC85AAB3FB3E2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C8DA37611821E69600DBC2F7 /* Constants */,
-				C8B5BEDB182097BF00602206 /* DataSource */,
-				C8B5BEC3181F578000602206 /* CoreData */,
-				C8DCE504181DC4BF008AD1B6 /* Models */,
-				C8DCE500181DC02C008AD1B6 /* Views */,
-				C8DCE4F7181DBE27008AD1B6 /* Controllers */,
-				C8DCE4CB181DBA58008AD1B6 /* PFCAppDelegate.h */,
-				C8DCE4CC181DBA58008AD1B6 /* PFCAppDelegate.m */,
-				C8DCE4CE181DBA58008AD1B6 /* Main_iPhone.storyboard */,
-				C8DCE4D1181DBA58008AD1B6 /* Main_iPad.storyboard */,
-				C8DCE4DA181DBA58008AD1B6 /* Images.xcassets */,
-				C8DCE4C3181DBA58008AD1B6 /* Supporting Files */,
-			);
-			path = PathfinderCC;
-			sourceTree = "<group>";
-		};
-		C8DCE4C3181DBA58008AD1B6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E0E74A801846820300F13FE9 /* corerulebook.json */,
-				C8DCE4C4181DBA58008AD1B6 /* PathfinderCC-Info.plist */,
-				C8DCE4C5181DBA58008AD1B6 /* InfoPlist.strings */,
-				C8DCE4C8181DBA58008AD1B6 /* main.m */,
-				C8DCE4CA181DBA58008AD1B6 /* PathfinderCC-Prefix.pch */,
-				E0709AB01905FB840075E34C /* UITextField+PFC.h */,
-				E0709AB11905FB840075E34C /* UITextField+PFC.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C8DCE4E7181DBA58008AD1B6 /* PathfinderCCTests */ = {
-			isa = PBXGroup;
-			children = (
-				E09C3A7A1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m */,
-				C8DCE4ED181DBA58008AD1B6 /* PathfinderCCTests.m */,
-				C8DCE4E8181DBA58008AD1B6 /* Supporting Files */,
-				E0E74A72184642D300F13FE9 /* PFCMenuViewControllerTests.m */,
-				E0E74A761846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m */,
-				E0E74A7B1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m */,
-				E0F296F41846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m */,
-				E0709AB3190600BA0075E34C /* PFCCharacterListViewControllerTests.m */,
-				E02299421C87F131008AC991 /* PathfinderCCTests-Bridging-Header.h */,
-				E02299471C87F630008AC991 /* PathfinderCCTests.swift */,
-			);
-			path = PathfinderCCTests;
-			sourceTree = "<group>";
-		};
-		C8DCE4E8181DBA58008AD1B6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E0F296F6184689800007B2B6 /* testcorerulebook.json */,
-				C8DCE4E9181DBA58008AD1B6 /* PathfinderCCTests-Info.plist */,
-				C8DCE4EA181DBA58008AD1B6 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C8DCE4F7181DBE27008AD1B6 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				C8B5BEDF18209D9200602206 /* CreateCharacterControllers */,
-				C8DCE4FB181DBF0B008AD1B6 /* PFCCharacterSheetViewController.h */,
-				C8DCE4FC181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m */,
-				C8B5BED5181FE39900602206 /* PFCMenuViewController.h */,
-				C8B5BED6181FE39900602206 /* PFCMenuViewController.m */,
-				C8B5BED81820970B00602206 /* PFCCharacterListViewController.h */,
-				C8B5BED91820970B00602206 /* PFCCharacterListViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		C8DCE500181DC02C008AD1B6 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C8DCE501181DC084008AD1B6 /* PFCAbilityScoreCollectionViewCell.h */,
-				C8DCE502181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m */,
-				BE5B0CD0182D82990039E623 /* PFCWrittenTextField.h */,
-				BE5B0CD1182D82990039E623 /* PFCWrittenTextField.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		C8DCE504181DC4BF008AD1B6 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				E022991E1C87EC31008AC991 /* Mapping */,
-				E02299321C87ED8E008AC991 /* Character+CoreDataProperties.swift */,
-				E02299331C87ED8E008AC991 /* Character.swift */,
-				E02299341C87ED8E008AC991 /* Race+CoreDataProperties.swift */,
-				E02299351C87ED8E008AC991 /* Race.swift */,
-				E02299361C87ED8E008AC991 /* AbilityScore+CoreDataProperties.swift */,
-				E02299371C87ED8E008AC991 /* AbilityScore.swift */,
-				E02299381C87ED8E008AC991 /* CoreRulebook+CoreDataProperties.swift */,
-				E02299391C87ED8E008AC991 /* CoreRulebook.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D14039F719AD28079B51C668 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3AC5AEF4146A2239DCF121E5 /* Pods-PathfinderCCTests.debug.xcconfig */,
-				6B1694D5FBE5C11EA71E312C /* Pods-PathfinderCCTests.release.xcconfig */,
-				FB1F725C26F423F86B558E05 /* Pods-PathfinderCC.debug.xcconfig */,
-				F28BCAEEDCD56A9CB025DD5A /* Pods-PathfinderCC.release.xcconfig */,
+				93EFB2E5BD27FCB93CABA741 /* Pods-PathfinderCC.debug.xcconfig */,
+				F6F11746032D1042BD80E926 /* Pods-PathfinderCC.release.xcconfig */,
+				A8BCDECA606A3F022C126719 /* Pods-PathfinderCCTests.debug.xcconfig */,
+				16D4FD7D0706E9CCE42C0394 /* Pods-PathfinderCCTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E022991E1C87EC31008AC991 /* Mapping */ = {
+		C817C24A1C88D8AB00C21742 = {
 			isa = PBXGroup;
 			children = (
-				E022991F1C87EC6C008AC991 /* PathfinderCC-Bridging-Header.h */,
+				C817C2551C88D8AB00C21742 /* PathfinderCC */,
+				C817C26D1C88D8AB00C21742 /* PathfinderCCTests */,
+				C817C2781C88D8AB00C21742 /* PathfinderCCUITests */,
+				C817C2541C88D8AB00C21742 /* Products */,
+				39892E5792EBC85AAB3FB3E2 /* Pods */,
+				2760349168D78B32C0080C02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C817C2541C88D8AB00C21742 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C817C2531C88D8AB00C21742 /* PathfinderCC.app */,
+				C817C26A1C88D8AB00C21742 /* PathfinderCCTests.xctest */,
+				C817C2751C88D8AB00C21742 /* PathfinderCCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C817C2551C88D8AB00C21742 /* PathfinderCC */ = {
+			isa = PBXGroup;
+			children = (
+				C88EE2F41C8A163C00405F76 /* CoreRulebook */,
+				C8E1FFAC1C891FA70097FF62 /* Constants.swift */,
+				C817C2A41C88DC9C00C21742 /* Menu */,
+				C817C29F1C88DC3E00C21742 /* CreateCharacter */,
+				C817C29C1C88DA2800C21742 /* CharacterSheet */,
+				C817C28A1C88D91700C21742 /* Models */,
+				C817C2561C88D8AB00C21742 /* AppDelegate.swift */,
+				C817C2581C88D8AB00C21742 /* ViewController.swift */,
+				C817C25A1C88D8AB00C21742 /* Main.storyboard */,
+				C817C2601C88D8AB00C21742 /* Assets.xcassets */,
+				C817C2621C88D8AB00C21742 /* LaunchScreen.storyboard */,
+				C8E1FFBC1C8947590097FF62 /* corerulebook.json */,
+				C817C2651C88D8AB00C21742 /* Info.plist */,
+				C817C2871C88D90700C21742 /* CoreRulebook.xcdatamodeld */,
+			);
+			path = PathfinderCC;
+			sourceTree = "<group>";
+		};
+		C817C26D1C88D8AB00C21742 /* PathfinderCCTests */ = {
+			isa = PBXGroup;
+			children = (
+				C817C26E1C88D8AB00C21742 /* PathfinderCCTests.swift */,
+				C817C2701C88D8AB00C21742 /* Info.plist */,
+				C871BE531C89E1D000FE8E2D /* CreateCharacterAbilityScoreViewControllerTests.swift */,
+				C88EE2F21C8A130100405F76 /* MenuViewControllerTests.swift */,
+			);
+			path = PathfinderCCTests;
+			sourceTree = "<group>";
+		};
+		C817C2781C88D8AB00C21742 /* PathfinderCCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C817C2791C88D8AB00C21742 /* PathfinderCCUITests.swift */,
+				C817C27B1C88D8AB00C21742 /* Info.plist */,
+			);
+			path = PathfinderCCUITests;
+			sourceTree = "<group>";
+		};
+		C817C28A1C88D91700C21742 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C817C28E1C88D91700C21742 /* Character.swift */,
+				C8E1FFB41C892D890097FF62 /* Character+CoreDataProperties.swift */,
+				C817C2931C88D91700C21742 /* Race.swift */,
+				C8E1FFB51C892D890097FF62 /* Race+CoreDataProperties.swift */,
+				C817C28C1C88D91700C21742 /* AbilityScore.swift */,
+				C8E1FFB61C892D890097FF62 /* AbilityScore+CoreDataProperties.swift */,
+				C817C2901C88D91700C21742 /* CoreRulebook.swift */,
+				C8E1FFB71C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift */,
+				C817C2911C88D91700C21742 /* Mapping */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C817C2911C88D91700C21742 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Mapping;
+			sourceTree = "<group>";
+		};
+		C817C29C1C88DA2800C21742 /* CharacterSheet */ = {
+			isa = PBXGroup;
+			children = (
+				C8E1FFB01C8922CE0097FF62 /* AbilityScoreCollectionViewCell.swift */,
+				C8E1FFB11C8922CE0097FF62 /* CharacterSheetViewController.swift */,
+			);
+			path = CharacterSheet;
+			sourceTree = "<group>";
+		};
+		C817C29F1C88DC3E00C21742 /* CreateCharacter */ = {
+			isa = PBXGroup;
+			children = (
+				C817C2A01C88DC6500C21742 /* CreateCharacterAbilityScoreViewController.swift */,
+				C817C2A21C88DC7800C21742 /* CreateCharacterNameViewController.swift */,
+			);
+			path = CreateCharacter;
+			sourceTree = "<group>";
+		};
+		C817C2A41C88DC9C00C21742 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C817C2A51C88DCB000C21742 /* MenuViewController.swift */,
+				C817C2A71C88DCCF00C21742 /* CharacterListViewController.swift */,
+				C86FA5861C89CAA800404C82 /* FetchedResultsControllerDataSource.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		C88EE2F41C8A163C00405F76 /* CoreRulebook */ = {
+			isa = PBXGroup;
+			children = (
+				C88EE2F51C8A165D00405F76 /* CoreRulebookCoordinator.swift */,
+			);
+			path = CoreRulebook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C8DCE4B8181DBA58008AD1B6 /* PathfinderCC */ = {
+		C817C2521C88D8AB00C21742 /* PathfinderCC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8DCE4F1181DBA59008AD1B6 /* Build configuration list for PBXNativeTarget "PathfinderCC" */;
+			buildConfigurationList = C817C27E1C88D8AB00C21742 /* Build configuration list for PBXNativeTarget "PathfinderCC" */;
 			buildPhases = (
-				303523CE1635992A1045F6F0 /* Check Pods Manifest.lock */,
-				C8DCE4B5181DBA58008AD1B6 /* Sources */,
-				C8DCE4B6181DBA58008AD1B6 /* Frameworks */,
-				C8DCE4B7181DBA58008AD1B6 /* Resources */,
-				3ADAC4D06DAAE1EF7EE61D66 /* Embed Pods Frameworks */,
-				917DE12B3A6111DC4D4CCA73 /* Copy Pods Resources */,
+				3F04D62C9DB2667B3BA7979D /* Check Pods Manifest.lock */,
+				C817C24F1C88D8AB00C21742 /* Sources */,
+				C817C2501C88D8AB00C21742 /* Frameworks */,
+				C817C2511C88D8AB00C21742 /* Resources */,
+				465139F184703F02F14E4D1E /* Embed Pods Frameworks */,
+				18F13A3A1A289859CEA3A152 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,58 +288,72 @@
 			);
 			name = PathfinderCC;
 			productName = PathfinderCC;
-			productReference = C8DCE4B9181DBA58008AD1B6 /* PathfinderCC.app */;
+			productReference = C817C2531C88D8AB00C21742 /* PathfinderCC.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C8DCE4DF181DBA58008AD1B6 /* PathfinderCCTests */ = {
+		C817C2691C88D8AB00C21742 /* PathfinderCCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8DCE4F4181DBA59008AD1B6 /* Build configuration list for PBXNativeTarget "PathfinderCCTests" */;
+			buildConfigurationList = C817C2811C88D8AB00C21742 /* Build configuration list for PBXNativeTarget "PathfinderCCTests" */;
 			buildPhases = (
-				A34BEB44639D2D780F3C4A6E /* Check Pods Manifest.lock */,
-				C8DCE4DC181DBA58008AD1B6 /* Sources */,
-				C8DCE4DD181DBA58008AD1B6 /* Frameworks */,
-				C8DCE4DE181DBA58008AD1B6 /* Resources */,
-				14A87FE53B9860907D8D5A48 /* Embed Pods Frameworks */,
-				4C211D7EE02D8F9EDD9048EE /* Copy Pods Resources */,
+				17A4492267EDE2FC24ECB2EB /* Check Pods Manifest.lock */,
+				C817C2661C88D8AB00C21742 /* Sources */,
+				C817C2671C88D8AB00C21742 /* Frameworks */,
+				C817C2681C88D8AB00C21742 /* Resources */,
+				C2B9C23CE621971F824738C0 /* Embed Pods Frameworks */,
+				A026F2E41A548C997E6E0950 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C8DCE4E6181DBA58008AD1B6 /* PBXTargetDependency */,
+				C817C26C1C88D8AB00C21742 /* PBXTargetDependency */,
 			);
 			name = PathfinderCCTests;
 			productName = PathfinderCCTests;
-			productReference = C8DCE4E0181DBA58008AD1B6 /* PathfinderCCTests.xctest */;
+			productReference = C817C26A1C88D8AB00C21742 /* PathfinderCCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C817C2741C88D8AB00C21742 /* PathfinderCCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C817C2841C88D8AB00C21742 /* Build configuration list for PBXNativeTarget "PathfinderCCUITests" */;
+			buildPhases = (
+				C817C2711C88D8AB00C21742 /* Sources */,
+				C817C2721C88D8AB00C21742 /* Frameworks */,
+				C817C2731C88D8AB00C21742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C817C2771C88D8AB00C21742 /* PBXTargetDependency */,
+			);
+			name = PathfinderCCUITests;
+			productName = PathfinderCCUITests;
+			productReference = C817C2751C88D8AB00C21742 /* PathfinderCCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C8DCE4B1181DBA58008AD1B6 /* Project object */ = {
+		C817C24B1C88D8AB00C21742 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = PFC;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Amanda Chappell";
+				ORGANIZATIONNAME = AmplifiedProjects;
 				TargetAttributes = {
-					C8DCE4B8181DBA58008AD1B6 = {
-						DevelopmentTeam = 37CAHGRH45;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 0;
-							};
-							com.apple.iCloud = {
-								enabled = 0;
-							};
-						};
+					C817C2521C88D8AB00C21742 = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
-					C8DCE4DF181DBA58008AD1B6 = {
-						TestTargetID = C8DCE4B8181DBA58008AD1B6;
+					C817C2691C88D8AB00C21742 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C817C2521C88D8AB00C21742;
+					};
+					C817C2741C88D8AB00C21742 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C817C2521C88D8AB00C21742;
 					};
 				};
 			};
-			buildConfigurationList = C8DCE4B4181DBA58008AD1B6 /* Build configuration list for PBXProject "PathfinderCC" */;
+			buildConfigurationList = C817C24E1C88D8AB00C21742 /* Build configuration list for PBXProject "PathfinderCC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -451,60 +361,48 @@
 				en,
 				Base,
 			);
-			mainGroup = C8DCE4B0181DBA58008AD1B6;
-			productRefGroup = C8DCE4BA181DBA58008AD1B6 /* Products */;
+			mainGroup = C817C24A1C88D8AB00C21742;
+			productRefGroup = C817C2541C88D8AB00C21742 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C8DCE4B8181DBA58008AD1B6 /* PathfinderCC */,
-				C8DCE4DF181DBA58008AD1B6 /* PathfinderCCTests */,
+				C817C2521C88D8AB00C21742 /* PathfinderCC */,
+				C817C2691C88D8AB00C21742 /* PathfinderCCTests */,
+				C817C2741C88D8AB00C21742 /* PathfinderCCUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C8DCE4B7181DBA58008AD1B6 /* Resources */ = {
+		C817C2511C88D8AB00C21742 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8DCE4D3181DBA58008AD1B6 /* Main_iPad.storyboard in Resources */,
-				E0F296F818468A9B0007B2B6 /* testcorerulebook.json in Resources */,
-				E02A3183191D9AF300F8ACCB /* (null) in Resources */,
-				E02A3182191D9AF300F8ACCB /* (null) in Resources */,
-				C8DCE4DB181DBA58008AD1B6 /* Images.xcassets in Resources */,
-				C8DCE4D0181DBA58008AD1B6 /* Main_iPhone.storyboard in Resources */,
-				E0E74A811846820300F13FE9 /* corerulebook.json in Resources */,
-				C8DCE4C7181DBA58008AD1B6 /* InfoPlist.strings in Resources */,
+				C817C2641C88D8AB00C21742 /* LaunchScreen.storyboard in Resources */,
+				C8E1FFBD1C8947590097FF62 /* corerulebook.json in Resources */,
+				C817C2611C88D8AB00C21742 /* Assets.xcassets in Resources */,
+				C817C25C1C88D8AB00C21742 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8DCE4DE181DBA58008AD1B6 /* Resources */ = {
+		C817C2681C88D8AB00C21742 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8DCE4EC181DBA58008AD1B6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C817C2731C88D8AB00C21742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14A87FE53B9860907D8D5A48 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PathfinderCCTests/Pods-PathfinderCCTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		303523CE1635992A1045F6F0 /* Check Pods Manifest.lock */ = {
+		17A4492267EDE2FC24ECB2EB /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -519,37 +417,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3ADAC4D06DAAE1EF7EE61D66 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PathfinderCC/Pods-PathfinderCC-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4C211D7EE02D8F9EDD9048EE /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PathfinderCCTests/Pods-PathfinderCCTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		917DE12B3A6111DC4D4CCA73 /* Copy Pods Resources */ = {
+		18F13A3A1A289859CEA3A152 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -564,7 +432,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PathfinderCC/Pods-PathfinderCC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A34BEB44639D2D780F3C4A6E /* Check Pods Manifest.lock */ = {
+		3F04D62C9DB2667B3BA7979D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -579,103 +447,135 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		465139F184703F02F14E4D1E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PathfinderCC/Pods-PathfinderCC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A026F2E41A548C997E6E0950 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PathfinderCCTests/Pods-PathfinderCCTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2B9C23CE621971F824738C0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PathfinderCCTests/Pods-PathfinderCCTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C8DCE4B5181DBA58008AD1B6 /* Sources */ = {
+		C817C24F1C88D8AB00C21742 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8DCE50F181DE7F4008AD1B6 /* PFCCreateCharacterAbilityScoreViewController.m in Sources */,
-				C8DA37641821E6BF00DBC2F7 /* PFCAlignment.m in Sources */,
-				C8B5BED7181FE39900602206 /* PFCMenuViewController.m in Sources */,
-				C8DA37671821E92A00DBC2F7 /* PFCGender.m in Sources */,
-				C8B5BEDE182097E500602206 /* PFCFetchedResultsControllerDataSource.m in Sources */,
-				E022993D1C87ED8E008AC991 /* Race.swift in Sources */,
-				E0709AB21905FB840075E34C /* UITextField+PFC.m in Sources */,
-				E022993A1C87ED8E008AC991 /* Character+CoreDataProperties.swift in Sources */,
-				BE5B0CD2182D82990039E623 /* PFCWrittenTextField.m in Sources */,
-				C8B5BECB181F59B600602206 /* PFCStore.m in Sources */,
-				E022993B1C87ED8E008AC991 /* Character.swift in Sources */,
-				C8B5BEE218209DDF00602206 /* PFCCreateCharacterNameViewController.m in Sources */,
-				C8DCE4CD181DBA58008AD1B6 /* PFCAppDelegate.m in Sources */,
-				C8DCE4FE181DBF0B008AD1B6 /* PFCCharacterSheetViewController.m in Sources */,
-				C8DCE503181DC085008AD1B6 /* PFCAbilityScoreCollectionViewCell.m in Sources */,
-				E072507F182DA7A800E523B6 /* CoreRulebook.xcdatamodeld in Sources */,
-				C8B5BEDA1820970B00602206 /* PFCCharacterListViewController.m in Sources */,
-				C8DCE4C9181DBA58008AD1B6 /* main.m in Sources */,
-				E0E74A7A1846765600F13FE9 /* PFCCoreRulebookVersionCoordinator.m in Sources */,
-				E022993C1C87ED8E008AC991 /* Race+CoreDataProperties.swift in Sources */,
-				E02299411C87ED8E008AC991 /* CoreRulebook.swift in Sources */,
-				E0E74A7F184680F900F13FE9 /* PFCCoreRulebookBuilder.m in Sources */,
-				E022993F1C87ED8E008AC991 /* AbilityScore.swift in Sources */,
-				E022993E1C87ED8E008AC991 /* AbilityScore+CoreDataProperties.swift in Sources */,
-				E02299401C87ED8E008AC991 /* CoreRulebook+CoreDataProperties.swift in Sources */,
+				C8E1FFAD1C891FA70097FF62 /* Constants.swift in Sources */,
+				C8E1FFB91C892D890097FF62 /* Race+CoreDataProperties.swift in Sources */,
+				C817C2A61C88DCB000C21742 /* MenuViewController.swift in Sources */,
+				C817C2591C88D8AB00C21742 /* ViewController.swift in Sources */,
+				C817C2891C88D90700C21742 /* CoreRulebook.xcdatamodeld in Sources */,
+				C817C2A31C88DC7800C21742 /* CreateCharacterNameViewController.swift in Sources */,
+				C8E1FFB21C8922CE0097FF62 /* AbilityScoreCollectionViewCell.swift in Sources */,
+				C817C2571C88D8AB00C21742 /* AppDelegate.swift in Sources */,
+				C88EE2F61C8A165D00405F76 /* CoreRulebookCoordinator.swift in Sources */,
+				C8E1FFBB1C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift in Sources */,
+				C817C29B1C88D91700C21742 /* Race.swift in Sources */,
+				C817C2951C88D91700C21742 /* AbilityScore.swift in Sources */,
+				C8E1FFBA1C892D890097FF62 /* AbilityScore+CoreDataProperties.swift in Sources */,
+				C817C2991C88D91700C21742 /* CoreRulebook.swift in Sources */,
+				C817C2A11C88DC6500C21742 /* CreateCharacterAbilityScoreViewController.swift in Sources */,
+				C8E1FFB31C8922CE0097FF62 /* CharacterSheetViewController.swift in Sources */,
+				C86FA5871C89CAA800404C82 /* FetchedResultsControllerDataSource.swift in Sources */,
+				C817C2A81C88DCCF00C21742 /* CharacterListViewController.swift in Sources */,
+				C8E1FFB81C892D890097FF62 /* Character+CoreDataProperties.swift in Sources */,
+				C817C2971C88D91700C21742 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8DCE4DC181DBA58008AD1B6 /* Sources */ = {
+		C817C2661C88D8AB00C21742 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8DCE4EE181DBA58008AD1B6 /* PathfinderCCTests.m in Sources */,
-				E09C3A7B1837B25A0032FD37 /* PFCCreateCharacterAbilityScoreViewControllerTest.m in Sources */,
-				E0E74A7C1846795000F13FE9 /* PFCCreateCharacterNameViewControllerTests.m in Sources */,
-				E0E74A771846577300F13FE9 /* PFCCharacterSheetViewControllerTests.m in Sources */,
-				E0F296F51846872B0007B2B6 /* PFCCoreRulebookVersionCoordinatorTests.m in Sources */,
-				E0E74A73184642D300F13FE9 /* PFCMenuViewControllerTests.m in Sources */,
-				E02299481C87F630008AC991 /* PathfinderCCTests.swift in Sources */,
-				E0709AB4190600BA0075E34C /* PFCCharacterListViewControllerTests.m in Sources */,
+				C88EE2F31C8A130100405F76 /* MenuViewControllerTests.swift in Sources */,
+				C871BE541C89E1D000FE8E2D /* CreateCharacterAbilityScoreViewControllerTests.swift in Sources */,
+				C817C26F1C88D8AB00C21742 /* PathfinderCCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C817C2711C88D8AB00C21742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C817C27A1C88D8AB00C21742 /* PathfinderCCUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C8DCE4E6181DBA58008AD1B6 /* PBXTargetDependency */ = {
+		C817C26C1C88D8AB00C21742 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C8DCE4B8181DBA58008AD1B6 /* PathfinderCC */;
-			targetProxy = C8DCE4E5181DBA58008AD1B6 /* PBXContainerItemProxy */;
+			target = C817C2521C88D8AB00C21742 /* PathfinderCC */;
+			targetProxy = C817C26B1C88D8AB00C21742 /* PBXContainerItemProxy */;
+		};
+		C817C2771C88D8AB00C21742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C817C2521C88D8AB00C21742 /* PathfinderCC */;
+			targetProxy = C817C2761C88D8AB00C21742 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C8DCE4C5181DBA58008AD1B6 /* InfoPlist.strings */ = {
+		C817C25A1C88D8AB00C21742 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C8DCE4C6181DBA58008AD1B6 /* en */,
+				C817C25B1C88D8AB00C21742 /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C8DCE4CE181DBA58008AD1B6 /* Main_iPhone.storyboard */ = {
+		C817C2621C88D8AB00C21742 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C8DCE4CF181DBA58008AD1B6 /* Base */,
+				C817C2631C88D8AB00C21742 /* Base */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		C8DCE4D1181DBA58008AD1B6 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C8DCE4D2181DBA58008AD1B6 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		C8DCE4EA181DBA58008AD1B6 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C8DCE4EB181DBA58008AD1B6 /* en */,
-			);
-			name = InfoPlist.strings;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C8DCE4EF181DBA59008AD1B6 /* Debug */ = {
+		C817C27C1C88D8AB00C21742 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -690,33 +590,37 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C8DCE4F0181DBA59008AD1B6 /* Release */ = {
+		C817C27D1C88D8AB00C21742 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -731,198 +635,138 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				ONLY_ACTIVE_ARCH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		C8DCE4F2181DBA59008AD1B6 /* Debug */ = {
+		C817C27F1C88D8AB00C21742 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB1F725C26F423F86B558E05 /* Pods-PathfinderCC.debug.xcconfig */;
+			baseConfigurationReference = 93EFB2E5BD27FCB93CABA741 /* Pods-PathfinderCC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_ASSIGN_ENUM = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
-				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
-				CLANG_WARN_OBJC_RECEIVER_WEAK = NO;
-				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = YES;
-				INFOPLIST_FILE = "PathfinderCC/PathfinderCC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				INFOPLIST_FILE = PathfinderCC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amplifiedproejcts.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amplifiedprojects.PathfinderCC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PathfinderCC/Models/Mapping/PathfinderCC-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		C8DCE4F3181DBA59008AD1B6 /* Release */ = {
+		C817C2801C88D8AB00C21742 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F28BCAEEDCD56A9CB025DD5A /* Pods-PathfinderCC.release.xcconfig */;
+			baseConfigurationReference = F6F11746032D1042BD80E926 /* Pods-PathfinderCC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_ASSIGN_ENUM = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
-				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
-				CLANG_WARN_OBJC_RECEIVER_WEAK = NO;
-				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = YES;
-				INFOPLIST_FILE = "PathfinderCC/PathfinderCC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				INFOPLIST_FILE = PathfinderCC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amplifiedproejcts.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amplifiedprojects.PathfinderCC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PathfinderCC/Models/Mapping/PathfinderCC-Bridging-Header.h";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		C8DCE4F5181DBA59008AD1B6 /* Debug */ = {
+		C817C2821C88D8AB00C21742 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AC5AEF4146A2239DCF121E5 /* Pods-PathfinderCCTests.debug.xcconfig */;
+			baseConfigurationReference = A8BCDECA606A3F022C126719 /* Pods-PathfinderCCTests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PathfinderCC.app/PathfinderCC";
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "PathfinderCCTests/PathfinderCCTests-Info.plist";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PathfinderCCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amplifiedproejcts.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amplifiedprojects.PathfinderCCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PathfinderCCTests/PathfinderCCTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PathfinderCC.app/PathfinderCC";
 			};
 			name = Debug;
 		};
-		C8DCE4F6181DBA59008AD1B6 /* Release */ = {
+		C817C2831C88D8AB00C21742 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B1694D5FBE5C11EA71E312C /* Pods-PathfinderCCTests.release.xcconfig */;
+			baseConfigurationReference = 16D4FD7D0706E9CCE42C0394 /* Pods-PathfinderCCTests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PathfinderCC.app/PathfinderCC";
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PathfinderCC/PathfinderCC-Prefix.pch";
-				INFOPLIST_FILE = "PathfinderCCTests/PathfinderCCTests-Info.plist";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PathfinderCCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amplifiedproejcts.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amplifiedprojects.PathfinderCCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PathfinderCCTests/PathfinderCCTests-Bridging-Header.h";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PathfinderCC.app/PathfinderCC";
+			};
+			name = Release;
+		};
+		C817C2851C88D8AB00C21742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PathfinderCCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amplifiedprojects.PathfinderCCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PathfinderCC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C817C2861C88D8AB00C21742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PathfinderCCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amplifiedprojects.PathfinderCCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PathfinderCC;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C8DCE4B4181DBA58008AD1B6 /* Build configuration list for PBXProject "PathfinderCC" */ = {
+		C817C24E1C88D8AB00C21742 /* Build configuration list for PBXProject "PathfinderCC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C8DCE4EF181DBA59008AD1B6 /* Debug */,
-				C8DCE4F0181DBA59008AD1B6 /* Release */,
+				C817C27C1C88D8AB00C21742 /* Debug */,
+				C817C27D1C88D8AB00C21742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8DCE4F1181DBA59008AD1B6 /* Build configuration list for PBXNativeTarget "PathfinderCC" */ = {
+		C817C27E1C88D8AB00C21742 /* Build configuration list for PBXNativeTarget "PathfinderCC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C8DCE4F2181DBA59008AD1B6 /* Debug */,
-				C8DCE4F3181DBA59008AD1B6 /* Release */,
+				C817C27F1C88D8AB00C21742 /* Debug */,
+				C817C2801C88D8AB00C21742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8DCE4F4181DBA59008AD1B6 /* Build configuration list for PBXNativeTarget "PathfinderCCTests" */ = {
+		C817C2811C88D8AB00C21742 /* Build configuration list for PBXNativeTarget "PathfinderCCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C8DCE4F5181DBA59008AD1B6 /* Debug */,
-				C8DCE4F6181DBA59008AD1B6 /* Release */,
+				C817C2821C88D8AB00C21742 /* Debug */,
+				C817C2831C88D8AB00C21742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C817C2841C88D8AB00C21742 /* Build configuration list for PBXNativeTarget "PathfinderCCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C817C2851C88D8AB00C21742 /* Debug */,
+				C817C2861C88D8AB00C21742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -930,17 +774,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E072507D182DA7A800E523B6 /* CoreRulebook.xcdatamodeld */ = {
+		C817C2871C88D90700C21742 /* CoreRulebook.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E072507E182DA7A800E523B6 /* CoreRulebook.xcdatamodel */,
+				C817C2881C88D90700C21742 /* CoreRulebook.xcdatamodel */,
 			);
-			currentVersion = E072507E182DA7A800E523B6 /* CoreRulebook.xcdatamodel */;
+			currentVersion = C817C2881C88D90700C21742 /* CoreRulebook.xcdatamodel */;
 			path = CoreRulebook.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = C8DCE4B1181DBA58008AD1B6 /* Project object */;
+	rootObject = C817C24B1C88D8AB00C21742 /* Project object */;
 }

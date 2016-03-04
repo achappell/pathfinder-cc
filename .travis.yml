@@ -1,16 +1,17 @@
 language: objective-c
 osx_image: xcode7.2
 xcode_workspace: PathfinderCC.xcworkspace
-xcode_scheme: PathfinderCC
+xcode_scheme: PathfinderCCTravis
 xcode_sdk: iphonesimulator9.2
+script:
+  - xcodebuild test -workspace PathfinderCC.xcworkspace -scheme PathfinderCCTravis -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2'
+after_success:
+- bash <(curl -s https://codecov.io/bash)
 before_script:
 - pod install
-- sudo easy_install cpp-coveralls
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/PathfinderCCAdhoc.mobileprovision.enc -d -a -out scripts/profile/TravisExample_Ad_Hoc.mobileprovision
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
-after_success:
-- ./coveralls.rb --extension m
 env:
   global:
   - secure: gvWBWtaThYNKalIBkPq6uGJLbFwhHT589Y0/jeeREEHWd6GQhjnxjFZR2paNNbsyEkgKUIE9yeIvGuiYlzmVBmBajSuLVQUPKzxhccG5vo8Jw47DpOABG7Qov6og3RzbI56PFO/XIyg5nEvkbay6MbLEVsauqZrJu9GMAf1gpFg=
