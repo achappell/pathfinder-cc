@@ -42,6 +42,12 @@
 		C8E1FFBB1C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1FFB71C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift */; };
 		C8E1FFBD1C8947590097FF62 /* corerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = C8E1FFBC1C8947590097FF62 /* corerulebook.json */; };
 		C8FD15361C8A3E0C00473164 /* testcorerulebook.json in Resources */ = {isa = PBXBuildFile; fileRef = C8FD15351C8A3E0C00473164 /* testcorerulebook.json */; };
+		E04AC4DA1C8A938F00CFA64D /* CoreRulebook+FEMMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AC4D91C8A938F00CFA64D /* CoreRulebook+FEMMapping.swift */; };
+		E04AC4DC1C8A953D00CFA64D /* Race+FEMMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AC4DB1C8A953D00CFA64D /* Race+FEMMapping.swift */; };
+		E04AC4DE1C8A967800CFA64D /* FEMMapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AC4DD1C8A967800CFA64D /* FEMMapped.swift */; };
+		E04AC4E01C8A970400CFA64D /* JSONDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AC4DF1C8A970400CFA64D /* JSONDeserializer.swift */; };
+		E04AC4E41C8A9A1600CFA64D /* CoreRulebook+FEMMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AC4E31C8A9A1600CFA64D /* CoreRulebook+FEMMappingTests.swift */; };
+		E04AC4E61C8A9FC000CFA64D /* Races+FEMMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AC4E51C8A9FC000CFA64D /* Races+FEMMappingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +112,12 @@
 		C8E1FFB71C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreRulebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C8E1FFBC1C8947590097FF62 /* corerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = corerulebook.json; sourceTree = "<group>"; };
 		C8FD15351C8A3E0C00473164 /* testcorerulebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testcorerulebook.json; sourceTree = "<group>"; };
+		E04AC4D91C8A938F00CFA64D /* CoreRulebook+FEMMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreRulebook+FEMMapping.swift"; sourceTree = "<group>"; };
+		E04AC4DB1C8A953D00CFA64D /* Race+FEMMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Race+FEMMapping.swift"; sourceTree = "<group>"; };
+		E04AC4DD1C8A967800CFA64D /* FEMMapped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FEMMapped.swift; sourceTree = "<group>"; };
+		E04AC4DF1C8A970400CFA64D /* JSONDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDeserializer.swift; sourceTree = "<group>"; };
+		E04AC4E31C8A9A1600CFA64D /* CoreRulebook+FEMMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreRulebook+FEMMappingTests.swift"; sourceTree = "<group>"; };
+		E04AC4E51C8A9FC000CFA64D /* Races+FEMMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Races+FEMMappingTests.swift"; sourceTree = "<group>"; };
 		F6F11746032D1042BD80E926 /* Pods-PathfinderCC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCC.release.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCC/Pods-PathfinderCC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +213,7 @@
 		C817C26D1C88D8AB00C21742 /* PathfinderCCTests */ = {
 			isa = PBXGroup;
 			children = (
+				E04AC4E11C8A99E800CFA64D /* Models */,
 				C8FD15351C8A3E0C00473164 /* testcorerulebook.json */,
 				C88EE3031C8A310D00405F76 /* Menu */,
 				C88EE2FE1C8A2E6100405F76 /* CreateCharacter */,
@@ -223,6 +236,7 @@
 		C817C28A1C88D91700C21742 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E04AC4D81C8A935C00CFA64D /* Mapping */,
 				C817C28E1C88D91700C21742 /* Character.swift */,
 				C8E1FFB41C892D890097FF62 /* Character+CoreDataProperties.swift */,
 				C817C2931C88D91700C21742 /* Race.swift */,
@@ -305,6 +319,34 @@
 				C88EE3081C8A330000405F76 /* CharacterListViewControllerTests.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		E04AC4D81C8A935C00CFA64D /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				E04AC4D91C8A938F00CFA64D /* CoreRulebook+FEMMapping.swift */,
+				E04AC4DB1C8A953D00CFA64D /* Race+FEMMapping.swift */,
+				E04AC4DD1C8A967800CFA64D /* FEMMapped.swift */,
+				E04AC4DF1C8A970400CFA64D /* JSONDeserializer.swift */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		E04AC4E11C8A99E800CFA64D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E04AC4E21C8A99EE00CFA64D /* Mapping */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E04AC4E21C8A99EE00CFA64D /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				E04AC4E31C8A9A1600CFA64D /* CoreRulebook+FEMMappingTests.swift */,
+				E04AC4E51C8A9FC000CFA64D /* Races+FEMMappingTests.swift */,
+			);
+			path = Mapping;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,6 +581,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04AC4DC1C8A953D00CFA64D /* Race+FEMMapping.swift in Sources */,
 				C8E1FFAD1C891FA70097FF62 /* Constants.swift in Sources */,
 				C8E1FFB91C892D890097FF62 /* Race+CoreDataProperties.swift in Sources */,
 				C817C2A61C88DCB000C21742 /* MenuViewController.swift in Sources */,
@@ -547,17 +590,20 @@
 				C8E1FFB21C8922CE0097FF62 /* AbilityScoreCollectionViewCell.swift in Sources */,
 				C817C2571C88D8AB00C21742 /* AppDelegate.swift in Sources */,
 				C88EE2F61C8A165D00405F76 /* CoreRulebookCoordinator.swift in Sources */,
+				E04AC4DA1C8A938F00CFA64D /* CoreRulebook+FEMMapping.swift in Sources */,
 				C8E1FFBB1C892D890097FF62 /* CoreRulebook+CoreDataProperties.swift in Sources */,
 				C88EE2F81C8A1E2500405F76 /* ScoreLabel.swift in Sources */,
 				C817C29B1C88D91700C21742 /* Race.swift in Sources */,
 				C817C2951C88D91700C21742 /* AbilityScore.swift in Sources */,
 				C8E1FFBA1C892D890097FF62 /* AbilityScore+CoreDataProperties.swift in Sources */,
 				C817C2991C88D91700C21742 /* CoreRulebook.swift in Sources */,
+				E04AC4DE1C8A967800CFA64D /* FEMMapped.swift in Sources */,
 				C817C2A11C88DC6500C21742 /* CreateCharacterAbilityScoreViewController.swift in Sources */,
 				C8E1FFB31C8922CE0097FF62 /* CharacterSheetViewController.swift in Sources */,
 				C86FA5871C89CAA800404C82 /* FetchedResultsControllerDataSource.swift in Sources */,
 				C817C2A81C88DCCF00C21742 /* CharacterListViewController.swift in Sources */,
 				C8E1FFB81C892D890097FF62 /* Character+CoreDataProperties.swift in Sources */,
+				E04AC4E01C8A970400CFA64D /* JSONDeserializer.swift in Sources */,
 				C817C2971C88D91700C21742 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,10 +615,12 @@
 				C88EE2FB1C8A1F7E00405F76 /* AbilityScoreCollectionViewCellTests.swift in Sources */,
 				C88EE3071C8A314A00405F76 /* FetchedResultsControllerDataSourceTests.swift in Sources */,
 				C88EE2FD1C8A20CD00405F76 /* CharacterHelper.swift in Sources */,
+				E04AC4E61C8A9FC000CFA64D /* Races+FEMMappingTests.swift in Sources */,
 				C88EE3021C8A2E9C00405F76 /* CreateCharacterAbilityScoreViewControllerTests.swift in Sources */,
 				C88EE3051C8A312600405F76 /* MenuViewControllerTests.swift in Sources */,
 				C88EE3001C8A2E7C00405F76 /* CreateCharacterNameViewControllerTests.swift in Sources */,
 				C88EE3091C8A330000405F76 /* CharacterListViewControllerTests.swift in Sources */,
+				E04AC4E41C8A9A1600CFA64D /* CoreRulebook+FEMMappingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

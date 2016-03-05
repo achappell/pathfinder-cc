@@ -37,7 +37,7 @@ class CoreRulebookCoordinator {
         return nil
     }()
     
-    init(jsonURL: NSURL) {
+    init(jsonURL: NSURL?) {
         self.jsonURL = jsonURL
     }
 
@@ -54,5 +54,12 @@ class CoreRulebookCoordinator {
             return version.integerValue
         }
         return 0
+    }
+    
+    func migrateToLatestCoreRulebook() -> Bool {
+        
+        
+        
+        return false
     }
 }

@@ -11,7 +11,6 @@ target 'PathfinderCC' do
 end
 
 target 'PathfinderCCTests' do
-  pod 'OCMock'
   pod 'FastEasyMapping'
   pod 'MagicalRecord', '~> 2.3'
 end
