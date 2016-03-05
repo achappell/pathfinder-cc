@@ -16,6 +16,7 @@ extension CoreRulebook: FEMMapped {
         
         let mapping = FEMMapping(entityName: CoreRulebook.MR_entityName())
         
+        mapping.addToManyRelationshipMapping(Skill.mapping(), forProperty: "skills", keyPath: "coreRulebook.skills")
         mapping.addToManyRelationshipMapping(Race.mapping(), forProperty: "races", keyPath: "coreRulebook.races")
         
         return mapping

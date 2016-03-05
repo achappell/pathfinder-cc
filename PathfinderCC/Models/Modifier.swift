@@ -9,6 +9,12 @@
 import Foundation
 import CoreData
 
+extension Constants {
+    struct Modifiers {
+        static let Size = "Size"
+    }
+}
+
 
 class Modifier: NSManagedObject {
 

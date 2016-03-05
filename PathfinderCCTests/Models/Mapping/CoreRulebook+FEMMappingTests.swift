@@ -33,9 +33,10 @@ class CoreRulebook_FEMMappingTests: XCTestCase {
         let data = NSData(contentsOfFile: path!)
         
         let deserializer = JSONDeserializer()
-        let coreRulebook = deserializer.objectFromData(data!, classType: CoreRulebook.self)
+        let coreRulebook = deserializer.objectFromData(data!, classType: CoreRulebook.self)! as CoreRulebook
         
-        XCTAssertTrue(coreRulebook?.races.count == 1)
+        XCTAssertEqual(coreRulebook.races.count, 1)
+        XCTAssertEqual(coreRulebook.skills.count, 1)
     }
 
 }

@@ -22,6 +22,27 @@ class Modifier_FEMMappingTests: XCTestCase {
     }
 
     func testFEMMapping() {
+        let deserializer = JSONDeserializer()
+        let modifiers = getModifiers()
+        let modifier = deserializer.objectFromDictionary(modifiers![0], classType: Modifier.self)! as Modifier
+                
+        XCTAssertEqual(modifier.value, 0)
+        XCTAssertEqual(modifier.type, "Size")
+        XCTAssertEqual(modifier.originalText, "Dwarves are Medium creatures and have no bonuses or penalties due to their size.")
+    }
+    
+    func testSkillMapping() {
+        let deserializer = JSONDeserializer()
+        let modifiers = getModifiers()
+        let modifier = deserializer.objectFromDictionary(modifiers![2], classType: Modifier.self)! as Modifier
+                
+        XCTAssertEqual(modifier.value, 2)
+        XCTAssertEqual(modifier.type, "Skill")
+        XCTAssertEqual(modifier.originalText, "Dwarves receive a +2 racial bonus on Appraise skill checks made to determine the price of nonmagical goods that contain precious metals or gemstones.")
+        XCTAssertEqual(modifier.circumstance, "Only for nonmagical goods that contain precious metals or gemstones.")
+    }
+    
+    func getModifiers() -> [[String:AnyObject]]? {
         
         let bundle = NSBundle(forClass: CoreRulebook_FEMMappingTests.self)
         let path = bundle.pathForResource("testcorerulebook", ofType: "json")
@@ -30,20 +51,15 @@ class Modifier_FEMMappingTests: XCTestCase {
         
         do {
             let JSONDict = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! [String:AnyObject]
-            
-            
-            let deserializer = JSONDeserializer()
-            
-            if let book = JSONDict["coreRulebook"] as? [String: AnyObject], races = book["races"] as? [[String: AnyObject]], size = races[0]["size"] as? [String:AnyObject] {
-                let modifier = deserializer.objectFromDictionary(size, classType: Modifier.self)! as Modifier
-                
-                XCTAssertEqual(modifier.value, 0)
-                XCTAssertEqual(modifier.type, 0)
-                XCTAssertEqual(modifier.originalText, "Dwarves are Medium creatures and have no bonuses or penalties due to their size.")
+
+            if let book = JSONDict["coreRulebook"] as? [String: AnyObject], races = book["races"] as? [[String: AnyObject]], modifiers = races[0]["modifiers"] as? [[String:AnyObject]] {
+                return modifiers
             }
         } catch {
             
         }
+        
+        return nil
     }
 
 }

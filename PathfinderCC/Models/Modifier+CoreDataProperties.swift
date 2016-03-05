@@ -16,8 +16,9 @@ extension Modifier {
 
     @NSManaged var circumstance: String
     @NSManaged var originalText: String
-    @NSManaged var type: Int16
+    @NSManaged var type: String
     @NSManaged var value: Int16
+    @NSManaged var name: String
     @NSManaged var skill: Skill?
     @NSManaged var race: Race?
 

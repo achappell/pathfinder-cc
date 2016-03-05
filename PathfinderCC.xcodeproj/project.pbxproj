@@ -58,6 +58,10 @@
 		E0FF11CA1C8B23FC0090EB0E /* Modifier+FEMMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF11C91C8B23FC0090EB0E /* Modifier+FEMMappingTests.swift */; };
 		E0FF11CD1C8B28090090EB0E /* Trait+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF11CB1C8B28090090EB0E /* Trait+CoreDataProperties.swift */; };
 		E0FF11CE1C8B28090090EB0E /* Trait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF11CC1C8B28090090EB0E /* Trait.swift */; };
+		E0FF11D01C8B43920090EB0E /* Trait+FEMMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF11CF1C8B43920090EB0E /* Trait+FEMMapping.swift */; };
+		E0FF11D21C8B43BC0090EB0E /* Trait+FEMMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF11D11C8B43BC0090EB0E /* Trait+FEMMappingTests.swift */; };
+		E0FF11D41C8B51660090EB0E /* Skill+FEMMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF11D31C8B51660090EB0E /* Skill+FEMMapping.swift */; };
+		E0FF11D61C8B51C10090EB0E /* Skill+FEMMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF11D51C8B51C10090EB0E /* Skill+FEMMappingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +142,10 @@
 		E0FF11C91C8B23FC0090EB0E /* Modifier+FEMMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Modifier+FEMMappingTests.swift"; sourceTree = "<group>"; };
 		E0FF11CB1C8B28090090EB0E /* Trait+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trait+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E0FF11CC1C8B28090090EB0E /* Trait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trait.swift; sourceTree = "<group>"; };
+		E0FF11CF1C8B43920090EB0E /* Trait+FEMMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trait+FEMMapping.swift"; sourceTree = "<group>"; };
+		E0FF11D11C8B43BC0090EB0E /* Trait+FEMMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trait+FEMMappingTests.swift"; sourceTree = "<group>"; };
+		E0FF11D31C8B51660090EB0E /* Skill+FEMMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Skill+FEMMapping.swift"; sourceTree = "<group>"; };
+		E0FF11D51C8B51C10090EB0E /* Skill+FEMMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Skill+FEMMappingTests.swift"; sourceTree = "<group>"; };
 		F6F11746032D1042BD80E926 /* Pods-PathfinderCC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathfinderCC.release.xcconfig"; path = "Pods/Target Support Files/Pods-PathfinderCC/Pods-PathfinderCC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -346,6 +354,8 @@
 				E04AC4DB1C8A953D00CFA64D /* Race+FEMMapping.swift */,
 				E0FF11BB1C8B18BF0090EB0E /* AbilityScore+FEMMapping.swift */,
 				E0FF11C71C8B235A0090EB0E /* Modifier+FEMMapping.swift */,
+				E0FF11CF1C8B43920090EB0E /* Trait+FEMMapping.swift */,
+				E0FF11D31C8B51660090EB0E /* Skill+FEMMapping.swift */,
 				E04AC4DD1C8A967800CFA64D /* FEMMapped.swift */,
 				E04AC4DF1C8A970400CFA64D /* JSONDeserializer.swift */,
 			);
@@ -367,6 +377,8 @@
 				E04AC4E51C8A9FC000CFA64D /* Races+FEMMappingTests.swift */,
 				E0FF11BD1C8B197B0090EB0E /* AbilityScore+FEMMappingTests.swift */,
 				E0FF11C91C8B23FC0090EB0E /* Modifier+FEMMappingTests.swift */,
+				E0FF11D11C8B43BC0090EB0E /* Trait+FEMMappingTests.swift */,
+				E0FF11D51C8B51C10090EB0E /* Skill+FEMMappingTests.swift */,
 			);
 			path = Mapping;
 			sourceTree = "<group>";
@@ -604,9 +616,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E04AC4DC1C8A953D00CFA64D /* Race+FEMMapping.swift in Sources */,
+				E0FF11D41C8B51660090EB0E /* Skill+FEMMapping.swift in Sources */,
 				C8E1FFAD1C891FA70097FF62 /* Constants.swift in Sources */,
 				C8E1FFB91C892D890097FF62 /* Race+CoreDataProperties.swift in Sources */,
 				E0FF11C41C8B1FA40090EB0E /* Modifier+CoreDataProperties.swift in Sources */,
+				E0FF11D01C8B43920090EB0E /* Trait+FEMMapping.swift in Sources */,
 				C817C2A61C88DCB000C21742 /* MenuViewController.swift in Sources */,
 				C817C2891C88D90700C21742 /* CoreRulebook.xcdatamodeld in Sources */,
 				E0FF11BC1C8B18BF0090EB0E /* AbilityScore+FEMMapping.swift in Sources */,
@@ -646,6 +660,7 @@
 				C88EE3071C8A314A00405F76 /* FetchedResultsControllerDataSourceTests.swift in Sources */,
 				C88EE2FD1C8A20CD00405F76 /* CharacterHelper.swift in Sources */,
 				E04AC4E61C8A9FC000CFA64D /* Races+FEMMappingTests.swift in Sources */,
+				E0FF11D21C8B43BC0090EB0E /* Trait+FEMMappingTests.swift in Sources */,
 				C88EE3021C8A2E9C00405F76 /* CreateCharacterAbilityScoreViewControllerTests.swift in Sources */,
 				E0FF11CA1C8B23FC0090EB0E /* Modifier+FEMMappingTests.swift in Sources */,
 				E0FF11BE1C8B197B0090EB0E /* AbilityScore+FEMMappingTests.swift in Sources */,
@@ -653,6 +668,7 @@
 				C88EE3001C8A2E7C00405F76 /* CreateCharacterNameViewControllerTests.swift in Sources */,
 				C88EE3091C8A330000405F76 /* CharacterListViewControllerTests.swift in Sources */,
 				E04AC4E41C8A9A1600CFA64D /* CoreRulebook+FEMMappingTests.swift in Sources */,
+				E0FF11D61C8B51C10090EB0E /* Skill+FEMMappingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

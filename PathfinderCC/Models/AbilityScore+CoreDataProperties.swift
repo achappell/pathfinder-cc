@@ -21,6 +21,5 @@ extension AbilityScore {
     @NSManaged var type: Int16
     @NSManaged var character: Character?
     @NSManaged var race: Race?
-    @NSManaged var skills: NSOrderedSet?
 
 }

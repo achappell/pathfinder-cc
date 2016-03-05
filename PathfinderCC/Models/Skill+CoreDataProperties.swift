@@ -14,7 +14,18 @@ import CoreData
 
 extension Skill {
 
+    @NSManaged var name: String
+    @NSManaged var originalText: String?
+    @NSManaged var check: String?
+    @NSManaged var action: String?
+    @NSManaged var tryAgain: Bool
+    @NSManaged var tryAgainOriginalText: String?
+    @NSManaged var special: String?
+    @NSManaged var restriction: String?
+    @NSManaged var trainedOnly: Bool
+    @NSManaged var untrained: String?
+    @NSManaged var keyAbility: Int16
     @NSManaged var modifier: Modifier?
-    @NSManaged var abilityScore: AbilityScore?
+    @NSManaged var coreRulebook: CoreRulebook?
 
 }

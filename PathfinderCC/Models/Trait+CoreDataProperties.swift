@@ -15,8 +15,9 @@ import CoreData
 extension Trait {
 
     @NSManaged var value: Int16
-    @NSManaged var type: Int16
+    @NSManaged var type: String
     @NSManaged var originalText: String
+    @NSManaged var name: String
     @NSManaged var race: Race?
 
 }

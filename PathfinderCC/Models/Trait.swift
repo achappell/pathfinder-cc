@@ -9,6 +9,11 @@
 import Foundation
 import CoreData
 
+extension Constants {
+    struct Traits {
+        static let Speed = "Speed"
+    }
+}
 
 class Trait: NSManagedObject {
 
