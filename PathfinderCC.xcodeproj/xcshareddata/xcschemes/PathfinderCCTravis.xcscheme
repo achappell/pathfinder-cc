@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "69789196E8DBDA67E60BD6C746B68285"
+               BlueprintIdentifier = "AD2A787865A218CE6F8BBA6F2165A975"
                BuildableName = "Pods_PathfinderCCTests.framework"
                BlueprintName = "Pods-PathfinderCCTests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -64,16 +64,6 @@
                BlueprintIdentifier = "C817C2691C88D8AB00C21742"
                BuildableName = "PathfinderCCTests.xctest"
                BlueprintName = "PathfinderCCTests"
-               ReferencedContainer = "container:PathfinderCC.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C817C2741C88D8AB00C21742"
-               BuildableName = "PathfinderCCUITests.xctest"
-               BlueprintName = "PathfinderCCUITests"
                ReferencedContainer = "container:PathfinderCC.xcodeproj">
             </BuildableReference>
          </TestableReference>
