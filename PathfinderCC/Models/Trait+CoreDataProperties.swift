@@ -1,5 +1,5 @@
 //
-//  AbilityScore+CoreDataProperties.swift
+//  Trait+CoreDataProperties.swift
 //  
 //
 //  Created by Amanda Chappell on 3/5/16.
@@ -12,15 +12,11 @@
 import Foundation
 import CoreData
 
-extension AbilityScore {
+extension Trait {
 
-    @NSManaged var abilityModifier: Int16
-    @NSManaged var baseScore: Int16
-    @NSManaged var tempAdjustment: Int16
-    @NSManaged var tempModifier: Int16
+    @NSManaged var value: Int16
     @NSManaged var type: Int16
-    @NSManaged var character: Character?
+    @NSManaged var originalText: String
     @NSManaged var race: Race?
-    @NSManaged var skills: NSOrderedSet?
 
 }

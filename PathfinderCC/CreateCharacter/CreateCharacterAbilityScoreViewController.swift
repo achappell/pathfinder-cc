@@ -61,7 +61,7 @@ class CreateCharacterAbilityScoreViewController: UIViewController, UITextFieldDe
         let wisdomScore = AbilityScore.insertItemWithBaseScore(Int16(self.wisdomTextField.text!)!, type: .Wisdom)
         let charismaScore = AbilityScore.insertItemWithBaseScore(Int16(self.charismaTextField.text!)!, type: .Charisma)
         
-        let abilityScores = Set([strengthScore,dexterityScore, constitutionScore, intelligenceScore, wisdomScore, charismaScore])
+        let abilityScores = NSOrderedSet(array: [strengthScore,dexterityScore, constitutionScore, intelligenceScore, wisdomScore, charismaScore])
         let character = Character.insertItemWithAbilityScores(abilityScores)
         
         return character

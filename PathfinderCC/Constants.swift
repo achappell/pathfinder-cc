@@ -27,4 +27,9 @@ struct Constants {
         static let NeutralEvil = "Neutral Evil"
         static let ChaoticEvil = "Chaotic Evil"
     }
+    
+    struct Size {
+        static let Small = "Small"
+        static let Medium = "Medium"
+    }
 }

@@ -168,7 +168,7 @@ class CreateCharacterAbilityScoreViewControllerTests: XCTestCase {
         let character = viewController.createCharacter()
         
         XCTAssertNotNil(character, "Character was not created correctly")
-        XCTAssertEqual(character.baseAbilityScores?.count, 6, "There should be 6 ability scores on the character now")
+        XCTAssertEqual(character.baseAbilityScores.count, 6, "There should be 6 ability scores on the character now")
     }
     
     func testSetActiveFieldOnResponder() {

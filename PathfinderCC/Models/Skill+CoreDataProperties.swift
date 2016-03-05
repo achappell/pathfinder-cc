@@ -1,5 +1,5 @@
 //
-//  CoreRulebook+CoreDataProperties.swift
+//  Skill+CoreDataProperties.swift
 //  
 //
 //  Created by Amanda Chappell on 3/5/16.
@@ -12,8 +12,9 @@
 import Foundation
 import CoreData
 
-extension CoreRulebook {
+extension Skill {
 
-    @NSManaged var races: NSOrderedSet
+    @NSManaged var modifier: Modifier?
+    @NSManaged var abilityScore: AbilityScore?
 
 }

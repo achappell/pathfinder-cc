@@ -17,6 +17,9 @@ extension Race: FEMMapped {
         let mapping = FEMMapping(entityName: Race.MR_entityName())
         mapping.addAttributesFromArray(["name","physicalDescription","adventures","alignmentAndReligion","relations","society"])
         
+            mapping.addToManyRelationshipMapping(AbilityScore.mapping(), forProperty: "scoreModifiers", keyPath: "scoreModifiers")
+            mapping.addToManyRelationshipMapping(Modifier.mapping(), forProperty: "modifiers", keyPath: "modifiers")
+        
         return mapping
     }
     

@@ -13,7 +13,7 @@ import MagicalRecord
 @objc(Character)
 class Character: NSManagedObject {
 
-    class func insertItemWithAbilityScores(abilityScores: Set<AbilityScore>) -> Character {
+    class func insertItemWithAbilityScores(abilityScores: NSOrderedSet) -> Character {
         
         let character = Character.MR_createEntity()!
         
@@ -47,7 +47,7 @@ class Character: NSManagedObject {
     }
     
     func abilityScoreOfType(abilityType: AbilityType) -> AbilityScore {
-        for abilityScore in baseAbilityScores as! Set<AbilityScore> {
+        for abilityScore in baseAbilityScores.array as! [AbilityScore] {
             if abilityScore.type == abilityType.rawValue {
                 return abilityScore
             }

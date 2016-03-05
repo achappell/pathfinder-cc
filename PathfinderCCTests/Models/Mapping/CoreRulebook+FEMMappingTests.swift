@@ -35,7 +35,7 @@ class CoreRulebook_FEMMappingTests: XCTestCase {
         let deserializer = JSONDeserializer()
         let coreRulebook = deserializer.objectFromData(data!, classType: CoreRulebook.self)
         
-        XCTAssertTrue(coreRulebook?.races?.count == 1)
+        XCTAssertTrue(coreRulebook?.races.count == 1)
     }
 
 }

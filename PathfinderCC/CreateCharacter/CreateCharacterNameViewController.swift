@@ -23,7 +23,11 @@ class CreateCharacterNameViewController: UIViewController, UIPickerViewDelegate,
 
     @IBAction func save(sender: AnyObject) {
         if let character = character {
-            character.name = self.nameTextField.text
+            
+            if let name = self.nameTextField.text {
+                character.name = name
+            }
+            
             if let age = ageTextField.text, ageInt = Int16(age) {
                 character.age = ageInt
             }
